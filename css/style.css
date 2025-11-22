@@ -1,3 +1,4 @@
+/*pour toutes les pages*/
 header{
     border-bottom: 1px solid #000000;
 }
@@ -20,12 +21,37 @@ nav a{
     color: #000000;
 }
 
+/*pour la page actualité_mode*/
+.actualités-mode{
+    display: block;
+}
+.actualités-mode a{
+    color: red;
+}
+
+
+/*body*/
 body {
-    background-color: #ffffff;
+    background-color: #000000;
     scroll-snap-type: inherit;
 }
 
-.backgroud-image{
+
+/*pour la page accueil*/
+.accueil {
+    position: relative; /* indispensable pour le texte absolute */
+}
+
+.accueil h1 {
+    position: absolute;
+    top: 15vw;
+    left: 38vw;
+    color: #ffffff;
+    font-size: 80px;
+    z-index: 10; /* au-dessus de l’image */
+}
+
+.accueil img {
     padding: 50px;
     display: block;
     margin-left: auto;
@@ -33,11 +59,13 @@ body {
     opacity: 0.8;
 }
 
+/*pour la page à_propos*/
 .a-propos{
     color: #ffffff;
     padding-block: unset;
     
 }
+
 .text-a-propos{
     border-radius: 20px;
     border-color: #000000;
