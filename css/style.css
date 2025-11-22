@@ -39,8 +39,9 @@ body {
     
 }
 .text-a-propos{
-    border-radius: 20 0;
+    border-radius: 20px;
     border-color: #000000;
+    text-align: center;
 }
 
 form {
@@ -51,7 +52,7 @@ form {
     gap: 15px;
 }
 
-.btn-submit{
+form button{
     display: block;
     width: 15%;
     font-weight: 700;
@@ -64,4 +65,19 @@ form {
     border-radius: 8px;
     text-align: center;
     margin-top: 20px;
+}
+
+form button:hover{
+    background: #252525;
+
+}
+
+form label {
+  font-weight: bold;
+}
+form input, form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
 }
