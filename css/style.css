@@ -9,6 +9,15 @@ nav ul {
     
 }
 
+.bandeau{
+    display: flex;
+    height: 5vw;
+    justify-content: space-between;
+    align-items: center;  
+    background: linear-gradient(#242121 7%, #776F6F 38%, #9A9595 51%, #716969 65%, #100E0E 95%);
+    list-style: none;
+}
+
 nav a{
     color:#ffffff;
     margin-right: 30px;
