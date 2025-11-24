@@ -1,13 +1,4 @@
-/*pour toutes les pages*/
-nav ul {
-    display: flex;
-    height: 5vw;
-    justify-content: space-between;
-    align-items: center;  
-    background: linear-gradient(#242121 7%, #776F6F 38%, #9A9595 51%, #716969 65%, #100E0E 95%);
-    list-style: none;
-    
-}
+/*le header pour toutes les pages*/
 
 .bandeau{
     display: flex;
@@ -16,11 +7,13 @@ nav ul {
     align-items: center;  
     background: linear-gradient(#242121 7%, #776F6F 38%, #9A9595 51%, #716969 65%, #100E0E 95%);
     list-style: none;
+    text-decoration: none;
 }
 
 nav a{
     color:#ffffff;
     margin-right: 30px;
+    text-decoration: none;
 }
 
 .title {
@@ -40,23 +33,36 @@ nav a{
 
 /*body*/
 body {
+    position: relative;
     font-family: "Times New Roman", Times, serif;
     background: linear-gradient(#000000 52%, #ffffff 100%);
+}
+/*le footer pour toutes les pages sauf à propos*/
+.btn-à-propos {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    font-size: large;
+    text-decoration: none;
 }
 
 
 /*pour la page accueil*/
 .accueil {
-    position: relative; /* indispensable pour le texte absolute */
+    position: relative;
 }
 
 .accueil h1 {
     position: absolute;
     top: 15vw;
-    left: 38vw;
+    left: 32vw;
     color: #ffffff;
     font-size: 80px;
-    z-index: 10; /* au-dessus de l’image */
+    z-index: 10;
 }
 
 .accueil img {
@@ -68,17 +74,6 @@ body {
 }
 
 /*pour la page à_propos*/
-.a-propos{
-    color: #ffffff;
-    padding-block: unset;
-    
-}
-
-.text-a-propos{
-    border-radius: 20px;
-    border-color: #000000;
-    text-align: center;
-}
 
 form {
     font-weight: 15;
