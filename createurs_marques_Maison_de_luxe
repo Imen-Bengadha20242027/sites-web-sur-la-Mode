@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>ICONIX</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="css/images/favicon.ico">
+        <link rel="stylesheet" href="css/style.css" >
+    </head>
+
+    <body>
+        <header>
+            <div class="title">
+                <h1>ICONIX</h1>
+            </div>
+            <nav>
+                <ul class="bandeau">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="actualités_mode.html">Actualités Mode</a></li>
+                    <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+                    <li><a href="tendances.html">Tendances</a></li>
+                    <li><a href="createur_marques.html">Créateurs & Marques</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1> Maison de Luxe </h1>
+        <h3> Découvrez les maisons de luxe qui ont façonné l’histoire de la mode, des icônes intemporelles aux créateurs visionnaires dont l’héritage continue d’inspirer les tendances d’aujourd’hui.</h3>
+        <h2> Christian Dior </h2>
+        <img src="">
+        <h3> Christian Dior révolutionne la mode en 1947 avec le « New Look », une silhouette féminine aux tailles marquées et jupes volumineuses. Son style raffiné et élégant a redéfini la haute couture française et continue d’influencer la mode moderne. </h3>
+        <img src="">
+        <img src="">
+        <h2> Coco Chanel-Maison Chanel </h2>
+        <img src="">
+        <h3> Coco Chanel libère la femme des corsets et impose un style simple, chic et intemporel. Elle est à l’origine du tailleur en tweed, de la petite robe noire et du parfum Chanel N°5, devenus des symboles du luxe français.</h3>
+        <img src="">
+        <img src="">
+        <img src="">
+        <h2> Yves Saint Laurent-Maison YSL</h2>
+        <img src="">
+        <img src="">
+        <h3> Yves Saint Laurent révolutionne la mode avec des pièces emblématiques comme le smoking féminin, la saharienne et les robes Mondrian. Son style audacieux mêle art, liberté et sophistication.</h3>
+        <img src="">
+        <img src="">
+        <h2> Salvatore Ferragamo </h2>
+        <h3> Salvatore Ferragamo, surnommé « le cordonnier des stars », devient célèbre pour ses créations innovantes et son approche artisanale. Sa maison représente l’élégance italienne et l’innovation en matière de design.</h3>
+        <img src="">
+        <img src="">
+        <img src="">
+        <h2> Hermès-Maison Hermès </h2>
+        <h3> Thierry Hermès fonde une maison d’exception dédiée à l’artisanat et au luxe. Réputée pour la perfection de ses cuirs, ses foulards iconiques et ses pièces intemporelles, Hermès incarne un raffinement discret et une qualité incomparable.</h3>
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <h2> Louis Vuitton-Maison Louis Vuitton </h2>
+        <h3> Louis Vuitton devient célèbre dès 1854 pour ses malles innovantes et son approche visionnaire du voyage. La maison transforme l’art de la maroquinerie en symbole d’élégance et de savoir-faire, tout en réinventant sans cesse ses codes à travers un style moderne et raffiné.</h3>
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <footer>
+            <a href="a_propos.html" class="btn-a-propos"><b>À PROPOS</b></a>
+            <a href="liens vers insta" >
+                <img src="css/images/logo_instagram.png" class="logo-instagram" alt="logo-instagram">
+            </a>
+            <h2>Suivez nous</h2>
+            <a href="insta" class="btn-suivre"><b>@ICONIX</b></a>    
+        </footer>
+
+    </body>
+</html>

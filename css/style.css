@@ -37,6 +37,35 @@ body {
     font-family: "Times New Roman", Times, serif;
     background: linear-gradient(#000000 52%, #ffffff 100%);
 }
+/*pour la page tendances*/
+
+.tendances-text{
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+}
+.tendances-title{
+    text-align: center;
+    color: #ffffff;
+}
+
+.tendances-block{
+    border: 5px solid #948787;
+    background-color: rgb(217, 217, 217, 0.31);
+    padding: 25px 125px 0px;
+    border-radius: 25px;
+    width: 874px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    
+}
+
+.square{
+    height: 283px;
+    width: 189px;
+}
+
 /*le footer pour toutes les pages sauf à propos*/
 
 footer{
@@ -69,7 +98,7 @@ footer{
 }
 
 /* les blocks sous l'image dans accueil */
-.tendances {
+.actualités {
     display: flex;
     justify-content: center;
     gap: 60px;

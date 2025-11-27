@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>ICONIX</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="css/images/favicon.ico">
+        <link rel="stylesheet" href="css/style.css" >
+    </head>
+
+    <body>
+        <header>
+            <div class="title">
+                <h1>ICONIX</h1>
+            </div>
+            <nav>
+                <ul class="bandeau">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="actualités_mode.html">Actualités Mode</a></li>
+                    <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+                    <li><a href="tendances.html">Tendances</a></li>
+                    <li><a href="createur_marques.html">Créateurs & Marques</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1> Marques Streetwear & Populaires </h1>
+        <h3> Les marques streetwear occupent aujourd’hui une place essentielle dans la mode, influençant autant la culture que les tendances. Entre pièces iconiques et collaborations marquantes, ces labels mêlent confort, identité et style. Voici une sélection des marques les plus populaires du moment.</h3>
+        <h2> Supreme </h2>
+        <h3> Supreme est une marque streetwear née à New York, devenue un véritable phénomène culturel. Connue pour ses drops très limités, son logo emblématique et ses collaborations prestigieuses, la marque a su créer un univers unique où mode, skate et art se rencontrent. Aujourd’hui, Supreme reste une référence incontournable du streetwear mondial.</h3>
+        <img src="">
+        <img src="">
+        <h2> Off-White </h2>
+        <h3> Off-White, fondée par Virgil Abloh, a révolutionné le streetwear en mélangeant luxe, design conceptuel et influences urbaines. Avec ses guillemets, ses motifs industriels et son esthétique avant-gardiste, la marque a imposé un style reconnaissable entre tous. Aujourd’hui, Off-White reste l’un des labels les plus influents de la mode contemporaine. </h3>
+        <img src="">
+        <img src="">
+        <h2> Stüssy </h2>
+        <h3> Stüssy est l’une des marques pionnières du streetwear, née dans la culture surf californienne. Avec son logo iconique et son style décontracté, elle a posé les bases du streetwear moderne. Aujourd’hui, Stüssy reste une référence mondiale grâce à son authenticité et son influence durable.</h3>
+        <img src="">
+        <img src="">
+        <h2> Nike </h2>
+        <h3> Nike est une marque incontournable qui domine autant le sport que la culture streetwear. Ses sneakers emblématiques, ses collaborations marquantes et son identité visuelle forte en ont fait un pilier de la mode urbaine. Nike continue d’inspirer chaque génération grâce à son innovation et son impact culturel.</h3>
+        <img src="">
+        <img src="">
+        <footer>
+            <a href="a_propos.html" class="btn-a-propos"><b>À PROPOS</b></a>
+            <a href="liens vers insta" >
+                <img src="css/images/logo_instagram.png" class="logo-instagram" alt="logo-instagram">
+            </a>
+            <h2>Suivez nous</h2>
+            <a href="insta" class="btn-suivre"><b>@ICONIX</b></a>    
+        </footer>
+
+    </body>
+</html>
