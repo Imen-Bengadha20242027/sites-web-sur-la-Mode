@@ -22,48 +22,146 @@ nav a{
     color: #ffffff;
 }
 
-/*pour la page actualité_mode*/
-.actualités-mode{
+/*pour la page actualités_mode*/
+
+.actu-card{
+    border: #ffffff;
+    border-radius: 60px;
+    background-color: rgb(255, 245, 245, 0.51);
+    width: 500px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.actu-card:nth-child(even) {
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.actu-card:nth-child(odd) {
+    margin-right: auto;
+    margin-left: 100px;
+}
+.actu-img{
+    border-radius: 20%;
+    width: 400px;
+    height: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+.actu-title{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.actu-title:hover{
+    transform: scale(1.1);
+}
+
+.actu-text{
+    text-align: center;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.actualités-mode {
     display: block;
 }
-.actualités-mode a{
-    color: red;
+
+.actualités-mode a {
+    color: white;
+    text-decoration: none;
+}
+
+.actualités-mode-text {
+    color: #ffffff;
+    text-align: center;
+    font-size: xx-large;
+}
+
+/* Bloc principal */
+.actualité-mode-block { 
+    border: 5px solid #948787;
+    background-color: rgba(217, 217, 217, 0.31);
+    padding: 25px 125px 0;
+    border-radius: 25px; 
+    width: 874px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.actualité-mode-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.actualité-mode-block li {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 
 /*body*/
 body {
+    color: white;
     position: relative;
     font-family: "Times New Roman", Times, serif;
     background: linear-gradient(#080202 52%, #959191 100%);
 }
 /*pour la page tendances*/
 
-.tendances-text{
-    text-align: center;
-    color: white;
-    font-size: xx-large;
-}
-.tendances-title{
-    text-align: center;
-    color: #ffffff;
+.tendances-ligne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 150px;
 }
 
-.tendances-block{
+.tendance-img {
+    height: 500px;
+    width: auto;
+}
+
+.pantone-colonne {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.square {
+    width: 140px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Centrage global */
+.tendances-title {
+    margin-top: 120px;
+    color: white;
+    text-align: center;
+}
+.tendances-text{
+    color: #ffffff;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.tendances-block{ 
     border: 5px solid #948787;
     background-color: rgb(217, 217, 217, 0.31);
     padding: 25px 125px 0px;
-    border-radius: 25px;
+    border-radius: 25px; 
     width: 874px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
-    
-}
-
-.square{
-    height: 283px;
-    width: 189px;
 }
 
 /*le footer pour toutes les pages sauf à propos*/
@@ -162,6 +260,23 @@ form {
     text-align: center;
     color: #ffffff;
     margin: 60px;
+    border: 3px solid #948787;
+    padding: 25px 80px;
+    border-radius: 25px; 
+    width: 600px;
+    font-weight: 10px;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.titre-a-propos{
+    font-weight: 20px;
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    margin: 60px;
 }
 
 .btn-a-propos{
@@ -201,12 +316,26 @@ form button:hover{
 }
 
 form label {
-  font-weight: bold;
-  color: #ffffff;
+    font-weight: bold;
+    color: #ffffff;
 }
-form input, form textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 10px;
+
+.titre-feedback{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.feedback{
+    text-align: center;
+    font-size: large;
+}
+
+form textarea {
+    padding: 12px;
+    border: 4px solid #000;
+    border-radius: 20px;
+    font-size: 10px;
+    width: 500px;
+    background-color: transparent;
+    resize: vertical;
 }
