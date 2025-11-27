@@ -35,7 +35,7 @@ nav a{
 body {
     position: relative;
     font-family: "Times New Roman", Times, serif;
-    background: linear-gradient(#000000 52%, #ffffff 100%);
+    background: linear-gradient(#080202 52%, #959191 100%);
 }
 /*pour la page tendances*/
 
@@ -71,8 +71,13 @@ body {
 footer{
     position: relative;
 }
+
 .logo-instagram{
     width: 40px;
+}
+
+.btn-suivre{
+    text-decoration: none;
 }
 
 /*pour la page accueil*/
@@ -94,6 +99,8 @@ footer{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 400px;
+    margin-top: 400px;
     opacity: 0.6;
 }
 
