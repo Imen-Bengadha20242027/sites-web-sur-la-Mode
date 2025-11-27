@@ -38,18 +38,10 @@ body {
     background: linear-gradient(#000000 52%, #ffffff 100%);
 }
 /*le footer pour toutes les pages sauf à propos*/
-.btn-à-propos {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    padding: 12px 25px;
-    background: black;
-    color: white;
-    border-radius: 20px;
-    font-size: large;
-    text-decoration: none;
-}
 
+footer{
+    position: relative;
+}
 .logo-instagram{
     width: 40px;
 }
@@ -59,7 +51,7 @@ body {
     position: relative;
 }
 
-.accueil h1 {
+.slogan {
     position: absolute;
     top: 15vw;
     left: 32vw;
@@ -130,6 +122,29 @@ form {
     gap: 15px;
 }
 
+.text-a-propos{
+    text-align: center;
+    color: #ffffff;
+    margin: 60px;
+}
+
+.btn-a-propos{
+    position: absolute;
+    display: block;
+    right: 20px;
+    bottom: 20px;
+    width: 8%;
+    font-weight: 10px;
+    font-size: 25px;
+    background: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 120px;
+    text-decoration: none;
+}
+
 form button{
     display: block;
     width: 15%;
@@ -157,5 +172,5 @@ form input, form textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 10px;
 }
