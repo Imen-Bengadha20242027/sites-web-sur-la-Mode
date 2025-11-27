@@ -50,16 +50,17 @@ nav a{
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 50px;
+    transition: transform 0.3s ease;
+}
+
+.actu-img:hover{
+    transform: scale(1.05);
 }
 
 .actu-title{
     color: white;
     text-decoration: none;
     text-align: center;
-    transition: transform 0.3s ease;
-}
-.actu-title:hover{
-    transform: scale(1.1);
 }
 
 .actu-text{
@@ -255,7 +256,11 @@ form {
     flex-direction: column;
     gap: 15px;
 }
-
+.img-a-propos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .text-a-propos{
     text-align: center;
     color: #ffffff;
@@ -284,7 +289,7 @@ form {
     display: block;
     right: 20px;
     bottom: 20px;
-    width: 8%;
+    width: 10%;
     font-weight: 10px;
     font-size: 25px;
     background: #000000;
