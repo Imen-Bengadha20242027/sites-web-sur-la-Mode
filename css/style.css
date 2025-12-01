@@ -1,4 +1,4 @@
-/*le header pour toutes les pages*/
+/* le header pour toutes les pages */
 
 .bandeau{
     display: flex;
@@ -12,60 +12,62 @@
 
 nav a{
     color:#ffffff;
-    margin-right: 30px;
+    margin-right: 2rem;
     text-decoration: none;
 }
 
 .title {
     text-align: center;
-    font-size: 50px;
+    font-size: 3rem;
     color: #ffffff;
 }
 
-/*pour la page actualités_mode*/
+/* pour la page actualités_mode */
 
 .actu-card{
     border: #ffffff;
-    border-radius: 60px;
-    background-color: rgb(255, 245, 245, 0.51);
-    width: 500px;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    border-radius: 3rem;
+    background-color: rgba(255, 245, 245, 0.51);
+    width: 50vw;
+    max-width: 35rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 .actu-card:nth-child(even) {
     margin-left: auto;
-    margin-right: 100px;
+    margin-right: 8vw;
 }
 
 .actu-card:nth-child(odd) {
     margin-right: auto;
-    margin-left: 100px;
+    margin-left: 8vw;
 }
+
 .actu-img{
     border-radius: 20%;
-    width: 400px;
+    width: 80%;
     height: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
+    padding: 3rem 3rem 0 3rem;
     transition: transform 0.3s ease;
 }
 
 .actu-img:hover{
     transform: scale(1.05);
+
 }
 
 .actu-title{
     color: white;
     text-decoration: none;
     text-align: center;
+    font-size: 1.7rem;
 }
 
 .actu-text{
     text-align: center;
-    font-size: x-large;
+    font-size: 1.4rem;
     text-decoration: none;
 }
 
@@ -81,19 +83,20 @@ nav a{
 .actualités-mode-text {
     color: #ffffff;
     text-align: center;
-    font-size: xx-large;
+    font-size: 2.2rem;
 }
 
 /* Bloc principal */
 .actualité-mode-block { 
-    border: 5px solid #948787;
+    border: 0.4rem solid #948787;
     background-color: rgba(217, 217, 217, 0.31);
-    padding: 25px 125px 0;
-    border-radius: 25px; 
-    width: 874px;
+    padding: 2rem 8vw 0;
+    border-radius: 2rem; 
+    width: 60vw;
+    max-width: 55rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
+    margin-bottom: 6rem;
 }
 
 .actualité-mode-block ul {
@@ -104,96 +107,96 @@ nav a{
 
 .actualité-mode-block li {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 3rem;
 }
 
 
-/*body*/
+/* body */
 body {
     color: white;
     position: relative;
     font-family: "Times New Roman", Times, serif;
     background: linear-gradient(#080202 52%, #959191 100%);
 }
-/*pour la page tendances*/
+
+/* pour la page tendances */
 
 .tendances-ligne {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    margin-bottom: 150px;
+    gap: 4vw;
+    margin-bottom: 12vh;
 }
 
 .tendance-img {
-    height: 500px;
+    height: 55vh;
     width: auto;
 }
 
 .pantone-colonne {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 2rem;
 }
 
 .square {
-    width: 140px;
+    width: 10vw;
+    max-width: 9rem;
     height: auto;
-    border-radius: 5px;
 }
 
 /* Centrage global */
 .tendances-title {
-    margin-top: 120px;
+    margin-top: 10vh;
     color: white;
     text-align: center;
+    font-size: 2.8rem;
 }
+
 .tendances-text{
     color: #ffffff;
     text-align: center;
-    font-size: xx-large;
+    font-size: 2rem;
 }
 
 .tendances-block{ 
-    border: 5px solid #948787;
-    background-color: rgb(217, 217, 217, 0.31);
-    padding: 25px 125px 0px;
-    border-radius: 25px; 
-    width: 874px;
+    border: 0.4rem solid #948787;
+    background-color: rgba(217, 217, 217, 0.31);
+    padding: 2rem 8vw 0;
+    border-radius: 2rem; 
+    width: 60vw;
+    max-width: 55rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
+    margin-bottom: 6rem;
 }
 
-/*le footer pour toutes les pages sauf à propos*/
+/* le footer pour toutes les pages sauf à propos */
 
 footer{
     position: relative;
 }
 
 .logo-instagram{
-    width: 40px;
+    width: 3rem;
 }
 
 .btn-suivre{
     text-decoration: none;
 }
 
-/*pour la page accueil*/
+/* pour la page accueil */
 .accueil {
     position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.slogan {
-    position: absolute;
-    top: 15vw;
-    left: 32vw;
-    color: #ffffff;
-    font-size: 80px;
-    z-index: 10;
-}
-
-.accueil img {
+.accueil img { 
     padding: 50px;
     display: block;
     margin-left: auto;
@@ -202,118 +205,128 @@ footer{
     margin-top: 400px;
     opacity: 0.6;
 }
+/* Slogan sur l’image */
+.slogan {
+    position: absolute;  
+    color: white;
+    font-size: 4rem;
+    text-align: left;
+
+    margin-top: 400px;
+    margin-right: 2%;
+}
 
 /* les blocks sous l'image dans accueil */
 .actualités {
     display: flex;
     justify-content: center;
-    gap: 60px;
-    margin: 50px auto;
+    gap: 4vw;
+    margin: 5vh auto;
 }
 
 .card {
-    border: 5px solid #000000;
-    font-size: large;
-    padding: 25px 25px 0px ;
-    border-radius: 25px;
-    width: 313px;
+    border: 0.4rem solid #000000;
+    font-size: 1.4rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 22vw;
+    max-width: 20rem;
     text-align: center;
     color: white;
 }
+
 .card-title{
-    font-size: 30px;
+    font-size: 2rem;
 }
+
 .card-text{
-    font-size: 20px;
+    font-size: 1.3rem;
 }
+
 /* les avis */
 .avis {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin: 40px auto 80px;
+    gap: 2vw;
+    margin: 5vh auto 10vh;
     flex-wrap: wrap;
 }
 
 .avis-card {
     background: #4D4545;
-    border: 1px solid #000000;
-    padding: 20px;
-    border-radius: 40px;
-    width: 400px;
-    height: 100px;
+    border: 0.2rem solid #000000;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    width: 35vw;
+    max-width: 25rem;
+    height: auto;
+    min-height: 7rem;
     text-align: center;
     color: white;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
-/*pour la page à_propos*/
+/* pour la page à_propos */
 
 form {
-    font-weight: 15;
+    font-weight: 400;
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1rem;
 }
+
 .img-a-propos{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 .text-a-propos{
     text-align: center;
     color: #ffffff;
-    margin: 60px;
-    border: 3px solid #948787;
-    padding: 25px 80px;
-    border-radius: 25px; 
-    width: 600px;
-    font-weight: 10px;
-    font-size: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
+    margin: 4rem auto;
+    border: 0.3rem solid #948787;
+    padding: 2rem 5vw;
+    border-radius: 2rem; 
+    width: 45vw;
+    max-width: 40rem;
+    font-size: 1.5rem;
 }
 
 .titre-a-propos{
-    font-weight: 20px;
-    font-size: 50px;
+    font-size: 3rem;
     text-align: center;
     color: #ffffff;
-    margin: 60px;
+    margin: 4rem;
 }
 
 .btn-a-propos{
     position: absolute;
-    display: block;
-    right: 20px;
-    bottom: 20px;
+    right: 2rem;
+    bottom: 2rem;
     width: 10%;
-    font-weight: 10px;
-    font-size: 25px;
+    font-size: 1.5rem;
     background: #000000;
     color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
     text-align: center;
-    margin-top: 120px;
     text-decoration: none;
 }
 
 form button{
     display: block;
-    width: 15%;
+    width: 20%;
     font-weight: 700;
     margin-left: auto;
     margin-right: auto;
-    padding: 18px;
+    padding: 1rem;
     background: #000000;
     color: #ffffff;
-    font-size: 25px;
-    border-radius: 8px;
+    font-size: 1.4rem;
+    border-radius: 0.8rem;
     text-align: center;
-    margin-top: 20px;
 }
 
 form button:hover{
@@ -327,20 +340,21 @@ form label {
 
 .titre-feedback{
     text-align: center;
-    font-size: xx-large;
+    font-size: 2rem;
 }
 
 .feedback{
     text-align: center;
-    font-size: large;
+    font-size: 1.3rem;
 }
 
 form textarea {
-    padding: 12px;
-    border: 4px solid #000;
-    border-radius: 20px;
-    font-size: 10px;
-    width: 500px;
+    padding: 1rem;
+    border: 0.4rem solid #000;
+    border-radius: 1rem;
+    font-size: 1rem;
+    width: 40vw;
+    max-width: 35rem;
     background-color: transparent;
     resize: vertical;
 }
