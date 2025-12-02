@@ -119,59 +119,6 @@ body {
     background: linear-gradient(#080202 52%, #959191 100%);
 }
 
-/* pour la page tendances */
-
-.tendances-ligne {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4vw;
-    margin-bottom: 12vh;
-}
-
-.tendance-img {
-    height: 55vh;
-    width: auto;
-}
-
-.pantone-colonne {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.square {
-    width: 10vw;
-    max-width: 9rem;
-    height: auto;
-}
-
-/* Centrage global */
-.tendances-title {
-    margin-top: 10vh;
-    color: white;
-    text-align: center;
-    font-size: 2.8rem;
-}
-
-.tendances-text{
-    color: #ffffff;
-    text-align: center;
-    font-size: 2rem;
-}
-
-.tendances-block{ 
-    border: 0.4rem solid #948787;
-    background-color: rgba(217, 217, 217, 0.31);
-    padding: 2rem 8vw 0;
-    border-radius: 2rem; 
-    width: 60vw;
-    max-width: 55rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 6rem;
-}
-
 /* le footer pour toutes les pages sauf à propos */
 
 footer{
@@ -264,6 +211,123 @@ footer{
     text-align: center;
     color: white;
     font-size: 1.2rem;
+}
+
+/* pour la page looks iconiques*/
+
+.titre-looks-iconiques{
+    margin-left: 3%;
+}
+
+.look:nth-child(even) {
+    margin-left: auto;
+    margin-right: 8vw;
+}
+
+.look:nth-child(odd) {
+    margin-right: auto;
+    margin-left: 8vw;
+}
+
+.looks-iconiques {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+}
+
+.look {
+    background: rgba(217, 217, 217, 0.2);
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.images-look {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.img-look {
+    display: block;
+    width: calc(50% - 2.5rem);
+    height: auto;
+    border-radius: 1.5rem;
+}
+
+
+.text-look-iconique {
+    text-align: left;
+    color: #ffffff;
+    margin: 4rem auto;
+    background-color: rgb(148, 135, 135, 0.6);
+    padding: 2rem 5vw;
+    border-radius: 2rem; 
+    width: 45vw;
+    max-width: 30rem;
+    font-size: 1.5rem;
+}
+
+
+/* pour la page tendances */
+
+.tendances-ligne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+    margin-bottom: 12vh;
+}
+
+.tendance-img {
+    height: 55vh;
+    width: auto;
+}
+
+.pantone-colonne {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.square {
+    width: 10vw;
+    max-width: 9rem;
+    height: auto;
+}
+
+.tendances-title {
+    margin-top: 10vh;
+    color: white;
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+.tendances-text{
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.tendances-block{ 
+    border: 0.4rem solid #948787;
+    background-color: rgba(217, 217, 217, 0.31);
+    padding: 2rem 8vw 0;
+    border-radius: 2rem; 
+    width: 60vw;
+    max-width: 55rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6rem;
 }
 
 /* pour la page à_propos */
