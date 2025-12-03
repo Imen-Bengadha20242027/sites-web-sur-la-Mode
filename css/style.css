@@ -2,7 +2,7 @@
 
 .bandeau{
     display: flex;
-    height: 5vw;
+    height: 4vw;
     justify-content: space-between;
     align-items: center;  
     background: linear-gradient(#242121 7%, #776F6F 38%, #9A9595 51%, #716969 65%, #100E0E 95%);
@@ -21,6 +21,122 @@ nav a{
     font-size: 3rem;
     color: #ffffff;
 }
+
+/* body */
+body {
+    color: white;
+    position: relative;
+    font-family: "Times New Roman", Times, serif;
+    background: linear-gradient(#080202 52%, #959191 100%);
+}
+
+/* le footer pour toutes les pages sauf à propos */
+
+footer{
+    margin-top: 45rem;
+    display: flex;
+    position: relative;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    color: #000000;
+}
+
+.logo-instagram{
+    width: 4rem;
+    margin-top: 1.5rem;
+}
+
+.btn-suivre{
+    text-decoration: none;
+    color: #000000;
+}
+
+/* pour la page accueil */
+.accueil {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil img { 
+    padding: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 400px;
+    margin-top: 400px;
+    opacity: 0.6;
+}
+/* Slogan sur l’image */
+.slogan {
+    position: absolute;  
+    color: white;
+    font-size: 4rem;
+    text-align: left;
+
+    margin-top: 400px;
+    margin-right: 2%;
+}
+
+/* les blocks sous l'image dans accueil */
+.actualités {
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    margin: 5vh auto;
+}
+
+.card {
+    border: 0.4rem solid #000000;
+    font-size: 1.4rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 22vw;
+    max-width: 20rem;
+    text-align: center;
+    color: white;
+}
+
+.card-title{
+    font-size: 2rem;
+}
+
+.card-text{
+    font-size: 1.3rem;
+}
+
+/* les avis */
+.avis {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin: 5vh auto 10vh;
+    flex-wrap: wrap;
+}
+
+.avis-card {
+    background: #4D4545;
+    border: 0.2rem solid #000000;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    width: 35vw;
+    max-width: 25rem;
+    height: auto;
+    min-height: 7rem;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
 
 /* pour la page actualités_mode */
 
@@ -110,108 +226,43 @@ nav a{
     margin-bottom: 3rem;
 }
 
-
-/* body */
-body {
-    color: white;
-    position: relative;
-    font-family: "Times New Roman", Times, serif;
-    background: linear-gradient(#080202 52%, #959191 100%);
+/* pour la page actu défilé défilé */
+section{
+    font-size: x-large;
+}
+.text-chanel{
+    text-align: center;
 }
 
-/* le footer pour toutes les pages sauf à propos */
-
-footer{
-    position: relative;
-}
-
-.logo-instagram{
-    width: 3rem;
-}
-
-.btn-suivre{
-    text-decoration: none;
-}
-
-/* pour la page accueil */
-.accueil {
-    position: relative;
-    width: 100%;
-    height: auto;
+.block-actu-défilé, .block-img-actu {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
-.accueil img { 
-    padding: 50px;
+.img-container {
+    display: flex;
+    width: 100%;
+}
+
+.actu-img-défilé-gauche {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.actu-img-défilé-droite {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.actu-img-défilé {
+    width: 50%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 400px;
-    margin-top: 400px;
-    opacity: 0.6;
-}
-/* Slogan sur l’image */
-.slogan {
-    position: absolute;  
-    color: white;
-    font-size: 4rem;
-    text-align: left;
-
-    margin-top: 400px;
-    margin-right: 2%;
+    margin-bottom: 15rem;
 }
 
-/* les blocks sous l'image dans accueil */
-.actualités {
-    display: flex;
-    justify-content: center;
-    gap: 4vw;
-    margin: 5vh auto;
-}
-
-.card {
-    border: 0.4rem solid #000000;
-    font-size: 1.4rem;
-    padding: 2rem;
-    border-radius: 2rem;
-    width: 22vw;
-    max-width: 20rem;
-    text-align: center;
-    color: white;
-}
-
-.card-title{
-    font-size: 2rem;
-}
-
-.card-text{
-    font-size: 1.3rem;
-}
-
-/* les avis */
-.avis {
-    display: flex;
-    justify-content: center;
-    gap: 2vw;
-    margin: 5vh auto 10vh;
-    flex-wrap: wrap;
-}
-
-.avis-card {
-    background: #4D4545;
-    border: 0.2rem solid #000000;
-    padding: 2rem;
-    border-radius: 2.5rem;
-    width: 35vw;
-    max-width: 25rem;
-    height: auto;
-    min-height: 7rem;
-    text-align: center;
-    color: white;
-    font-size: 1.2rem;
-}
 
 /* pour la page looks iconiques*/
 
