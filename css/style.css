@@ -22,12 +22,19 @@ nav a{
     color: #ffffff;
 }
 
-/* body */
+/* body pour toutes les pages */
 body {
     color: white;
     position: relative;
     font-family: "Times New Roman", Times, serif;
     background: linear-gradient(#080202 52%, #959191 100%);
+}
+
+.titre-pages{
+    font-size: 3rem;
+    text-align: center;
+    color: #ffffff;
+    margin: 4rem;
 }
 
 /* le footer pour toutes les pages sauf à propos */
@@ -266,10 +273,6 @@ section{
 
 /* pour la page looks iconiques*/
 
-.titre-looks-iconiques{
-    margin-left: 3%;
-}
-
 .look:nth-child(even) {
     margin-left: auto;
     margin-right: 8vw;
@@ -357,6 +360,7 @@ section{
 
 .tendances-title {
     margin-top: 10vh;
+    margin-bottom: 3vh;
     color: white;
     text-align: center;
     font-size: 2.8rem;
@@ -416,13 +420,6 @@ form {
     width: 45vw;
     max-width: 40rem;
     font-size: 1.5rem;
-}
-
-.titre-a-propos{
-    font-size: 3rem;
-    text-align: center;
-    color: #ffffff;
-    margin: 4rem;
 }
 
 .btn-a-propos{
