@@ -4,7 +4,9 @@
         <title>ICONIX</title>
         <meta charset="utf-8">
         <link rel="icon" href="css/images/favicon.ico">
-        <link rel="stylesheet" href="css/style.css" >
+        <link rel="stylesheet" href="css/style.css" disabled>
+        <link rel="stylesheet" href="css/style.diff.css" >
+
     </head>
     
     <body>
@@ -95,6 +97,12 @@
             <div class="block-img-actu">
                 <h2><strong>Haute Couture Paris 2025-Chanel</strong></h2>
                 <img src="css/images/défilé_6.png" alt="défilé Chanel 2025" class="actu-img-défilé">
+                <iframe class="video-chanel"
+                src="https://www.youtube.com/embed/xXgKw_SCIg4"
+                title="Défilé Chanel"
+                frameborder="0"
+                allowfullscreen>
+                </iframe>
                 <h3 class="text-chanel">
                     La maison Chanel a présenté sa collection haute couture Automne-Hiver <br>2025/26 au ­Grand Palais à Paris,
                     dans un décor inspiré du 31 rue Cambon,<br> mêlant tons naturels — écru, ivoire, brun, vert et noir — 
@@ -115,6 +123,7 @@
             </a>
             
         </footer>
+        <button id="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'});"></button>
     </body>
     
 </html>

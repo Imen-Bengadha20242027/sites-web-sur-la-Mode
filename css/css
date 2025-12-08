@@ -1,0 +1,295 @@
+/* Nouveau style CSS modernisé pour ICONIX */
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f4f4f8;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #4b0000; /* rouge foncé */
+  color: #ffeaea; /* rouge très clair */
+}
+
+.title h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.bandeau {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.bandeau a {
+  color: #ffeaea; /* rouge très clair */
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.bandeau a:hover {
+  color: #c7a5ff;
+}
+
+/* TITRES */
+.titre-pages {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 45px;
+  color: #4b0000; /* rouge foncé */
+}
+
+/* SECTIONS TEXTE + IMAGE */
+.text-a-propos {
+  max-width: 600px;
+  margin: 40px auto;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.img-a-propos {
+  display: block;
+  margin: 20px auto;
+  width: 45%;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
+}
+
+/* FEEDBACK FORM */
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+textarea {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  background: #4b0000; /* rouge foncé */
+  color: #ffeaea; /* rouge très clair */
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5e3bef;
+}
+
+/* ACTUALITÉS – PAGE CARDS */
+.actus-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.actu-card {
+  background: #ffeaea; /* rouge très clair */
+  padding: 20px;
+  border-radius: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
+  transition: 0.3s;
+}
+
+.actu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
+}
+
+.actu-img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.actu-title {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #4b0000; /* rouge foncé */
+}
+
+.actu-text {
+  font-size: 16px;
+  color: #444;
+}
+
+/* PAGES AVEC IMAGES À GAUCHE/DROITE */
+.img-container img {
+  width: 45%;
+  border-radius: 15px;
+  margin: 15px;
+  box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
+}
+
+/* FOOTER */
+footer {
+  background: #4b0000; /* rouge foncé */
+  color: #ffeaea; /* rouge très clair */
+  margin-top: 50px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-a-propos,
+.btn-suivre {
+  color: #ffeaea; /* rouge très clair */
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.btn-a-propos:hover,
+.btn-suivre:hover {
+  color: #c7a5ff;
+}
+
+.logo-instagram {
+  width: 50px;
+}
+
+/* Image centrée avec cadre rouge foncé */
+.accueil img {
+  display: block;
+  margin: 0 auto;
+  border: 6px solid #4b0000;
+  border-radius: 16px;
+  padding: 4px;
+}
+
+/* Boîtes pour les commentaires/avis */
+.commentaire, .comment, .avis {
+  background: #ffeaea;
+  border-left: 5px solid #4b0000;
+  padding: 12px 16px;
+  margin: 15px 0;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #4b0000;
+}
+
+/* --- Positionner le texte L’ESSENCE DE LA MODE sous l’image --- */
+.titre-essence {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.8rem;
+  color: #4b0000;
+  font-weight: 600;
+}
+
+/* --- Centrer les titres + descriptions des sections --- */
+.section-centree,
+.section-centree p,
+.section-centree h2,
+.section-centree h3 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #4b0000;
+}
+
+/* --- Encadré pour paragraphes Défilés / Actualité Mode --- */
+.encadre-rouge {
+  border: 3px solid #4b0000;
+  background: #ffeaea;
+  padding: 15px 20px;
+  width: fit-content;
+  margin: 15px auto;
+  border-radius: 20px; /* pas trop carré */
+  color: #4b0000;
+}
+
+/* --- Espacement entre textes et titres Gucci / Chanel --- */
+.titre-defile {
+  margin-top: 25px;
+  margin-bottom: 8px;
+  color: #4b0000;
+  font-weight: 600;
+}
+
+/* --- Vidéo Chanel responsive --- */
+.video-chanel {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 700px;
+  border: 5px solid #4b0000;
+  border-radius: 16px;
+}
+
+/* --- Bouton Remonter en haut --- */
+#top-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  background: #4b0000;
+  color: #ffeaea;
+  cursor: pointer;
+  border: none;
+}
+/* --- Bouton Remonter en haut avec flèche --- */
+#top-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  background: #4b0000; /* rouge foncé */
+  color: #ffeaea; /* très clair */
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+#top-btn:hover {
+  background: #6b0000;
+  transform: scale(1.1);
+}
+
+/* --- Assurer que le texte sous l’image est centré --- */
+.accueil .titre-essence {
+  text-align: center;
+  font-size: 2rem;
+  color: #4b0000;
+  font-weight: 700;
+  margin: 20px auto 40px auto;
+}
+
