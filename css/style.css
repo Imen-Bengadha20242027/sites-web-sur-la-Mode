@@ -30,6 +30,7 @@ body {
     position: relative;
     font-family: "Times New Roman", Times, serif;
     background: linear-gradient(#080202 52%, #959191 100%);
+    overflow-x: hidden;
 }
 
 .titre-pages{
@@ -347,6 +348,76 @@ footer{
     margin: 0 auto;
 }
 
+/* Styles généraux pour la page Tendances */
+.tendances-intemporelles-section {
+    padding: 2rem 5%;
+    max-width: 1200px; /* Limite la largeur de la section pour la lecture */
+    margin: 0 auto;
+}
+
+/* Style de la description d'introduction */
+.introduction-tendance {
+    margin: 2rem 0 4rem;
+    padding-left: 10%; /* Décalage pour l'alignement */
+}
+
+.description-tendance {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
+    max-width: 600px; /* Assure une bonne lisibilité */
+}
+
+/* Style commun à chaque bloc de tendance */
+.tendance-block {
+    margin-bottom: 8rem;
+}
+
+.tendance-titre {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.tendance-contenu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tendance-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Styles spécifiques pour l'Old Money (alignement à deux colonnes) */
+.tendance-block.old-money-style .tendance-contenu {
+
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.old-money-colonne-gauche {
+    flex: 1;
+    max-width: 45%; 
+    display: flex;
+    justify-content: center;
+}
+
+.old-money-colonne-droite {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
 /* pour la page collaboration */
 
 .section-description-collaboration {
@@ -574,7 +645,7 @@ footer{
 }
 
 
-/* Styles pour la page Créateurs & Marques */
+/* pour la page créateurs & marques */
 .titre-pages.createurs-marques {
     text-align: left;
     margin-left: 20rem;
@@ -585,8 +656,9 @@ footer{
 .marques-container {
     display: flex;
     flex-direction: column;
-    gap: 20rem;
+    gap: 15rem;
     padding: 5rem 0;
+
 }
 
 .marque-cercle:nth-child(even) {
@@ -608,10 +680,11 @@ footer{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    /* Propriétés pour l'effet de cercle */
+
+    /* pour l'effet de cercle */
     border-radius: 50%;
-    width: 70rem;
-    height: 70rem; 
+    width: 60rem;
+    height: 60rem; 
     text-align: center;
     background: #413E3E;
     box-shadow: #413E3E 0px 0px 100px;
@@ -644,13 +717,6 @@ footer{
     width: 25rem;
     height: auto;
     margin-bottom: 1rem;
-}
-
-
-
-.logo-populaire {
-    width: 25%; /* Ajustez la taille des logos */
-    height: auto;
 }
 
 
