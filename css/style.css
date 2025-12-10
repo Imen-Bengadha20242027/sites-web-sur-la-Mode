@@ -12,6 +12,8 @@
 
 nav a{
     color:#ffffff;
+    font-size: 1.5rem;
+    margin-left: 2rem;
     margin-right: 2rem;
     text-decoration: none;
 }
