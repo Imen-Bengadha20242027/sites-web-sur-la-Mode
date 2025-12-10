@@ -233,41 +233,218 @@ footer{
     margin-bottom: 3rem;
 }
 
-/* pour la page actu défilé défilé */
-section{
-    font-size: x-large;
-}
-.text-chanel{
-    text-align: center;
+/* pour la page actu mode défilé */
+.section-description-actu-mode-defile{
+    text-align: left;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-left: 35%;
+    margin-right: 35%;
+
 }
 
-.block-actu-défilé, .block-img-actu {
+.block-article-defile {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 5%;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
 }
 
-.img-container {
-    display: flex;
+.block-article-defile h2 {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
     width: 100%;
 }
 
-.actu-img-défilé-gauche {
-    margin-left: 0;
-    margin-right: auto;
+.defile-top-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+    width: 100%;
 }
 
-.actu-img-défilé-droite {
-    margin-left: auto;
-    margin-right: 0;
-}
 
-.actu-img-défilé {
+.defile-texte-gauche,
+.defile-texte-droite,
+.defile-image-droite,
+.defile-image-gauche {
     width: 50%;
+    margin-bottom: 20px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.content-gauche-image-droite {
+    flex-direction: row;
+}
+
+.content-image-gauche-texte-droite {
+    flex-direction: row;
+}
+
+
+.actu-img-defile {
+    width: 100%;
     height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15rem;
+}
+
+
+.defile-texte-gauche p, .defile-texte-droite p {
+    font-size: 1em;
+    line-height: 1.7;
+}
+
+.defile-mini-image-interieur {
+    margin-top: 10px;
+    max-width: 120px;
+    float: right;
+    margin-left: 15px;
+}
+
+.defile-bottom-content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.defile-bottom-content p {
+    text-align: center;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.defile-chanel {
+    text-align: center;
+}
+
+.actu-img-defile-centree {
+    width: 80%;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.video-chanel {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 700px;
+  border: 5px solid #4b0000;
+  border-radius: 16px;
+}
+
+.text-chanel {
+    font-size: x-large;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* pour la page collaboration */
+
+.section-description-collaboration {
+    text-align: left;
+    font-size: xx-large;
+    font-weight: bolder;
+    border: 0.3rem solid #948787;
+    padding: 2rem 5rem;
+    border-radius: 2rem;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.collaboration-article-bloc {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 5%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.collaboration-article-bloc h2 {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.defile-top-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.defile-texte-gauche,
+.defile-texte-droite,
+.defile-image-droite,
+.defile-image-gauche {
+    width: 50%;
+    margin-bottom: 20px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.content-gauche-image-droite {
+    flex-direction: row;
+}
+
+.content-image-gauche-texte-droite {
+    flex-direction: row;
+}
+
+.collab-image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.collab-img-principale, .collab-img-mini {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.defile-texte-gauche p, .defile-texte-droite p {
+    font-size: 1em;
+    line-height: 1.7;
+}
+
+.defile-bottom-content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.defile-bottom-content p {
+    text-align: center;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.defile-chanel {
+    text-align: center;
+}
+
+.collab-img-centree {
+    width: 80%;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.text-chanel {
+    font-size: x-large;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 
