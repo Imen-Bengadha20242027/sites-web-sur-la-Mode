@@ -573,6 +573,87 @@ footer{
     margin-left: 20vw;
 }
 
+
+/* Styles pour la page Créateurs & Marques */
+.titre-pages.createurs-marques {
+    text-align: left;
+    margin-left: 20rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.marques-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    padding: 5rem 0;
+}
+
+.marque-cercle:nth-child(even) {
+    margin-right: auto;
+    margin-left: -10rem;
+    padding-left: 5rem;
+}
+
+.marque-cercle:nth-child(odd) {
+    margin-left: auto;
+    margin-right: -10rem;
+    padding-right: 5rem;
+}
+
+
+.marque-cercle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* Propriétés pour l'effet de cercle */
+    border-radius: 50%;
+    width: 70rem;
+    height: 70rem; 
+    text-align: center;
+    background: #413E3E;
+    box-shadow: #413E3E 0px 0px 100px;
+}
+
+.marque-cercle:hover {
+    opacity: 0.9;
+    transform: scale(1.02); 
+    transition: transform 0.4s ease-in-out;
+    box-shadow: #000 0px 0px 100px;
+}
+
+
+.marque-cercle h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.cercle-contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.marque-img {
+    max-width: 100%;
+    width: 25rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+
+
+.logo-populaire {
+    width: 25%; /* Ajustez la taille des logos */
+    height: auto;
+}
+
+
 /* pour la page à_propos */
 
 form {
