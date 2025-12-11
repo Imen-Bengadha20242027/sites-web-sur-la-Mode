@@ -374,27 +374,29 @@ footer{
     margin: 0 auto;
 }
 
-/* Styles généraux pour la page Tendances */
+/* pour la page actualités Tendances intemporelles */
 .tendances-intemporelles-section {
     padding: 2rem 5%;
-    max-width: 1200px; /* Limite la largeur de la section pour la lecture */
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Style de la description d'introduction */
 .introduction-tendance {
-    margin: 2rem 0 4rem;
-    padding-left: 10%; /* Décalage pour l'alignement */
+    font-size: 1.5rem;
+    line-height: 1.8;
+    width: 33%;
+    text-align: left;
+    margin: 4rem auto;
 }
 
 .description-tendance {
     font-size: 1.2rem;
     line-height: 1.8;
     color: #ccc;
-    max-width: 600px; /* Assure une bonne lisibilité */
+    max-width: 600px;
 }
 
-/* Style commun à chaque bloc de tendance */
 .tendance-block {
     margin-bottom: 8rem;
 }
@@ -413,13 +415,22 @@ footer{
 }
 
 .tendance-img {
+    display: block;
     width: 100%;
     max-width: 300px;
     height: auto;
     object-fit: cover;
 }
 
-/* Styles spécifiques pour l'Old Money (alignement à deux colonnes) */
+.tendance-img:nth-child(even){
+    margin-left: 10%;
+    margin-right: auto;
+}
+.tendance-img:nth-child(odd){
+    margin-right: 10%;
+    margin-left: auto;
+}
+
 .tendance-block.old-money-style .tendance-contenu {
 
     justify-content: space-around;
@@ -440,8 +451,6 @@ footer{
     flex-direction: column;
     gap: 20px;
 }
-
-
 
 
 /* pour la page collaboration */
