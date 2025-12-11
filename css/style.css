@@ -43,28 +43,54 @@ body {
 /* le footer pour toutes les pages sauf à propos */
 
 footer{
-    margin-top: 45rem;
+    margin-top: 40rem;
     display: flex;
     position: relative;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-text{
     display: flex;
-    flex-direction: column;
-    margin-left: 3rem;
+    flex-direction: column; 
+    align-items: flex-start;
+    margin-left: 3rem; 
     margin-bottom: 2rem;
     margin-right: 1rem;
     color: #000000;
 }
 
-.logo-instagram{
-    width: 4rem;
-    margin-top: 1.5rem;
+.footer-social-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
 }
 
 .btn-suivre{
     text-decoration: none;
+    margin: 0;
     color: #000000;
+    font-size: x-large;
+}
+
+.logo-instagram{
+    width: 4rem;
+}
+
+.btn-to-top{
+    width: 25%;
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem; 
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 2rem;
+    text-align: center;
+    text-decoration: none;
 }
 
 /* pour la page accueil */
