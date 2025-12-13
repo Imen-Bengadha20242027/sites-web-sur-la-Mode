@@ -1,3 +1,722 @@
+<<<<<<< HEAD
+/* Nouveau style CSS modernisé pour ICONIX */
+=======
+ HEAD
+/* =========================================================
+   STYLE ALTERNATIF : PALETTE BLEU NUIT / VIOLET / OR ROSE
+   ========================================================= */
+>>>>>>> 52f30cd (j'ai fais un fichier du javaScript pour pouvoir faire le changement du style sur le site directement)
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+<<<<<<< HEAD
+=======
+/*  Liens du menu de navigation dans le header ====== */
+nav a{
+    color:#fbe9ff;                    /* Texte clair légèrement rosé */
+    margin-right: 2rem;
+    text-decoration: none;
+    font-family: "Verdana", "Segoe UI", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    text-decoration: underline;       /* Soulignement au survol pour l’accessibilité */
+}
+
+/*  Titre principal du site dans le header ====== */
+.title {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #fce3b6;                   /* Or doux */
+    font-family: "Verdana", "Segoe UI", sans-serif;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+}
+
+/*  BODY : style général du fond et du texte pour toutes les pages ====== */
+>>>>>>> 52f30cd (j'ai fais un fichier du javaScript pour pouvoir faire le changement du style sur le site directement)
+body {
+  background: #f4f4f8;
+  color: #222;
+  line-height: 1.6;
+}
+
+<<<<<<< HEAD
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #4b0000; /* rouge foncé */
+  color: #ffeaea; /* rouge très clair */
+}
+
+.title h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.bandeau {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.bandeau a {
+  color: #ffeaea; /* rouge très clair */
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.bandeau a:hover {
+  color: #c7a5ff;
+=======
+/*  Titres principaux des pages (ex : h1 de chaque page) ====== */
+.titre-pages{
+    font-size: 3rem;
+    text-align: center;
+    color: #fce3b6;                   /* Or rosé pour les gros titres */
+    margin: 4rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+/*  FOOTER : zone en bas de page (toutes les pages sauf "à propos") ====== */
+footer{
+    margin-top: 45rem;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3vw;
+    background: #090a15;              /* Bande sombre contrastée */
+    border-top: 1px solid #4b3a7a;    /* Ligne violette discrète */
+}
+
+/*  Texte dans le footer (coordonnées, phrase, etc.) ====== */
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 1rem;
+    color: #f0e6ff;
+    font-size: 0.95rem;
+}
+
+/*  Logo Instagram affiché dans le footer ====== */
+.logo-instagram{
+    width: 3.5rem;
+    margin-top: 0.5rem;
+}
+
+/*  Bouton/lien "Nous suivre" dans le footer ====== */
+.btn-suivre{
+    text-decoration: none;
+    color: #090914;
+    background: linear-gradient(135deg,#fce3b6,#f7b1d3);
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+>>>>>>> 52f30cd (j'ai fais un fichier du javaScript pour pouvoir faire le changement du style sur le site directement)
+}
+
+/* TITRES */
+.titre-pages {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 45px;
+  color: #4b0000; /* rouge foncé */
+}
+
+<<<<<<< HEAD
+/* SECTIONS TEXTE + IMAGE */
+.text-a-propos {
+  max-width: 600px;
+  margin: 40px auto;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.img-a-propos {
+  display: block;
+  margin: 20px auto;
+  width: 45%;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
+}
+
+/* FEEDBACK FORM */
+=======
+/*  PAGE ACCUEIL : bloc principal d’accueil (image + slogan) ====== */
+.accueil {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 2rem;
+}
+
+/*  Image principale de la page d’accueil ====== */
+.accueil img { 
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+    opacity: 0.9;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.55);
+}
+
+/*  Slogan positionné sur l’image d’accueil ====== */
+.slogan {
+    position: absolute;
+    color: #fdf7ff;
+    font-size: 3.8rem;
+    text-align: left;
+    margin-top: 0;
+    margin-right: 2%;
+    max-width: 55%;
+    bottom: 15%;
+    left: 10%;
+    text-shadow: 0 5px 22px rgba(0,0,0,0.8);
+}
+
+/*  Blocs d’actualités sous l’image d’accueil ====== */
+.actualités {
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    margin: 5vh auto;
+    flex-wrap: wrap;
+}
+
+/*  Chaque carte d’actualité sur l’accueil ====== */
+.card {
+    border: 1px solid #fce3b6;        /* léger contour doré */
+    font-size: 1.3rem;
+    padding: 2rem;
+    border-radius: 1.8rem;
+    width: 22vw;
+    max-width: 20rem;
+    text-align: center;
+    color: #fdf7ff;
+    background: radial-gradient(circle at top, #2b144d 0%, #10091f 60%);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+/*  Titre de chaque carte d’actualité ====== */
+.card-title{
+    font-size: 1.9rem;
+    margin-bottom: 0.8rem;
+}
+
+/*  Texte de chaque carte d’actualité ====== */
+.card-text{
+    font-size: 1.2rem;
+}
+
+/*  SECTION AVIS : conteneur des cartes d’avis ====== */
+.avis {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin: 5vh auto 10vh;
+    flex-wrap: wrap;
+}
+
+/*  Carte individuelle d’un avis ====== */
+.avis-card {
+    background: linear-gradient(145deg,#281341,#431f6b);
+    border: 1px solid #f7b1d3;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    width: 35vw;
+    max-width: 25rem;
+    height: auto;
+    min-height: 7rem;
+    text-align: center;
+    color: #fdf7ff;
+    font-size: 1.1rem;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+}
+
+/*  PAGE ACTUALITÉS_MODE : carte principale d’une actualité ====== */
+.actu-card{
+    border: 1px solid #fce3b6;
+    border-radius: 2.5rem;
+    background-color: rgba(20, 10, 40, 0.9);
+    width: 50vw;
+    max-width: 35rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    box-shadow: 0 16px 45px rgba(0,0,0,0.7);
+}
+
+/*  Position alternée des cartes (gauche/droite) ====== */
+.actu-card:nth-child(even) {
+    margin-left: auto;
+    margin-right: 8vw;
+}
+
+.actu-card:nth-child(odd) {
+    margin-right: auto;
+    margin-left: 8vw;
+}
+
+/*  Image à l’intérieur d’une carte actualité mode ====== */
+.actu-img{
+    border-radius: 1.8rem;
+    width: 80%;
+    height: auto;
+    padding: 3rem 3rem 0 3rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.actu-img:hover{
+    transform: scale(1.04);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.8);
+}
+
+/*  Titre de l’actualité mode (lien cliquable) ====== */
+.actu-title{
+    color: #fce3b6;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+/*  Texte descriptif de l’actualité mode ====== */
+.actu-text{
+    text-align: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #f8f3ff;
+    padding: 0 2rem;
+}
+
+/*  Liste globale des actualités mode ====== */
+.actualités-mode {
+    display: block;
+}
+
+/*  Liens dans la section actualités mode ====== */
+.actualités-mode a {
+    color: #f7b1d3;
+    text-decoration: none;
+}
+
+.actualités-mode a:hover {
+    text-decoration: underline;
+}
+
+/*  Titre général pour la section actualités mode ====== */
+.actualités-mode-text {
+    color: #fce3b6;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+/*  Bloc principal regroupant le contenu texte de la page actualités mode ====== */
+.actualité-mode-block { 
+    border: 1px solid #4b3a7a;
+    background-color: rgba(8, 6, 20, 0.9);
+    padding: 2rem 8vw 0;
+    border-radius: 2rem; 
+    width: 60vw;
+    max-width: 55rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6rem;
+}
+
+/*  Liste d’éléments à l’intérieur du bloc actualité-mode ====== */
+.actualité-mode-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*  Éléments individuels de la liste dans actualité-mode-block ====== */
+.actualité-mode-block li {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/*  PAGE ACTU DÉFILÉ : style global de la section ====== */
+section{
+    font-size: x-large;
+}
+
+/*  Texte descriptif (par exemple défilé Chanel) centré ====== */
+.text-chanel{
+    text-align: center;
+}
+
+/*  Conteneurs pour le texte et les images du défilé ====== */
+.block-actu-défilé,
+.block-img-actu {
+    display: flex;
+    flex-direction: column;
+}
+
+/*  Conteneur de plusieurs images de défilé alignées ====== */
+.img-container {
+    display: flex;
+    width: 100%;
+}
+
+/*  Image alignée à gauche dans le défilé ====== */
+.actu-img-défilé-gauche {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/*  Image alignée à droite dans le défilé ====== */
+.actu-img-défilé-droite {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/*  Image de défilé centrée avec marges verticales ====== */
+.actu-img-défilé {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15rem;
+    border-radius: 2rem;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.8);
+}
+
+/*  PAGE LOOKS ICONIQUES : alternance gauche/droite des blocs  */
+.look:nth-child(even) {
+    margin-left: auto;
+    margin-right: 8vw;
+}
+
+.look:nth-child(odd) {
+    margin-right: auto;
+    margin-left: 8vw;
+}
+
+/*  Conteneur global de tous les looks iconiques  */
+.looks-iconiques {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    font-family: "Verdana", "Segoe UI", sans-serif;
+    color: #fdf7ff;
+}
+
+/*  Bloc individuel d’un look (image(s) + texte)  */
+.look {
+    background: radial-gradient(circle at top, rgba(73, 41, 112,0.9), rgba(10, 7, 22,0.95));
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.85);
+}
+
+/*  Conteneur des images d’un look (deux images côte à côte)  */
+.images-look {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/*  Image individuelle d’un look iconique  */
+.img-look {
+    display: block;
+    width: calc(50% - 2.5rem);
+    height: auto;
+    border-radius: 1.5rem;
+}
+
+/*  Texte d’explication sous les looks iconiques  */
+.text-look-iconique {
+    text-align: left;
+    color: #fdf7ff;
+    margin: 4rem auto;
+    background-color: rgba(10, 7, 22, 0.85);
+    padding: 2rem 5vw;
+    border-radius: 2rem; 
+    width: 45vw;
+    max-width: 30rem;
+    font-size: 1.4rem;
+    border: 1px solid #f7b1d3;
+}
+
+/*  PAGE TENDANCES : ligne contenant une image + couleurs Pantone  */
+.tendances-ligne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+    margin-bottom: 12vh;
+}
+
+/*  Grande image de tendance (photo de mode)  */
+.tendance-img {
+    height: 55vh;
+    width: auto;
+    border-radius: 2rem;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.85);
+}
+
+/*  Colonne de petits carrés de couleur type Pantone  */
+.pantone-colonne {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/*  Carré de couleur Pantone  */
+.square {
+    width: 8vw;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 1rem;
+    border: 1px solid #fce3b6;
+}
+
+/*  Titre principal de la page tendances  */
+.tendances-title {
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+    color: #fce3b6;
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+/*  Texte d’intro ou explication dans la page tendances  */
+.tendances-text{
+    color: #f8f3ff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*  Bloc qui contient chaque ligne de tendances  */
+.tendances-block{ 
+    border: 1px solid #4b3a7a;
+    background-color: rgba(8, 6, 20, 0.9);
+    padding: 2rem 8vw 0;
+    border-radius: 2rem; 
+    width: 60vw;
+    max-width: 55rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6rem;
+}
+
+/*  Alternance gauche/droite des lignes de tendances  */
+.tendances-ligne:nth-child(even) {
+    margin-left: auto;
+    margin-right: 20vw;
+}
+
+.tendances-ligne:nth-child(odd) {
+    margin-right: auto;
+    margin-left: 20vw;
+}
+
+/*  PAGE À_PROPOS : style général du formulaire  */
+>>>>>>> 52f30cd (j'ai fais un fichier du javaScript pour pouvoir faire le changement du style sur le site directement)
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+<<<<<<< HEAD
+textarea {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  background: #4b0000; /* rouge foncé */
+  color: #ffeaea; /* rouge très clair */
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5e3bef;
+=======
+/*  Image sur la page à_propos (photo, logo, etc.)  */
+.img-a-propos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    max-width: 260px;
+}
+
+/*  Bloc de texte explicatif dans la page à_propos  */
+.text-a-propos{
+    text-align: center;
+    color: #fdf7ff;
+    margin: 4rem auto;
+    border: 1px solid #fce3b6;
+    padding: 2rem 5vw;
+    border-radius: 2rem; 
+    width: 45vw;
+    max-width: 40rem;
+    font-size: 1.4rem;
+    background: rgba(8,6,20,0.9);
+}
+
+/*  Bouton pour remonter en haut de la page à_propos  */
+.btn-a-propos{
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    width: 10%;
+    font-size: 1.3rem;
+    background: linear-gradient(135deg,#fce3b6,#f7b1d3);
+    color: #090914;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    text-align: center;
+    text-decoration: none;
+>>>>>>> 52f30cd (j'ai fais un fichier du javaScript pour pouvoir faire le changement du style sur le site directement)
+}
+
+/* ACTUALITÉS – PAGE CARDS */
+.actus-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+<<<<<<< HEAD
+.actu-card {
+  background: #ffeaea; /* rouge très clair */
+  padding: 20px;
+  border-radius: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
+  transition: 0.3s;
+=======
+/*  Bouton d’envoi du formulaire (page à_propos)  */
+form button{
+    display: block;
+    width: 20%;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    background: #f7b1d3;
+    color: #090914;
+    font-size: 1.2rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    border: none;
+>>>>>>> 52f30cd (j'ai fais un fichier du javaScript pour pouvoir faire le changement du style sur le site directement)
+}
+
+.actu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
+}
+
+<<<<<<< HEAD
+.actu-img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.actu-title {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #4b0000; /* rouge foncé */
+}
+
+.actu-text {
+  font-size: 16px;
+  color: #444;
+}
+
+/* PAGES AVEC IMAGES À GAUCHE/DROITE */
+.img-container img {
+  width: 45%;
+  border-radius: 15px;
+  margin: 15px;
+  box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
+}
+
+=======
+/*  Label de chaque champ du formulaire  */
+form label {
+    font-weight: bold;
+    color: #fdf7ff;
+}
+
+/*  Titre au-dessus du formulaire d’avis  */
+.titre-feedback{
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*  Texte d’intro du formulaire d’avis  */
+.feedback{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/*  Zone de texte (textarea) du formulaire  */
+form textarea {
+    padding: 1rem;
+    border: 0.2rem solid #fce3b6;
+    border-radius: 1rem;
+    font-size: 1rem;
+    width: 40vw;
+    max-width: 35rem;
+    background-color: rgba(8,6,20,0.9);
+    color: #fdf7ff;
+    resize: vertical;
+}
+
 /* Nouveau style CSS modernisé pour ICONIX */
 
 /* RESET */
@@ -149,6 +868,7 @@ button:hover {
   box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
 }
 
+>>>>>>> 52f30cd (j'ai fais un fichier du javaScript pour pouvoir faire le changement du style sur le site directement)
 /* FOOTER */
 footer {
   background: #4b0000; /* rouge foncé */
@@ -293,3 +1013,7 @@ footer {
   margin: 20px auto 40px auto;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 52f30cd (j'ai fais un fichier du javaScript pour pouvoir faire le changement du style sur le site directement)

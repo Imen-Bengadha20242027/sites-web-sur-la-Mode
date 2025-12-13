@@ -4,10 +4,9 @@
         <title>ICONIX</title>
         <meta charset="utf-8">
         <link rel="icon" href="css/images/favicon.ico">
-        <link rel="stylesheet" href="css/style.css" >
-        <link rel="stylesheet" href="css/style.diff.css" disabled>
+        <link rel="stylesheet" href="css/style.css" id="theme-style">
     </head>
-
+    <script src="js/switchstyle.js"></script>
     <body>
         <header>
             <div class="title">
@@ -56,7 +55,7 @@
                 <b>RETOUR EN HAUT DE LA PAGE</b>
             </button>
         </footer>
-
+        <button id="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'});"></button>
     </body>
 
 </html>
