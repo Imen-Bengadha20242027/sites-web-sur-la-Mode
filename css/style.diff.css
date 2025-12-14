@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 /* Nouveau style CSS modernisé pour ICONIX */
-=======
- HEAD
-/* =========================================================
-   STYLE ALTERNATIF : PALETTE BLEU NUIT / VIOLET / OR ROSE
-   ========================================================= */
->>>>>>> 52f30cd (j'ai fais un fichier du javaScript pour pouvoir faire le changement du style sur le site directement)
 
 /* RESET */
 * {
@@ -15,8 +8,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-<<<<<<< HEAD
-=======
+
 /*  Liens du menu de navigation dans le header ====== */
 nav a{
     color:#fbe9ff;                    /* Texte clair légèrement rosé */
@@ -43,14 +35,13 @@ nav a:hover{
 }
 
 /*  BODY : style général du fond et du texte pour toutes les pages ====== */
->>>>>>> 52f30cd (j'ai fais un fichier du javaScript pour pouvoir faire le changement du style sur le site directement)
 body {
   background: #f4f4f8;
   color: #222;
   line-height: 1.6;
 }
 
-<<<<<<< HEAD
+
 /* HEADER */
 header {
   display: flex;
@@ -81,7 +72,7 @@ header {
 
 .bandeau a:hover {
   color: #c7a5ff;
-=======
+}
 /*  Titres principaux des pages (ex : h1 de chaque page) ====== */
 .titre-pages{
     font-size: 3rem;
@@ -130,7 +121,6 @@ footer{
     border-radius: 999px;
     font-size: 0.9rem;
     font-weight: 600;
->>>>>>> 52f30cd (j'ai fais un fichier du javaScript pour pouvoir faire le changement du style sur le site directement)
 }
 
 /* TITRES */
@@ -141,7 +131,7 @@ footer{
   color: #4b0000; /* rouge foncé */
 }
 
-<<<<<<< HEAD
+
 /* SECTIONS TEXTE + IMAGE */
 .text-a-propos {
   max-width: 600px;
@@ -160,7 +150,7 @@ footer{
 }
 
 /* FEEDBACK FORM */
-=======
+
 /*  PAGE ACCUEIL : bloc principal d’accueil (image + slogan) ====== */
 .accueil {
     position: relative;
@@ -550,7 +540,6 @@ section{
 }
 
 /*  PAGE À_PROPOS : style général du formulaire  */
->>>>>>> 52f30cd (j'ai fais un fichier du javaScript pour pouvoir faire le changement du style sur le site directement)
 form {
   max-width: 500px;
   margin: 40px auto;
@@ -559,7 +548,6 @@ form {
   gap: 15px;
 }
 
-<<<<<<< HEAD
 textarea {
   padding: 10px;
   border: 2px solid #ccc;
@@ -579,7 +567,7 @@ button {
 
 button:hover {
   background: #5e3bef;
-=======
+}
 /*  Image sur la page à_propos (photo, logo, etc.)  */
 .img-a-propos{
     display: block;
@@ -616,7 +604,6 @@ button:hover {
     border-radius: 999px;
     text-align: center;
     text-decoration: none;
->>>>>>> 52f30cd (j'ai fais un fichier du javaScript pour pouvoir faire le changement du style sur le site directement)
 }
 
 /* ACTUALITÉS – PAGE CARDS */
@@ -627,7 +614,6 @@ button:hover {
   padding: 40px;
 }
 
-<<<<<<< HEAD
 .actu-card {
   background: #ffeaea; /* rouge très clair */
   padding: 20px;
@@ -636,8 +622,8 @@ button:hover {
   text-align: center;
   box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
   transition: 0.3s;
-=======
-/*  Bouton d’envoi du formulaire (page à_propos)  */
+}
+  /*  Bouton d’envoi du formulaire (page à_propos)  */
 form button{
     display: block;
     width: 20%;
@@ -651,7 +637,6 @@ form button{
     border-radius: 0.8rem;
     text-align: center;
     border: none;
->>>>>>> 52f30cd (j'ai fais un fichier du javaScript pour pouvoir faire le changement du style sur le site directement)
 }
 
 .actu-card:hover {
@@ -659,7 +644,6 @@ form button{
   box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
 }
 
-<<<<<<< HEAD
 .actu-img {
   width: 100%;
   border-radius: 15px;
@@ -685,7 +669,7 @@ form button{
   box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
 }
 
-=======
+
 /*  Label de chaque champ du formulaire  */
 form label {
     font-weight: bold;
@@ -868,7 +852,7 @@ button:hover {
   box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
 }
 
->>>>>>> 52f30cd (j'ai fais un fichier du javaScript pour pouvoir faire le changement du style sur le site directement)
+
 /* FOOTER */
 footer {
   background: #4b0000; /* rouge foncé */
@@ -1012,8 +996,26 @@ footer {
   font-weight: 700;
   margin: 20px auto 40px auto;
 }
+/* Bouton changement de style – intégré au header */
+#theme-toggle {
+    align-self: flex-end;        /* en bas du bandeau */
+    margin-bottom: 8px;
+    margin-left: auto;           /* pousse le bouton à droite */
 
-<<<<<<< HEAD
-=======
+    background: #4b0000;         /* rouge foncé */
+    color: #ffeaea;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
 
->>>>>>> 52f30cd (j'ai fais un fichier du javaScript pour pouvoir faire le changement du style sur le site directement)
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background: #6b0000;
+    transform: scale(1.05);
+}

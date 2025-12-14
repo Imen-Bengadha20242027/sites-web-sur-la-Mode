@@ -1022,3 +1022,47 @@ form textarea {
     background-color: transparent;
     resize: vertical;
 }
+/* Bouton pour remonter en haut */
+.top-btn {
+    position: fixed;       /* toujours visible à l’écran */
+    bottom: 2rem;          /* 2rem du bas */
+    right: 2rem;           /* 2rem de la droite */
+    width: 70px;           /* largeur du cercle */
+    height: 70px;          /* hauteur du cercle */
+    border-radius: 50%;    /* cercle parfait */
+    background-color: #000; /* fond noir */
+    color: #fff;           /* flèche blanche */
+    border: none;          /* pas de bordure */
+    font-size: 2rem;       /* taille de la flèche */
+    cursor: pointer;       /* pointeur quand survol */
+    display: flex;         /* centrer le contenu */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+#top-btn:hover {
+    background-color: #333; /* couleur au survol */
+}
+
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4b0000; /* rouge foncé */
+    color: #ffeaea;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+    z-index: 1000;
+}
+
+#theme-toggle:hover {
+    background-color: #6b0000;
+    transform: scale(1.05);
+}
