@@ -381,7 +381,6 @@ footer{
     margin: 0 auto;
 }
 
-/* Style de la description d'introduction */
 .introduction-tendance {
     font-size: 1.5rem;
     line-height: 1.8;
@@ -754,6 +753,189 @@ footer{
     margin-bottom: 1rem;
 }
 
+/* Styles Spécifiques pour la page Maisons de Luxe */
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+}
+
+.titre-pages, h2, h1 {
+    color: #FFFFFF;
+}
+
+.titre-luxe {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.introduction-luxe {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto 50px;
+    font-size: 1.2em;
+}
+
+.maison-luxe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+    padding: 20px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.defile-top-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.defile-texte-gauche {
+    width: 35%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description-luxe {
+    font-size: 1.6em; 
+    line-height: 1.8;
+}
+
+.defile-image-droite.marque-cercle {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marque-cercle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    border-radius: 50%;
+    width: 60rem;
+    height: 60rem; 
+    text-align: center;
+    background: #413E3E;
+    box-shadow: #413E3E 0px 0px 100px;
+    
+    position: relative; 
+    overflow: hidden; 
+}
+
+.marque-cercle:nth-child(even) {
+    margin-right: auto;
+    margin-left: -10rem;
+    padding-left: 5rem;
+}
+
+.marque-cercle:nth-child(odd) {
+    margin-left: auto;
+    margin-right: -10rem;
+    padding-right: 5rem;
+}
+
+.dior-section .contenu-principal-dior.marque-cercle { 
+    display: block;
+    width: 70rem;
+    height: 70rem;
+    max-width: 90%;
+}
+
+.dior-section .defile-top-content {
+    display: block;
+    width: 100%;
+}
+
+.dior-section .titre-marque-dior {
+    position: absolute;
+    top: 5%; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    z-index: 10; 
+}
+
+.dior-section .defile-texte-gauche {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 45%; 
+    z-index: 5;
+    text-align: left;
+    background-color: transparent;
+    padding: 0;
+}
+
+.dior-section .logo-luxe-box {
+    position: absolute; 
+    top: 15%; 
+    right: 5%;
+    z-index: 5;
+    background-color: white; 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dior-section .luxe-logo {
+    width: 100px;
+    height: auto;
+}
+
+.dior-section .image-circulaire-container {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.dior-section .image-mannequin-dior {
+    top: 30%;
+    right: 5%;
+    width: 45%; 
+    height: 70%; 
+}
+
+.dior-section .image-robe-dior {
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%; 
+    height: 45%; 
+}
+
+.luxe-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.maison-luxe:not(.dior-section) .defile-image-droite.marque-cercle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 50px;
+}
+
+.maison-luxe:not(.dior-section) .image-circulaire-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+}
 
 /* pour la page à_propos */
 
