@@ -11,12 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Changer de thème au clic
     themeButton.addEventListener("click", () => {
-        if(themeLink.getAttribute("href") === "css/style.css") {
+        if(themeLink.getAttribute("href") === "css/style.dark.css") {
             themeLink.setAttribute("href", "css/style.diff.css");
             localStorage.setItem("theme", "css/style.diff.css"); // Sauvegarder le choix
         } else {
-            themeLink.setAttribute("href", "css/style.css");
-            localStorage.setItem("theme", "css/style.css"); // Sauvegarder le choix
+            themeLink.setAttribute("href", "css/style.dark.css");
+            localStorage.setItem("theme", "css/style.dark.css"); // Sauvegarder le choix
         }
     });
 });
