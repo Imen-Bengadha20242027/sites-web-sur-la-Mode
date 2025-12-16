@@ -375,25 +375,29 @@ footer{
 }
 
 /* pour la page actualités Tendances intemporelles */
+
 .tendances-intemporelles-section {
     padding: 2rem 5%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.introduction-tendance {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    width: 33%;
-    text-align: left;
-    margin: 4rem auto;
+/* 🔹 NOUVEL encadré texte (comme ta 2e image) */
+.introduction-tendance-box {
+    max-width: 900px;
+    margin: 4rem auto 6rem;
+    padding: 2.5rem 3rem;
+    border: 0.2rem solid rgba(148, 135, 135, 0.8);
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.35);
 }
 
-.description-tendance {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #ccc;
-    max-width: 600px;
+.introduction-tendance {
+    font-size: 1.6rem;
+    line-height: 2;
+    text-align: left;
+    color: #ffffff;
+    margin: 0;
 }
 
 .tendance-block {
@@ -407,49 +411,86 @@ footer{
     text-align: center;
 }
 
+/* Conteneur images */
 .tendance-contenu {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Encadrement chic des images */
+.tendance-item {
+    background: rgba(217, 217, 217, 0.10);
+    border: 0.2rem solid rgba(148, 135, 135, 0.8);
+    border-radius: 2rem;
+    padding: 1rem;
+    max-width: 330px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    transition: transform 0.3s ease;
+}
+
+.tendance-item:hover {
+    transform: scale(1.02);
 }
 
 .tendance-img {
     display: block;
     width: 100%;
-    max-width: 300px;
-    height: auto;
+    height: 380px;
     object-fit: cover;
+    border-radius: 1.5rem;
 }
 
-.tendance-img:nth-child(even){
-    margin-left: 10%;
-    margin-right: auto;
-}
-.tendance-img:nth-child(odd){
-    margin-right: 10%;
-    margin-left: auto;
-}
-
-.tendance-block.old-money-style .tendance-contenu {
-
-    justify-content: space-around;
+/* OLD MONEY : 1 grande à gauche, 2 empilées à droite */
+.tendance-grid--oldmoney {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
     align-items: flex-start;
 }
 
-.old-money-colonne-gauche {
-    flex: 1;
-    max-width: 45%; 
-    display: flex;
-    justify-content: center;
+.tendance-item--large {
+    max-width: 420px;
 }
 
-.old-money-colonne-droite {
-    flex: 1;
-    max-width: 45%;
+.tendance-item--large .tendance-img {
+    height: 520px; /* plus grande */
+}
+
+.tendance-colonne {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
 }
+
+/* SPORTSWEAR : 3 images bien alignées */
+.tendance-grid--3 .tendance-item {
+    max-width: 300px;
+}
+
+.tendance-grid--3 .tendance-img {
+    height: 340px;
+}
+
+/* Responsive : en mobile on réduit les hauteurs */
+@media (max-width: 900px) {
+    .introduction-tendance {
+        width: 90%;
+        text-align: center;
+    }
+
+    .tendance-img {
+        height: 320px;
+    }
+
+    .tendance-item--large .tendance-img {
+        height: 380px;
+    }
+}
+
 
 
 /* pour la page collaboration */
