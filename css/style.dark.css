@@ -457,7 +457,7 @@ footer{
 }
 
 .tendance-item--large .tendance-img {
-    height: 520px; /* plus grande */
+    height: 520px; 
 }
 
 .tendance-colonne {
@@ -475,7 +475,7 @@ footer{
     height: 340px;
 }
 
-/* Responsive : en mobile on réduit les hauteurs */
+/* Responsive  */
 @media (max-width: 900px) {
     .introduction-tendance {
         width: 90%;
@@ -493,21 +493,16 @@ footer{
 
 
 
-/* =========================
-   COLLABORATIONS (BEAU)
-   - intro encadrée OK
-   - PAS d’encadrement sur les blocs
-   - texte plus grand + “magazine”
-   - images plus petites + propres
-   - LV : 2 images alignées sur une ligne
-========================= */
+/* 
+   COLLABORATIONS 
+   */
 
 .collab-page{
   width: min(1200px, 95%);
   margin: 0 auto;
 }
 
-/* Intro : tu voulais garder l’encadré */
+/* Intro */
 .collab-intro-box{
   width: min(900px, 92%);
   margin: 2rem auto 5rem auto;
@@ -521,12 +516,12 @@ footer{
   background: rgba(0,0,0,0.25);
   box-shadow: 0 12px 30px rgba(0,0,0,0.5);
 
-  font-size: 1.8rem;      /* texte + grand */
+  font-size: 1.8rem;      
   line-height: 2;
   color: #eaeaea;
 }
 
-/* Articles : pas de cadre, juste de l’air */
+/* Articles  */
 .collaboration-article-bloc{
   width: 100%;
   margin: 0 auto 7rem auto;
@@ -562,7 +557,7 @@ footer{
 
 /* Texte : style magazine */
 .collab-text{
-  font-size: 1.7rem;      /* texte + grand */
+  font-size: 1.7rem;      
   line-height: 2.05;
   color: #e8e8e8;
   max-width: 55ch;
@@ -592,7 +587,7 @@ footer{
 /* Texte du bas */
 .collab-bottom{
   margin: 2.8rem auto 0 auto;
-  font-size: 1.6rem;      /* texte + grand */
+  font-size: 1.6rem;     
   line-height: 2.05;
   color: #e6e6e6;
   max-width: 70ch;
@@ -607,14 +602,14 @@ footer{
 }
 
 .collab-text-center{
-  font-size: 1.7rem;      /* texte + grand */
+  font-size: 1.7rem;     
   line-height: 2.05;
   color: #e8e8e8;
   max-width: 70ch;
   margin: 0 auto 2rem auto;
 }
 
-/* ✅ LV : 2 images sur une même ligne */
+
 .collab-images.center{
   display: flex;
   flex-direction: row;
@@ -650,7 +645,7 @@ footer{
     font-size: 1.25rem;
   }
 
-  /* LV en mobile : images l’une sous l’autre */
+  /* LV en mobile  */
   .collab-images.center{
     flex-direction: column;
   }
@@ -664,89 +659,62 @@ footer{
 
 /* pour la page looks iconiques*/
 
-.looks-iconiques {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-    font-family: "Playfair Display", "Georgia", serif;
-    color: #fdf7ff;
-}
-
-/* Alternance gauche / droite */
 .look:nth-child(even) {
-    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 8vw;
 }
 
 .look:nth-child(odd) {
-    align-self: flex-start;
+    margin-right: auto;
+    margin-left: 8vw;
 }
 
-/* Bloc look */
+.looks-iconiques {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+}
+
 .look {
-    width: 85%;
-    background: rgba(91, 88, 107, 0.75);
-    padding: 3rem;
-    border-radius: 4rem;
-    box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+    background: rgba(217, 217, 217, 0.2);
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-/* Images */
 .images-look {
     display: flex;
+    gap: 1rem;
     justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap; /* mobile friendly */
+    margin-bottom: 1rem;
 }
 
 .img-look {
-    width: 45%;
-    max-width: 420px;
-
-    border-radius: 1.8rem;
-    border: 3px solid #fce3b6;
-    padding: 6px;
-    background: rgba(0,0,0,0.25);
-
-    box-shadow: 0 18px 40px rgba(0,0,0,0.7);
+    display: block;
+    width: calc(50% - 2.5rem);
+    height: auto;
+    border-radius: 1.5rem;
 }
 
-.img-look:hover {
-    transform: scale(1.03);
-}
 
-/* Titres */
-.look h2 {
-    font-size: 2rem;
-    letter-spacing: 0.05rem;
-    margin-bottom: 1.2rem;
-    text-align: center;
-}
-
-/* Texte descriptif */
-.look h3 {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.8;
-    text-align: center;
-    color: #e9e2ff;
-}
-
-/* Texte final explicatif */
 .text-look-iconique {
-    margin: 6rem auto 0;
-    max-width: 700px;
-    font-family: "Georgia", "Playfair Display", serif;
-    font-size: 1.2rem;
-    line-height: 1.9;
-    text-align: center;
-    background: rgba(142, 126, 126, 0.8);
-    padding: 3rem;
-    border-radius: 4rem;
-    border: 1px solid #fce3b6;
+    text-align: left;
+    color: #ffffff;
+    margin: 4rem auto;
+    background-color: rgb(148, 135, 135, 0.6);
+    padding: 2rem 5vw;
+    border-radius: 2rem; 
+    width: 45vw;
+    max-width: 30rem;
+    font-size: 1.5rem;
 }
 
 
@@ -761,7 +729,7 @@ footer{
 }
 
 .tendance-img {
-    height: 90vh;
+    height: 55vh;
     width: auto;
 }
 
@@ -772,7 +740,7 @@ footer{
 }
 
 .square {
-    width: 10vw;
+    width: 8vw;
     height: auto;
 }
 
@@ -812,18 +780,13 @@ footer{
     margin-left: 20vw;
 }
 
+
 /* pour la page créateurs & marques */
 .titre-pages.createurs-marques {
     text-align: left;
     margin-left: 20rem;
     margin-top: 10rem;
     margin-bottom: 10rem;
-}
-.marque-cercle h3 {
-    font-size: 3rem; /* augmenter la taille */
-    color: white;    /* mettre le texte en blanc */
-    margin-bottom: 2rem; /* espace sous le titre */
-    text-align: center;  /* centrer le texte dans le cercle */
 }
 
 .marques-container {
@@ -1161,31 +1124,28 @@ form textarea {
     background-color: transparent;
     resize: vertical;
 }
-#top-btn {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  font-size: 1.8rem;
-  background: #4b0000;
-  color: #ffeaea;
-  cursor: pointer;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-  transition: 0.3s ease;
-  z-index: 9999;
+/* Bouton pour remonter en haut */
+.top-btn {
+    position: fixed;       /* toujours visible à l’écran */
+    bottom: 2rem;          /* 2rem du bas */
+    right: 2rem;           /* 2rem de la droite */
+    width: 70px;           /* largeur du cercle */
+    height: 70px;          /* hauteur du cercle */
+    border-radius: 50%;    /* cercle parfait */
+    background-color: #000; /* fond noir */
+    color: #fff;           /* flèche blanche */
+    border: none;          /* pas de bordure */
+    font-size: 2rem;       /* taille de la flèche */
+    cursor: pointer;       /* pointeur quand survol */
+    display: flex;         /* centrer le contenu */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    z-index: 1000;
 }
-
 #top-btn:hover {
-  background: #6b0000;
-  transform: scale(1.1);
+    background-color: #333; /* couleur au survol */
 }
-
 
 #theme-toggle {
     position: fixed;
