@@ -1024,18 +1024,18 @@ form textarea {
 }
 /* Bouton pour remonter en haut */
 .top-btn {
-    position: fixed;       /* toujours visible à l’écran */
-    bottom: 2rem;          /* 2rem du bas */
-    right: 2rem;           /* 2rem de la droite */
-    width: 70px;           /* largeur du cercle */
-    height: 70px;          /* hauteur du cercle */
-    border-radius: 50%;    /* cercle parfait */
-    background-color: #000; /* fond noir */
-    color: #fff;           /* flèche blanche */
-    border: none;          /* pas de bordure */
-    font-size: 2rem;       /* taille de la flèche */
-    cursor: pointer;       /* pointeur quand survol */
-    display: flex;         /* centrer le contenu */
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
