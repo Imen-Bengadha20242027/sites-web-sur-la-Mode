@@ -382,7 +382,7 @@ footer{
     margin: 0 auto;
 }
 
-/* 🔹 NOUVEL encadré texte (comme ta 2e image) */
+/* encadré texte  */
 .introduction-tendance-box {
     max-width: 900px;
     margin: 4rem auto 6rem;
@@ -443,7 +443,7 @@ footer{
     border-radius: 1.5rem;
 }
 
-/* OLD MONEY : 1 grande à gauche, 2 empilées à droite */
+/* OLD MONEY  */
 .tendance-grid--oldmoney {
     display: flex;
     justify-content: center;
@@ -466,7 +466,7 @@ footer{
     gap: 2rem;
 }
 
-/* SPORTSWEAR : 3 images bien alignées */
+/* SPORTSWEAR  */
 .tendance-grid--3 .tendance-item {
     max-width: 300px;
 }
@@ -493,107 +493,104 @@ footer{
 
 
 
-/* pour la page collaboration */
+/*  COLLABORATIONS  */
 
-.section-description-collaboration {
-    text-align: left;
-    font-size: xx-large;
-    font-weight: bolder;
-    border: 0.3rem solid #948787;
-    padding: 2rem 5rem;
-    border-radius: 2rem;
-    margin-left: 30%;
-    margin-right: 30%;
+.section-description-collaboration{
+  width: min(900px, 92%);
+  margin: 2rem auto 5rem auto;
+  border: 0.25rem solid rgba(148, 135, 135, 0.85);
+  border-radius: 2rem;
+  padding: 2rem 2.5rem;
+  background: rgba(0,0,0,0.25);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  font-size: 1.6rem;
+  line-height: 1.8;
 }
 
-.collaboration-article-bloc {
-    max-width: 1000px;
-    margin: 80px auto;
-    padding: 0 5%;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
+/* ===== COLLABORATIONS (SANS CADRES SUR IMAGES NI SUR BLOCS) ===== */
+
+.collab-page{
+  width: 100%;
+  margin: 0 auto;
 }
 
-.collaboration-article-bloc h2 {
-    font-size: 2.3rem;
-    margin-bottom: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100%;
+/* Intro : tu gardes l’encadré */
+.collab-intro-box{
+  width: min(900px, 92%);
+  margin: 2rem auto 5rem auto;
+  border: 0.25rem solid rgba(148, 135, 135, 0.85);
+  border-radius: 2rem;
+  padding: 2rem 2.5rem;
+  background: rgba(0,0,0,0.25);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
 }
 
-.defile-top-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 40px;
-    width: 100%;
+.section-description-collaboration{
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.8;
 }
 
-.defile-texte-gauche,
-.defile-texte-droite,
-.defile-image-droite,
-.defile-image-gauche {
-    width: 50%;
-    margin-bottom: 20px;
-    font-size: x-large;
-    font-weight: bold;
+/* Les articles : aucun cadre */
+.collab-article{
+  width: min(1100px, 95%);
+  margin: 0 auto 7rem auto;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
-.content-gauche-image-droite {
-    flex-direction: row;
+.collab-title{
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 2.5rem 0;
 }
 
-.content-image-gauche-texte-droite {
-    flex-direction: row;
+/* Layout type “magazine” */
+.collab-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
 }
 
-.collab-image-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+/* textes */
+.collab-text{
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin: 0;
 }
 
-.collab-img-principale, .collab-img-mini {
-    width: 100%;
-    height: auto;
-    display: block;
+/* images : plus petites, SANS cadre */
+.collab-img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+  box-shadow: none;
 }
 
-.defile-texte-gauche p, .defile-texte-droite p {
-    font-size: 1em;
-    line-height: 1.7;
+/* tailles (tu pourras ajuster après) */
+.collab-img--big{ max-width: 380px; }
+.collab-img--mid{ max-width: 320px; }
+.collab-img--xl{ max-width: 520px; }
+
+/* alignements */
+.collab-left{ justify-self: start; }
+.collab-right{ justify-self: end; }
+
+/* mobile */
+@media (max-width: 900px){
+  .collab-grid{
+    grid-template-columns: 1fr;
+  }
+  .collab-left,
+  .collab-right{
+    justify-self: center;
+  }
 }
 
-.defile-bottom-content {
-    max-width: 80%;
-    margin: 0 auto;
-    padding-top: 30px;
-}
-
-.defile-bottom-content p {
-    text-align: center;
-    font-style: italic;
-    font-size: x-large;
-    font-weight: bold;
-}
-
-.defile-chanel {
-    text-align: center;
-}
-
-.collab-img-centree {
-    width: 80%;
-    margin: 0 auto 20px;
-    display: block;
-}
-
-.text-chanel {
-    font-size: x-large;
-    max-width: 700px;
-    margin: 0 auto;
-}
 
 
 /* pour la page looks iconiques*/
