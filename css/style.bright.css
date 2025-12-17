@@ -1,295 +1,1306 @@
-/* Nouveau style CSS modernisé pour ICONIX */
+/* le header pour toutes les pages */
 
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+.bandeau{
+    display: flex;
+    height: 4vw;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(#fff 7%, #888B8B 38%, #656A6A 51%, #8E9696 65%, #EFEEF0 95%);
+    list-style: none;
+    text-decoration: none;
 }
 
+nav a{
+    color:#000000;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    color: #000000;
+}
+
+/* body pour toutes les pages */
 body {
-  background: #f4f4f8;
-  color: #222;
-  line-height: 1.6;
+    color: black;
+    position: relative;
+    font-family: "Times New Roman", Times, serif;
+    background: linear-gradient(#fff 52%, #6A6E6E 100%);
+    overflow-x: hidden;
 }
 
-/* HEADER */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  background: #4b0000; /* rouge foncé */
-  color: #ffeaea; /* rouge très clair */
+.titre-pages{
+    font-size: 3rem;
+    text-align: center;
+    color: #000000;
+    margin: 4rem;
 }
 
-.title h1 {
-  font-size: 40px;
-  letter-spacing: 3px;
+
+/*  Pour le menu burger et les sous-menus  */
+
+.burger-toggle {
+    display: block;
+    font-size: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #333;
+    margin-left: 15rem;
 }
 
-.bandeau {
-  display: flex;
-  gap: 30px;
-  list-style: none;
+/* 1. Menu Principal (Masqué par défaut) */
+.menu-liste {
+    /* Style de base du volet */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 20%;
+    left: 80%;
+    width: 100%;
+    background-color: #000;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
 
-.bandeau a {
-  color: #ffeaea; /* rouge très clair */
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
+/* 2. Affichage du Menu Principal */
+.menu-liste.ouvert {
+    max-height: 500rem;
+    max-width: 20rem;
+    border-radius: 20px;
+    background: linear-gradient(#fff 15%, #888B8B 38%, #656A6A 51%, #8E9696 65%, #EFEEF0 95%);
+    transition: max-height 0.5s ease-in;
 }
 
-.bandeau a:hover {
-  color: #c7a5ff;
+/* 3. Style des éléments du menu principal */
+.menu-liste li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #000;
+    position: relative;
+
+}
+.menu-liste a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+
 }
 
-/* TITRES */
-.titre-pages {
-  text-align: center;
-  margin: 40px 0;
-  font-size: 45px;
-  color: #4b0000; /* rouge foncé */
+/* 4. Gestion des Sous-menus (Toggle et Marge) */
+.submenu-toggle {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 30px;
+    width: 30px;
+    background: #000;
+    border: none;
+    color: #ccc;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 1002;
+    border-radius: 50%;
+}
+.submenu-toggle.submenu-actif {
+    background: #333;
 }
 
-/* SECTIONS TEXTE + IMAGE */
-.text-a-propos {
-  max-width: 600px;
-  margin: 40px auto;
-  font-size: 20px;
-  text-align: center;
-  line-height: 1.7;
+/* Sous-liste (Masquée par défaut) */
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+
+
+    /* Technique pour masquer/animer le sous-menu */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
 
-.img-a-propos {
-  display: block;
-  margin: 20px auto;
-  width: 45%;
-  border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
+/* Affichage du Sous-menu */
+.submenu.submenu-ouvert {
+    max-height: 300px;
+    transition: max-height 0.5s ease-in;
 }
 
-/* FEEDBACK FORM */
-form {
-  max-width: 500px;
-  margin: 40px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.submenu li {
+    padding: 8px 10px 8px 10px;
+    border-bottom: 1px solid #000;
 }
 
-textarea {
-  padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
+
+/* le footer pour toutes les pages sauf à propos */
+
+footer{
+    margin-top: 40rem;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
 }
 
-button {
-  background: #4b0000; /* rouge foncé */
-  color: #ffeaea; /* rouge très clair */
-  padding: 12px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 18px;
-  transition: 0.3s;
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    color: #ffffff;
 }
 
-button:hover {
-  background: #5e3bef;
+.footer-social-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
 }
 
-/* ACTUALITÉS – PAGE CARDS */
-.actus-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 40px;
+.btn-suivre{
+    text-decoration: none;
+    margin: 0;
+    color: #ffffff;
+    font-size: x-large;
 }
 
-.actu-card {
-  background: #ffeaea; /* rouge très clair */
-  padding: 20px;
-  border-radius: 20px;
-  width: 280px;
-  text-align: center;
-  box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
-  transition: 0.3s;
+.logo-instagram{
+    width: 4rem;
 }
 
-.actu-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
+.btn-to-top{
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 2rem;
+    text-align: center;
+    text-decoration: none;
 }
 
-.actu-img {
-  width: 100%;
-  border-radius: 15px;
-  margin-bottom: 15px;
+/* pour la page accueil */
+.accueil {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.actu-title {
-  font-size: 22px;
-  margin-bottom: 8px;
-  color: #4b0000; /* rouge foncé */
-}
-
-.actu-text {
-  font-size: 16px;
-  color: #444;
-}
-
-/* PAGES AVEC IMAGES À GAUCHE/DROITE */
-.img-container img {
-  width: 45%;
-  border-radius: 15px;
-  margin: 15px;
-  box-shadow: 0 5px 20px rgba(75, 0, 0, 0.35);
-}
-
-/* FOOTER */
-footer {
-  background: #4b0000; /* rouge foncé */
-  color: #ffeaea; /* rouge très clair */
-  margin-top: 50px;
-  padding: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.btn-a-propos,
-.btn-suivre {
-  color: #ffeaea; /* rouge très clair */
-  text-decoration: none;
-  font-size: 18px;
-  transition: 0.3s;
-}
-
-.btn-a-propos:hover,
-.btn-suivre:hover {
-  color: #c7a5ff;
-}
-
-.logo-instagram {
-  width: 50px;
-}
-
-/* Image centrée avec cadre rouge foncé */
 .accueil img {
-  display: block;
-  margin: 0 auto;
-  border: 6px solid #4b0000;
-  border-radius: 16px;
-  padding: 4px;
+    padding: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 400px;
+    margin-top: 400px;
+    opacity: 0.6;
+}
+/* Slogan sur l’image */
+.slogan {
+    position: absolute;
+    color: black;
+    font-size: 4rem;
+    text-align: left;
+
+    margin-top: 400px;
+    margin-right: 2%;
 }
 
-/* Boîtes pour les commentaires/avis */
-.commentaire, .comment, .avis {
-  background: #ffeaea;
-  border-left: 5px solid #4b0000;
-  padding: 12px 16px;
-  margin: 15px 0;
-  border-radius: 10px;
-  font-size: 0.95rem;
-  color: #4b0000;
+/* les blocks sous l'image dans accueil */
+.actualités {
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    margin: 5vh auto;
 }
 
-/* --- Positionner le texte L’ESSENCE DE LA MODE sous l’image --- */
-.titre-essence {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 1.8rem;
-  color: #4b0000;
-  font-weight: 600;
+.card {
+    border: 0.4rem solid #ffffff;
+    font-size: 1.4rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 22vw;
+    max-width: 20rem;
+    text-align: center;
+    color: black;
 }
 
-/* --- Centrer les titres + descriptions des sections --- */
-.section-centree,
-.section-centree p,
-.section-centree h2,
-.section-centree h3 {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  color: #4b0000;
+.card-title{
+    font-size: 2rem;
 }
 
-/* --- Encadré pour paragraphes Défilés / Actualité Mode --- */
-.encadre-rouge {
-  border: 3px solid #4b0000;
-  background: #ffeaea;
-  padding: 15px 20px;
-  width: fit-content;
-  margin: 15px auto;
-  border-radius: 20px; /* pas trop carré */
-  color: #4b0000;
+.card-text{
+    font-size: 1.3rem;
 }
 
-/* --- Espacement entre textes et titres Gucci / Chanel --- */
-.titre-defile {
-  margin-top: 25px;
-  margin-bottom: 8px;
-  color: #4b0000;
-  font-weight: 600;
+/* les avis */
+.avis {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin: 5vh auto 10vh;
+    flex-wrap: wrap;
 }
 
-/* --- Vidéo Chanel responsive --- */
+.avis-card {
+    background: #B2BAB9;
+    border: 0.2rem solid #ffffff;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    width: 35vw;
+    max-width: 25rem;
+    height: auto;
+    min-height: 7rem;
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+}
+
+
+/* pour la page actualités_mode */
+
+.actu-card{
+    border: #000000;
+    border-radius: 3rem;
+    background-color: rgba(0, 10, 10, 0.51);
+    width: 50vw;
+    max-width: 35rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.actu-card:nth-child(even) {
+    margin-left: auto;
+    margin-right: 8vw;
+}
+
+.actu-card:nth-child(odd) {
+    margin-right: auto;
+    margin-left: 8vw;
+}
+
+.actu-img{
+    border-radius: 20%;
+    width: 80%;
+    height: auto;
+    padding: 3rem 3rem 0 3rem;
+    transition: transform 0.3s ease;
+}
+
+.actu-img:hover{
+    transform: scale(1.05);
+
+}
+
+.actu-title{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.actu-text{
+    text-align: center;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.actualités-mode {
+    display: block;
+}
+
+.actualités-mode a {
+    color: black;
+    text-decoration: none;
+}
+
+.actualités-mode-text {
+    color: #000000;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+/* Bloc principal */
+.actualité-mode-block {
+    border: 0.4rem solid #6B7878;
+    background-color: rgba(38, 38, 38, 0.31);
+    padding: 2rem 8vw 0;
+    border-radius: 2rem;
+    width: 60vw;
+    max-width: 55rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6rem;
+}
+
+.actualité-mode-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.actualité-mode-block li {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* pour la page actu mode défilé */
+.section-description-actu-mode-defile{
+    text-align: left;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-left: 35%;
+    margin-right: 35%;
+
+}
+
+.block-article-defile {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 5%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-article-defile h2 {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.defile-top-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+
+.defile-texte-gauche,
+.defile-texte-droite,
+.defile-image-droite,
+.defile-image-gauche {
+    width: 50%;
+    margin-bottom: 20px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.content-gauche-image-droite {
+    flex-direction: row;
+}
+
+.content-image-gauche-texte-droite {
+    flex-direction: row;
+}
+
+
+.actu-img-defile {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.defile-texte-gauche p, .defile-texte-droite p {
+    font-size: 1em;
+    line-height: 1.7;
+}
+
+.defile-mini-image-interieur {
+    margin-top: 10px;
+    max-width: 120px;
+    float: right;
+    margin-left: 15px;
+}
+
+.defile-bottom-content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.defile-bottom-content p {
+    text-align: center;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.defile-chanel {
+    text-align: center;
+}
+
+.actu-img-defile-centree {
+    width: 80%;
+    margin: 0 auto 20px;
+    display: block;
+}
+
 .video-chanel {
-  display: block;
-  margin: 0 auto;
-  width: 90%;
-  max-width: 700px;
-  border: 5px solid #4b0000;
-  border-radius: 16px;
+ display: block;
+ margin: 0 auto;
+ width: 90%;
+ max-width: 700px;
+ border: 5px solid #b4ff00;
+ border-radius: 16px;
 }
 
-/* --- Bouton Remonter en haut --- */
-#top-btn {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  padding: 10px 14px;
-  border-radius: 50%;
-  font-size: 1.4rem;
-  background: #4b0000;
-  color: #ffeaea;
-  cursor: pointer;
-  border: none;
+.text-chanel {
+    font-size: x-large;
+    max-width: 700px;
+    margin: 0 auto;
 }
-/* --- Bouton Remonter en haut avec flèche --- */
+
+/* pour la page actualités Tendances intemporelles */
+
+.tendances-intemporelles-section {
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* encadré texte  */
+.introduction-tendance-box {
+    max-width: 900px;
+    margin: 4rem auto 6rem;
+    padding: 2.5rem 3rem;
+    border: 0.2rem solid rgba(111, 124, 124, 0.8);
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.introduction-tendance {
+    font-size: 1.6rem;
+    line-height: 2;
+    text-align: left;
+    color: #000000;
+    margin: 0;
+}
+
+.tendance-block {
+    margin-bottom: 8rem;
+}
+
+.tendance-titre {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: black;
+    text-align: center;
+}
+
+/* Conteneur images */
+.tendance-contenu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Encadrement chic des images */
+.tendance-item {
+    background: rgba(38, 38, 38, 0.10);
+    border: 0.2rem solid rgba(111, 124, 124, 0.8);
+    border-radius: 2rem;
+    padding: 1rem;
+    max-width: 330px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(255,255,255,0.35);
+    transition: transform 0.3s ease;
+}
+
+.tendance-item:hover {
+    transform: scale(1.02);
+}
+
+.tendance-img {
+    display: block;
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+/* OLD MONEY  */
+.tendance-grid--oldmoney {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.tendance-item--large {
+    max-width: 420px;
+}
+
+.tendance-item--large .tendance-img {
+    height: 520px;
+}
+
+.tendance-colonne {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* SPORTSWEAR  */
+.tendance-grid--3 .tendance-item {
+    max-width: 300px;
+}
+
+.tendance-grid--3 .tendance-img {
+    height: 340px;
+}
+@media (max-width: 900px) {
+    .introduction-tendance {
+        width: 90%;
+        text-align: center;
+    }
+
+    .tendance-img {
+        height: 320px;
+    }
+
+    .tendance-item--large .tendance-img {
+        height: 380px;
+    }
+}
+
+
+.collab-page{
+    width: min(1200px, 95%);
+    margin: 0 auto;
+}
+
+/* Intro : tu voulais garder l’encadré */
+.collab-intro-box{
+    width: min(900px, 92%);
+    margin: 2rem auto 5rem auto;
+}
+
+.section-description-collaboration{
+    margin: 0;
+    border: 0.25rem solid rgba(111, 124, 124, 0.85);
+    border-radius: 2rem;
+    padding: 2rem 2.5rem;
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 12px 30px rgba(255,255,255,0.5);
+
+    font-size: 1.8rem;
+    line-height: 2;
+    color: #151515;
+}
+
+/* Articles : pas de cadre, juste de l’air */
+.collaboration-article-bloc{
+    width: 100%;
+    margin: 0 auto 7rem auto;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Titres */
+.collab-title{
+    text-align: center;
+    font-size: 2.7rem;
+    margin: 0 0 2.5rem 0;
+    letter-spacing: 0.02em;
+}
+
+/* Ligne texte + images */
+.collab-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* Inversion (Bloc 2) */
+.collab-row.reverse{
+    direction: rtl;
+}
+.collab-row.reverse > *{
+    direction: ltr;
+}
+
+/* Texte : style magazine */
+.collab-text{
+    font-size: 1.7rem;
+    line-height: 2.05;
+    color: #171717;
+    max-width: 55ch;
+}
+
+.collab-text p{
+    margin: 0;
+}
+
+/* Images (bloc 1 et 2) */
+.collab-images{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.collab-images img{
+    width: min(430px, 95%);
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    box-shadow: 0 18px 45px rgba(255,255,255,0.55);
+}
+
+/* Texte du bas */
+.collab-bottom{
+    margin: 2.8rem auto 0 auto;
+    font-size: 1.6rem;
+    line-height: 2.05;
+    color: #191919;
+    max-width: 70ch;
+    text-align: left;
+}
+
+/* Bloc LV / Kusama */
+.collab-center{
+    width: min(1000px, 95%);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.collab-text-center{
+    font-size: 1.7rem;
+    line-height: 2.05;
+    color: #171717;
+    max-width: 70ch;
+    margin: 0 auto 2rem auto;
+}
+
+/* ✅ LV : 2 images sur une même ligne */
+.collab-images.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    margin: 2.5rem 0;
+    flex-wrap: wrap;
+}
+
+.collab-images.center img{
+    width: min(420px, 48%);
+    height: auto;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+    .collab-row{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .collab-title{
+        font-size: 2.2rem;
+    }
+
+    .collab-text,
+    .collab-text-center{
+        font-size: 1.35rem;
+    }
+
+    .collab-bottom{
+        font-size: 1.25rem;
+    }
+
+    /* LV en mobile : images l’une sous l’autre */
+    .collab-images.center{
+        flex-direction: column;
+    }
+
+    .collab-images.center img{
+        width: 100%;
+    }
+}
+
+
+
+/* pour la page looks iconiques*/
+
+.looks-iconiques {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    font-family: "Playfair Display", "Georgia", serif;
+    color: #020800;
+}
+
+/* Alternance gauche / droite */
+.look:nth-child(even) {
+    align-self: flex-end;
+}
+
+.look:nth-child(odd) {
+    align-self: flex-start;
+}
+
+/* Bloc look */
+.look {
+    width: 85%;
+    background: rgba(164, 167, 148, 0.75);
+    padding: 3rem;
+    border-radius: 4rem;
+    box-shadow: 0 20px 45px rgba(255,255,255,0.6);
+}
+
+/* Images */
+.images-look {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.img-look {
+    width: 45%;
+    max-width: 420px;
+
+    border-radius: 1.8rem;
+    border: 3px solid #031c49;
+    padding: 6px;
+    background: rgba(255,255,255,0.25);
+
+    box-shadow: 0 18px 40px rgba(255,255,255,0.7);
+}
+
+.img-look:hover {
+    transform: scale(1.03);
+}
+
+/* Titres */
+.look h2 {
+    font-size: 2rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+/* Texte descriptif */
+.look h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.8;
+    text-align: center;
+    color: #161d00;
+}
+
+/* Texte final explicatif */
+.text-look-iconique {
+    margin: 6rem auto 0;
+    max-width: 700px;
+    font-family: "Georgia", "Playfair Display", serif;
+    font-size: 1.2rem;
+    line-height: 1.9;
+    text-align: center;
+    background: rgba(113, 129, 129, 0.8);
+    padding: 3rem;
+    border-radius: 4rem;
+    border: 1px solid #031c49;
+}
+
+
+/* pour la page tendances */
+
+.tendances-ligne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+    margin-bottom: 12vh;
+}
+
+.tendance-img {
+    height: 90vh;
+    width: auto;
+}
+
+.pantone-colonne {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.square {
+    width: 10vw;
+    height: auto;
+}
+
+.tendances-title {
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+    color: black;
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+.tendances-text{
+    color: #000000;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.tendances-block{
+    border: 0.4rem solid #6B7878;
+    background-color: rgba(38, 38, 38, 0.31);
+    padding: 2rem 8vw 0;
+    border-radius: 2rem;
+    width: 60vw;
+    max-width: 55rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6rem;
+}
+
+.tendances-ligne:nth-child(even) {
+    margin-left: auto;
+    margin-right: 20vw;
+}
+
+.tendances-ligne:nth-child(odd) {
+    margin-right: auto;
+    margin-left: 20vw;
+}
+
+/* pour la page créateurs & marques */
+.titre-pages.createurs-marques {
+    text-align: left;
+    margin-left: 20rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.marque-cercle h3 {
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.marques-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    padding: 5rem 0;
+
+}
+
+.marque-cercle:nth-child(even) {
+    margin-right: auto;
+    margin-left: -10rem;
+    padding-left: 5rem;
+}
+
+.marque-cercle:nth-child(odd) {
+    margin-left: auto;
+    margin-right: -10rem;
+    padding-right: 5rem;
+}
+
+
+.marque-cercle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    /* pour l'effet de cercle */
+    border-radius: 50%;
+    width: 60rem;
+    height: 60rem;
+    text-align: center;
+    background: #BEB9BB;
+    box-shadow: #BEB9BB 0px 0px 100px;
+}
+
+.marque-cercle:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: transform 0.4s ease-in-out;
+    box-shadow: #fff 0px 0px 100px;
+}
+
+
+.marque-cercle h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: black;
+}
+
+.cercle-contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.marque-img {
+    max-width: 100%;
+    width: 25rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Styles Spécifiques pour la page Maisons de Luxe */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+}
+
+.titre-pages, h2, h1 {
+    color: #000000;
+}
+
+.titre-luxe {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.introduction-luxe {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto 50px;
+    font-size: 1.2em;
+}
+
+.maison-luxe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+    padding: 20px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.defile-top-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.defile-texte-gauche {
+    width: 35%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description-luxe {
+    font-size: 1.6em;
+    line-height: 1.8;
+}
+
+.defile-image-droite.marque-cercle {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marque-cercle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    border-radius: 50%;
+    width: 60rem;
+    height: 60rem;
+    text-align: center;
+    background: #BEB9BB;
+    box-shadow: #BEB9BB 0px 0px 100px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.marque-cercle:nth-child(even) {
+    margin-right: auto;
+    margin-left: -10rem;
+    padding-left: 5rem;
+}
+
+.marque-cercle:nth-child(odd) {
+    margin-left: auto;
+    margin-right: -10rem;
+    padding-right: 5rem;
+}
+
+.dior-section .contenu-principal-dior.marque-cercle {
+    display: block;
+    width: 70rem;
+    height: 70rem;
+    max-width: 90%;
+}
+
+.dior-section .defile-top-content {
+    display: block;
+    width: 100%;
+}
+
+.dior-section .titre-marque-dior {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    z-index: 10;
+}
+
+.dior-section .defile-texte-gauche {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 45%;
+    z-index: 5;
+    text-align: left;
+    background-color: transparent;
+    padding: 0;
+}
+
+.dior-section .logo-luxe-box {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    z-index: 5;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dior-section .luxe-logo {
+    width: 100px;
+    height: auto;
+}
+
+.dior-section .image-circulaire-container {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.dior-section .image-mannequin-dior {
+    top: 30%;
+    right: 5%;
+    width: 45%;
+    height: 70%;
+}
+
+.dior-section .image-robe-dior {
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    height: 45%;
+}
+
+.luxe-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.maison-luxe:not(.dior-section) .defile-image-droite.marque-cercle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 50px;
+}
+
+.maison-luxe:not(.dior-section) .image-circulaire-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+/* pour la page à_propos */
+
+form {
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.img-a-propos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-a-propos{
+    text-align: center;
+    color: #000000;
+    margin: 4rem auto;
+    border: 0.3rem solid #6B7878;
+    padding: 2rem 5vw;
+    border-radius: 2rem;
+    width: 45vw;
+    max-width: 40rem;
+    font-size: 1.5rem;
+}
+
+.btn-a-propos{
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    width: 10%;
+    font-size: 1.5rem;
+    background: #ffffff;
+    color: #000000;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+form button{
+    display: block;
+    width: 20%;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    background: #ffffff;
+    color: #000000;
+    font-size: 1.4rem;
+    border-radius: 0.8rem;
+    text-align: center;
+}
+
+form button:hover{
+    background: #DADADA;
+}
+
+form label {
+    font-weight: bold;
+    color: #000000;
+}
+
+.titre-feedback{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.feedback{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+form textarea {
+    padding: 1rem;
+    border: 0.4rem solid #fff;
+    border-radius: 1rem;
+    font-size: 1rem;
+    width: 40vw;
+    max-width: 35rem;
+    background-color: transparent;
+    resize: vertical;
+}
+
+/* Bouton pour remonter en haut */
+
 #top-btn {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  font-size: 1.8rem;
-  background: #4b0000; /* rouge foncé */
-  color: #ffeaea; /* très clair */
-  cursor: pointer;
-  border: none;
-  text-align: center;
-  line-height: 50px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-  transition: 0.3s ease;
-  z-index: 1000;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    background: #b4ff00;
+    color: #001515;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(255,255,255,0.3);
+    transition: 0.3s ease;
+    z-index: 9999;
+
 }
 
 #top-btn:hover {
-  background: #6b0000;
-  transform: scale(1.1);
+    background: #94d800;
+    transform: scale(1.1);
 }
 
-/* --- Assurer que le texte sous l’image est centré --- */
-.accueil .titre-essence {
-  text-align: center;
-  font-size: 2rem;
-  color: #4b0000;
-  font-weight: 700;
-  margin: 20px auto 40px auto;
+
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #b4ff00;
+    color: #001515;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(255,255,255,0.3);
+    transition: 0.3s ease;
+    z-index: 1000;
 }
 
+#theme-toggle:hover {
+    background-color: #94d800;
+    transform: scale(1.05);
+}
