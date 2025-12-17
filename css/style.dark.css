@@ -69,7 +69,7 @@ body {
 
 /* 1. Menu Principal (Masqué par défaut) */
 .menu-liste {
-    /* Style de base du volet */
+    
     list-style: none; 
     padding: 0; 
     position: fixed; 
@@ -129,14 +129,14 @@ body {
     background: #ccc;
 }
 
-/* Sous-liste (Masquée par défaut) */
+/* Sous-liste  */
 .submenu {
     list-style: none;
     padding: 0;
     margin-left: 20px;
     
     
-    /* Technique pour masquer/animer le sous-menu */
+    /* animer le sous-menu */
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
@@ -144,7 +144,7 @@ body {
 
 /* Affichage du Sous-menu */
 .submenu.submenu-ouvert {
-    max-height: 300px; /* Grande valeur assurant l'affichage */
+    max-height: 300px; 
     transition: max-height 0.5s ease-in;
 }
 
@@ -155,7 +155,7 @@ body {
 
 /* Affichage du Sous-menu */
 .submenu.submenu-ouvert {
-    max-height: 300px; /* Grande valeur assurant l'affichage */
+    max-height: 300px; 
     transition: max-height 0.5s ease-in;
 }
 
@@ -544,7 +544,7 @@ footer{
     flex-wrap: wrap;
 }
 
-/* Encadrement chic des images */
+/* Encadrement des images */
 .tendance-item {
     background: rgba(217, 217, 217, 0.10);
     border: 0.2rem solid rgba(148, 135, 135, 0.8);
@@ -620,7 +620,7 @@ footer{
   margin: 0 auto;
 }
 
-/* Intro : tu voulais garder l’encadré */
+/* Intro  */
 .collab-intro-box{
   width: min(900px, 92%);
   margin: 2rem auto 5rem auto;
@@ -634,12 +634,12 @@ footer{
   background: rgba(0,0,0,0.25);
   box-shadow: 0 12px 30px rgba(0,0,0,0.5);
 
-  font-size: 1.8rem;      /* texte + grand */
+  font-size: 1.8rem;      
   line-height: 2;
   color: #eaeaea;
 }
 
-/* Articles : pas de cadre, juste de l’air */
+/* Articles  */
 .collaboration-article-bloc{
   width: 100%;
   margin: 0 auto 7rem auto;
@@ -675,7 +675,7 @@ footer{
 
 /* Texte : style magazine */
 .collab-text{
-  font-size: 1.7rem;      /* texte + grand */
+  font-size: 1.7rem;      
   line-height: 2.05;
   color: #e8e8e8;
   max-width: 55ch;
@@ -705,7 +705,7 @@ footer{
 /* Texte du bas */
 .collab-bottom{
   margin: 2.8rem auto 0 auto;
-  font-size: 1.6rem;      /* texte + grand */
+  font-size: 1.6rem;      
   line-height: 2.05;
   color: #e6e6e6;
   max-width: 70ch;
@@ -720,14 +720,14 @@ footer{
 }
 
 .collab-text-center{
-  font-size: 1.7rem;      /* texte + grand */
+  font-size: 1.7rem;      
   line-height: 2.05;
   color: #e8e8e8;
   max-width: 70ch;
   margin: 0 auto 2rem auto;
 }
 
-/* ✅ LV : 2 images sur une même ligne */
+/* LV : 2 images  */
 .collab-images.center{
   display: flex;
   flex-direction: row;
@@ -735,7 +735,7 @@ footer{
   align-items: flex-start;
   gap: 2.5rem;
   margin: 2.5rem 0;
-  flex-wrap: wrap; /* au cas où l’écran est trop petit */
+  flex-wrap: wrap;
 }
 
 .collab-images.center img{
@@ -763,7 +763,7 @@ footer{
     font-size: 1.25rem;
   }
 
-  /* LV en mobile : images l’une sous l’autre */
+  /* mobile */
   .collab-images.center{
     flex-direction: column;
   }
@@ -811,7 +811,7 @@ footer{
     display: flex;
     justify-content: center;
     gap: 2rem;
-    flex-wrap: wrap; /* mobile friendly */
+    flex-wrap: wrap;
 }
 
 .img-look {
@@ -933,10 +933,10 @@ footer{
     margin-bottom: 10rem;
 }
 .marque-cercle h3 {
-    font-size: 3rem; /* augmenter la taille */
-    color: white;    /* mettre le texte en blanc */
-    margin-bottom: 2rem; /* espace sous le titre */
-    text-align: center;  /* centrer le texte dans le cercle */
+    font-size: 3rem; 
+    color: white;    
+    margin-bottom: 2rem; 
+    text-align: center;  
 }
 
 .marques-container {
@@ -1005,15 +1005,12 @@ footer{
     margin-bottom: 1rem;
 }
 
-/* =========================
-   MAISONS DE LUXE (PRO)
-   scope : body.page-luxe
-========================= */
+/*  MAISONS DE LUXE  */
 
 .page-luxe .titre-pages { display: none; }
 .page-luxe .introduction-luxe { display: none; }
 
-/* Hero comme sur l'image */
+
 .page-luxe .luxe-hero{
   padding: 4.5rem 7vw 2.5rem;
 }
@@ -1035,7 +1032,7 @@ footer{
   font-family: "Brush Script MT", "Segoe Script", "Lucida Handwriting", cursive;
 }
 
-/* DIOR layout (texte gauche + cercle droite) */
+/* DIOR layout */
 .page-luxe .luxe-dior{
   position: relative;
   display: grid;
@@ -1061,7 +1058,7 @@ footer{
   color: #f2f2f2;
 }
 
-/* Gros cercle Dior */
+
 .page-luxe .luxe-dior-right{
   display: flex;
   justify-content: center;
@@ -1098,7 +1095,7 @@ footer{
   gap: 1rem;
 }
 
-/* Dior : logo + 2 images (comme ta maquette) */
+/* Dior : logo + 2 images  */
 .page-luxe .luxe-circle-grid--dior{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -1139,7 +1136,7 @@ footer{
   grid-row: 2;
 }
 
-/* Bands (les sections luxury-band) */
+/* Bands */
 .page-luxe .luxury-band{
   width: 100%;
   padding: 5.5rem 7vw;
@@ -1342,7 +1339,7 @@ form textarea {
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: #fff; /* rouge foncé */
+    background-color: #fff; 
     color: #000;
     padding: 10px 20px;
     border: none;
