@@ -7,8 +7,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-<<<<<<< HEAD
-=======
 .lune-toggle-btn {
     background: none; /* Supprime le fond par défaut */
     border: none;    /* Supprime la bordure */
@@ -24,7 +22,6 @@
 
 
 /*  Liens du menu de navigation dans le header ====== */
->>>>>>> 113a3c077a516abba71c8f1864ef12802bc4e5d0
 nav a{
     color:#fbe9ff;                    
     margin-right: 2rem;
@@ -89,9 +86,6 @@ header {
   color: #c7a5ff;
 }
 
-<<<<<<< HEAD
-/*  Titres principaux des pages */
-=======
 
 /*  Pour le menu burger et les sous-menus  */
 
@@ -175,17 +169,13 @@ header {
     list-style: none;
     padding: 0;
     margin-left: 20px;
-    
-    
-    /* Technique pour masquer/animer le sous-menu */
-    max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
 }
 
 /* Affichage du Sous-menu */
 .submenu.submenu-ouvert {
-    max-height: 300px; /* Grande valeur assurant l'affichage */
+    max-height: 300px; 
     transition: max-height 0.5s ease-in;
 }
 
@@ -194,8 +184,7 @@ header {
     border-bottom: 1px solid #fff;
 }
 
-/*  Titres principaux des pages (ex : h1 de chaque page) ====== */
->>>>>>> 113a3c077a516abba71c8f1864ef12802bc4e5d0
+/*  Titres principaux des pages */
 .titre-pages{
     font-size: 3rem;
     text-align: center;
@@ -644,8 +633,70 @@ section {
     margin-right: auto;
     margin-left: 20vw;
 }
+/* 5. page createurs & marques */
+.marques-container {
+    display: flex;               
+    justify-content: center;     
+    gap: 4rem;                   
+    padding: 5rem 0;             
+    flex-wrap: wrap;             
+}
+.marque-cercle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 
-/* 5. Page à_Propos */
+    /* Forme carrée */
+    border-radius: 1.5rem; 
+    width: 25rem;
+    height: 25rem;
+    text-align: center;
+
+    /* Couleurs */
+    background: #ffeaea; 
+    color: #4b0000;      
+
+    /* Ombre */
+    box-shadow: 0 10px 25px rgba(75, 0, 0, 0.25);
+
+    /* Transition hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.marque-cercle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(75, 0, 0, 0.4);
+}
+
+/* Titres */
+.marque-cercle h3 {
+    font-size: 2.2rem; 
+    color: #4b0000;   
+    margin-bottom: 1.5rem;
+}
+
+/* Contenu de l'image */
+.cercle-contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+/* Image */
+.marque-img {
+    max-width: 100%;
+    width: 12rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+
+
+/* 6. Page à_Propos */
 
 /* titre de à propos */
 .titre-pages {
