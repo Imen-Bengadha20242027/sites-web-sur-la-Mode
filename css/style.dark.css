@@ -51,6 +51,7 @@ body {
     cursor: pointer;
     padding: 10px;
     color: #ccc;
+    margin-left: 15rem;
 }
 
 /* 1. Menu Principal (Masqué par défaut) */
@@ -60,7 +61,7 @@ body {
     padding: 0;
     margin: 0;
     position: fixed; 
-    gap : 1rem;
+    top: 20%;
     left: 80%;
     width: 100%;
     background-color: #fff; 
