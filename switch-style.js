@@ -29,6 +29,24 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         
     });
+    
+    const monFormulaire = document.getElementById('Formulaire');
+    if (monFormulaire) {
+        monFormulaire.addEventListener('submit', function(event) {
+            event.preventDefault(); // Empêche l'envoi "sale" avec message=
+
+            // On récupère le contenu du textarea
+            const contenu = document.getElementById('message').value;
+            const destinataire = "iconix@gmail.com";
+            const sujet = "Avis ICONIX";
+
+            // On construit le lien mailto avec SEULEMENT le contenu dans le body
+            const mailtoLink = `mailto:${destinataire}?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(contenu)}`;
+
+            // On déclenche l'ouverture de la boîte mail
+            window.location.href = mailtoLink;
+        });
+    }
 });
 
 
