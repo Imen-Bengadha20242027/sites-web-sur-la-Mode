@@ -4,7 +4,7 @@
         <title>ICONIX</title>
         <meta charset="utf-8">
         <link rel="icon" href="css/images/favicon.ico">
-
+        <script src="switch-style.js"></script>
         <link rel="stylesheet" href="css/style.dark.css" id="theme-style">
     </head>
     <body>
@@ -20,8 +20,48 @@
                     <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
                     <li><a href="tendances.html">Tendances</a></li>
                     <li><a href="createur_marques.html">Créateurs & Marques</a></li>
+                    <li class="icone-nav">
+                        <button id="luneToggle" class="lune-toggle-btn">
+                            <img src="css/images/lune_mode_claire_2.png" alt="Changer le mode d'affichage" class="lune-mode">
+                        </button>
+                    </li>
+                    <nav class="navigation-principale">
+                        <button id="toggleBtn" onclick="toggleMenu()" class="burger-toggle" aria-expanded="false">
+                            ☰
+                        </button>
+
+                        <ul id="menuListe" class="menu-liste">
+                            <li><a href="index.html">Accueil</a></li>
+
+                            <li class="has-submenu">
+                                <a href="actualités_mode.html">Actualités Mode</a>
+                                <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
+                                <ul class="submenu">
+                                    <li><a href="actualités_mode_défilé.html">Défilés</a></li>
+                                    <li><a href="actualités_mode_tendances_intemporelles.html">Tendances Intemporelles</a></li>
+                                    <li><a href="actualités_mode_collaborations_partenariats.html">Collaborations & Partenariats</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li><a href="tendances.html">Tendances</a></li>
+                            <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+
+                            <li class="has-submenu">
+                                <a href="createur_marques.html">Créateurs & Marques</a>
+                                <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
+                                <ul class="submenu">
+                                    <li><a href="createurs_marques_Maison_de_luxe.html">Maison de Luxe</a></li>
+                                    <li><a href="createur_marques_marques_modernes.html">Marques Modernes</a></li>
+                                    <li><a href="createurs_marques_marques_streetwear_populaire.html">Marques Streetwear Populaire</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="a_propos.html">À Propos</a></li>
+                        </ul>
+                    </nav>
                 </ul>
             </nav>
+
         </header>
 
         <section>
@@ -66,6 +106,5 @@
             <button id="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'});">⬆</button>
 
         </footer>
-        <script src="javaScript/switch-style.js"></script>
     </body>
 </html>
