@@ -5,7 +5,7 @@
     height: 4vw;
     justify-content: space-between;
     align-items: center;  
-    background: linear-gradient(#242121 7%, #776F6F 38%, #9A9595 51%, #716969 65%, #100E0E 95%);
+    background: linear-gradient(#000 7%, #776F6F 38%, #9A9595 51%, #716969 65%, #100E0E 95%);
     list-style: none;
     text-decoration: none;
 }
@@ -29,7 +29,7 @@ body {
     color: white;
     position: relative;
     font-family: "Times New Roman", Times, serif;
-    background: linear-gradient(#080202 52%, #959191 100%);
+    background: linear-gradient(#000 52%, #959191 100%);
     overflow-x: hidden;
 }
 
@@ -59,9 +59,9 @@ body {
     list-style: none; 
     padding: 0;
     margin: 0;
-    position: absolute; 
-    top: 50px; 
-    left: 0;
+    position: fixed; 
+    gap : 1rem;
+    left: 80%;
     width: 100%;
     background-color: #fff; 
     z-index: 1000;
