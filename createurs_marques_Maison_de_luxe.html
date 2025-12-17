@@ -1,242 +1,243 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>ICONIX</title>
-        <meta charset="UTF-8">
-        <link rel="icon" href="css/images/favicon.ico">
-        <script src="switch-style.js"></script>
-        <link rel="stylesheet" href="css/style.dark.css" id="theme-style"> 
-    </head>
-    <body>
-        <button id="theme-toggle">Changer le style</button>
-        <header>
-            <div class="title">
-                <h1>ICONIX</h1>
-            </div>
-            <nav>
-                <ul class="bandeau">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="actualités_mode.html">Actualités Mode</a></li>
-                    <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
-                    <li><a href="tendances.html">Tendances</a></li>
-                    <li><a href="createur_marques.html">Créateurs & Marques</a></li>
-                    <li class="icone-nav">
-                        <button id="luneToggle" class="lune-toggle-btn">
-                            <img src="css/images/lune_mode_claire_2.png" alt="Changer le mode d'affichage" class="lune-mode">
-                        </button>
-                    </li>
-                    <nav class="navigation-principale">
-                        <button id="toggleBtn" onclick="toggleMenu()" class="burger-toggle" aria-expanded="false">
-                            ☰
-                        </button>
+<head>
+  <title>Maisons de Luxe - ICONIX</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="css/images/favicon.ico">
+  <script src="switch-style.js"></script>
+  <link rel="stylesheet" href="css/style.dark.css" id="theme-style">
+</head>
 
-                        <ul id="menuListe" class="menu-liste">
-                            <li><a href="index.html">Accueil</a></li>
+<body class="page-luxe">
+  <button id="theme-toggle">Changer le style</button>
 
-                            <li class="has-submenu">
-                                <a href="actualités_mode.html">Actualités Mode</a>
-                                <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
-                                <ul class="submenu">
-                                    <li><a href="actualités_mode_défilé.html">Défilés</a></li>
-                                    <li><a href="actualités_mode_tendances_intemporelles.html">Tendances Intemporelles</a></li>
-                                    <li><a href="actualités_mode_collaborations_partenariats.html">Collaborations & Partenariats</a></li>
-                                </ul>
-                            </li>
-                            
-                            <li><a href="tendances.html">Tendances</a></li>
-                            <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+  <header>
+    <div class="title">
+      <h1>ICONIX</h1>
+    </div>
 
-                            <li class="has-submenu">
-                                <a href="createur_marques.html">Créateurs & Marques</a>
-                                <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
-                                <ul class="submenu">
-                                    <li><a href="createurs_marques_Maison_de_luxe.html">Maison de Luxe</a></li>
-                                    <li><a href="createur_marques_marques_modernes.html">Marques Modernes</a></li>
-                                    <li><a href="createurs_marques_marques_streetwear_populaire.html">Marques Streetwear Populaire</a></li>
-                                </ul>
-                            </li>
+    <nav>
+      <ul class="bandeau">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="actualités_mode.html">Actualités Mode</a></li>
+        <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+        <li><a href="tendances.html">Tendances</a></li>
+        <li><a href="createur_marques.html">Créateurs & Marques</a></li>
 
-                            <li><a href="a_propos.html">À Propos</a></li>
-                        </ul>
-                    </nav>
+        <li class="icone-nav">
+          <button id="luneToggle" class="lune-toggle-btn">
+            <img src="css/images/lune_mode_claire_2.png" alt="Changer le mode d'affichage" class="lune-mode">
+          </button>
+        </li>
+
+        <!-- Menu burger  -->
+        <li class="nav-burger">
+          <nav class="navigation-principale">
+            <button id="toggleBtn" onclick="toggleMenu()" class="burger-toggle" aria-expanded="false">☰</button>
+
+            <ul id="menuListe" class="menu-liste">
+              <li><a href="index.html">Accueil</a></li>
+
+              <li class="has-submenu">
+                <a href="actualités_mode.html">Actualités Mode</a>
+                <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
+                <ul class="submenu">
+                  <li><a href="actualités_mode_défilé.html">Défilés</a></li>
+                  <li><a href="actualités_mode_tendances_intemporelles.html">Tendances Intemporelles</a></li>
+                  <li><a href="actualités_mode_collaborations_partenariats.html">Collaborations & Partenariats</a></li>
                 </ul>
-            </nav>
+              </li>
 
-        </header>
-        <h1 class="titre-pages "> Maisons de Luxe </h1>
-        <p class="introduction-luxe"> Découvrez les maisons de luxe qui ont façonné l’histoire de la mode, des icônes intemporelles aux créateurs visionnaires dont l’héritage continue d’inspirer les tendances d’aujourd’hui.</p>
-        <section class="maison-luxe dior-section">
-            <h2 class="titre-marque-dior"> Christian Dior </h2>
-            <div class="defile-top-content">
-                <div class="contenu-principal-dior marque-cercle">
-                    <div class="defile-texte-gauche">
-                        <div class="description-luxe description-dior">
-                            <p> <strong>Christian Dior</strong> révolutionne la mode en 1947 avec le **« New Look »**, une silhouette féminine aux tailles marquées et jupes volumineuses. Son style raffiné et élégant a redéfini la haute couture française et continue d’influencer la mode moderne. </p>
-                        </div>
-                    </div>
-                </div>
+              <li><a href="tendances.html">Tendances</a></li>
+              <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+
+              <li class="has-submenu">
+                <a href="createur_marques.html">Créateurs & Marques</a>
+                <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
+                <ul class="submenu">
+                  <li><a href="createurs_marques_Maison_de_luxe.html">Maison de Luxe</a></li>
+                  <li><a href="createur_marques_marques_modernes.html">Marques Modernes</a></li>
+                  <li><a href="createurs_marques_marques_streetwear_populaire.html">Marques Streetwear Populaire</a></li>
+                </ul>
+              </li>
+
+              <li><a href="a_propos.html">À Propos</a></li>
+            </ul>
+          </nav>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Header page  -->
+    <section class="luxe-hero">
+      <h1 class="luxe-title">Maisons de Luxe</h1>
+      <p class="luxe-intro">
+        Découvrez les maisons de luxe qui ont façonné l’histoire de la mode, des icônes intemporelles
+        aux créateurs visionnaires dont l’héritage continue d’inspirer les tendances d’aujourd’hui.
+      </p>
+    </section>
+
+    <!-- DIOR  -->
+    <section class="luxe-dior">
+      <div class="luxe-dior-left">
+        <h2 class="luxe-brand-left">Christian Dior</h2>
+        <p class="luxe-text-left">
+          <strong>Christian Dior</strong> révolutionne la mode en 1947 avec le « New Look », une silhouette féminine
+          aux tailles marquées et jupes volumineuses. Son style raffiné et élégant a redéfini la haute couture française
+          et continue d’influencer la mode moderne.
+        </p>
+      </div>
+
+      <div class="luxe-dior-right">
+        <div class="luxe-circle">
+          <h3 class="luxe-circle-title">Christian Dior</h3>
+
+          <div class="luxe-circle-grid luxe-circle-grid--dior">
+            <div class="luxe-tile luxe-tile--logo">
+              <img src="css/images/Dior_Luxe.png" alt="Logo Dior">
             </div>
-        </section>
 
-            <!-- COCO CHANEL -->
-            <section class="luxury-band">
-                <div class="band-content">
-                    <div class="band-text">
-                        <h2 class="brand-name">Coco Chanel<br>Maison Chanel</h2>
-                        <p class="brand-description">
-                            Coco Chanel libère la femme des corsets et impose un style simple, chic et intemporel. Elle est à l'origine du tailleur en tweed, de la petite robe noire et du parfum Chanel N°5, devenus des symboles du luxe français.
-                        </p>
-                        <img src="css/images/Maison L logo chanel Bloc 2.png" alt="Logo Chanel" class="brand-logo">
-                    </div>
-                    <div class="band-images">
-                        <div class="image-circle">
-                            <div class="circle-image">
-                                <img src="css/images/Maison L women black robe Bloc 2.png" alt="Coco Chanel Look 1">
-                            </div>
-                            <div class="circle-image">
-                                <img src="css/images/Maison L chapeaux noir Bloc 2.png" alt="Coco Chanel Look 2">
-                            </div>
-                            <div class="circle-image">
-                                <img src="css/images/Maison L women black robe Bloc 2.png" alt="Coco Chanel Look 3">
-                            </div>
-                            <div class="circle-image">
-                                <img src="css/images/Maison L chapeaux noir Bloc 2.png" alt="Coco Chanel Look 4">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- YVES SAINT LAURENT -->
-            <section class="luxury-band">
-                <div class="band-content">
-                    <div class="band-text">
-                        <h2 class="brand-name">Yves Saint Laurent<br>Maison YSL</h2>
-                        <p class="brand-description">
-                            Yves Saint Laurent révolutionne la mode avec des pièces emblématiques comme le smoking féminin, la saharienne et les robes Mondrian. Son style audacieux mêle art, liberté et sophistication.
-                        </p>
-                        <img src="css/images/Maison L yves saint laurent logo Bloc 3.png" alt="Logo YSL" class="brand-logo">
-                    </div>
-                    <div class="band-images">
-                        <div class="image-circle">
-                            <div class="circle-image">
-                                <img src="css/images/Maison L women black robe Bloc 2.png" alt="YSL Look 1">
-                            </div>
-                            <div class="circle-image">
-                                <img src="css/images/Maison L chapeaux noir Bloc 2.png" alt="YSL Look 2">
-                            </div>
-                            <div class="circle-image">
-                                <img src="css/images/Maison L women black robe Bloc 2.png" alt="YSL Look 3">
-                            </div>
-                            <div class="circle-image">
-                                <img src="css/images/Maison L chapeaux noir Bloc 2.png" alt="YSL Look 4">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SALVATORE FERRAGAMO -->
-            <section class="luxury-band">
-                <div class="band-content">
-                    <div class="band-text">
-                        <h2 class="brand-name">Salvatore<br>Ferragamo</h2>
-                        <p class="brand-description">
-                            Salvatore Ferragamo, surnommé « le cordonnier des stars », devient célèbre pour ses créations innovantes et son approche artisanale. Sa maison représente l'élégance italienne et l'innovation en matière de design.
-                        </p>
-                        <img src="css/images/Salvatore_Ferragamo.png" alt="Logo Ferragamo" class="brand-logo">
-                    </div>
-                    <div class="band-images">
-                        <div class="image-circle">
-                            <div class="circle-image">
-                                <img src="css/images/Salvatore_Ferragamo_1.png" alt="Ferragamo Look 1">
-                            </div>
-                            <div class="circle-image">
-                                <img src="css/images/Salvatore_Ferragamo_2.png" alt="Ferragamo Look 2">
-                            </div>
-                            <div class="circle-image">
-                                <img src="css/images/image_ferragamo_3.png" alt="Ferragamo Look 3">
-                            </div>
-                            <div class="circle-image">
-                                <img src="css/images/image_ferragamo_4.png" alt="Ferragamo Look 4">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- HERMÈS -->
-            <section class="luxury-band">
-                <div class="band-content">
-                    <div class="band-text">
-                        <h2 class="brand-name">Thierry Hermès<br>Maison Hermès</h2>
-                        <p class="brand-description">
-                            Thierry Hermès fonde une maison d'exception dédiée à l'artisanat et au luxe. Réputée pour la perfection de ses cuirs, ses foulards iconiques et ses pièces intemporelles, Hermès incarne un raffinement discret et une qualité incomparable.
-                        </p>
-                        <img src="css/images/logo_hermes_paris.png" alt="Logo Hermès" class="brand-logo">
-                    </div>
-                    <div class="band-images">
-                        <div class="image-circle">
-                            <div class="circle-image">
-                                <img src="css/images/sac_hermes.jpg" alt="Hermès Look 1">
-                            </div>
-                            <div class="circle-image">
-                                <img src="css/images/hermes_1.jpg" alt="Hermès Look 2">
-                            </div>
-                            <div class="circle-image">
-                                <img src="css/images/hermes_2.png" alt="Hermès Look 3">
-                            </div>
-                            <div class="circle-image">
-                                <img src="css/images/image_hermes_4.png" alt="Hermès Look 4">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- LOUIS VUITTON -->
-            <section class="luxury-band">
-                <div class="band-content">
-                    <div class="band-text">
-                        <h2 class="brand-name">Louis Vuitton<br>Maison Louis Vuitton</h2>
-                        <p class="brand-description">
-                            Louis Vuitton devient célèbre dès 1854 pour ses malles innovantes et son approche visionnaire du voyage. La maison transforme l'art de la maroquinerie en symbole d'élégance et de savoir-faire, tout en réinventant sans cesse ses codes à travers un style moderne et raffiné.
-                        </p>
-                        <img src="css/images/lv_logo.png" alt="Logo Louis Vuitton" class="brand-logo">
-                    </div>
-                    <div class="band-images">
-                        <div class="image-circle">
-                            <div class="circle-image">
-                                <img src="css/images/sac_lv.png" alt="LV Look 1">
-                            </div>
-                            <div class="circle-image">
-                                <img src="css/images/lv_1.png" alt="LV Look 2">
-                            </div>
-                            <div class="circle-image">
-                                <img src="css/images/lv_2.png" alt="LV Look 3">
-                            </div>
-                            <div class="circle-image">
-                                <img src="css/images/image_lv_4.png" alt="LV Look 4">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </header>
-
-        <footer>
-            <div class="footer-social-block">
-                <div class="footer-text">
-                    <h2 class="suivez-nous">Suivez nous</h2>
-                    <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="btn-suivre"><b>@ICONIX</b></a>
-                </div>
-                <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="logo-link">
-                    <img src="css/images/logo_instagram.png" class="logo-instagram" alt="logo-instagram">
-                </a>
+            <div class="luxe-tile luxe-tile--portrait">
+              <img src="css/images/Chritian_Dior_Luxe.png" alt="Mannequin Dior New Look">
             </div>
-            <a href="a_propos.html" class="btn-a-propos"><b>À PROPOS</b></a>
-            <button id="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'});">⬆</button>
-        </footer>
-    </body>
+
+            <div class="luxe-tile luxe-tile--dress">
+              <img src="css/images/robe_Luxe.png" alt="Robe Dior">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Les marques -->
+    <section class="luxury-band">
+      <div class="band-content">
+        <div class="band-text">
+          <h2 class="brand-name">Coco Chanel<br>Maison Chanel</h2>
+          <p class="brand-description">
+            Coco Chanel libère la femme des corsets et impose un style simple, chic et intemporel. Elle est à l’origine
+            du tailleur en tweed, de la petite robe noire et du parfum Chanel N°5, devenus des symboles du luxe français.
+          </p>
+          <img src="css/images/Chanel.png" alt="Logo Chanel" class="brand-logo">
+        </div>
+
+        <div class="band-images">
+          <div class="image-circle">
+            <div class="circle-image"><img src="css/images/robe_noir_Luxe.png" alt="Chanel 1"></div>
+            <div class="circle-image"><img src="css/images/Robe_Chanel_Luxe.png" alt="Chanel 2"></div>
+            <div class="circle-image"><img src="css/images/Robe_Chanel_Luxe_2.png" alt="Chanel 3"></div>
+            <div class="circle-image"><img src="css/images/image_chanel_4.png" alt="Chanel 4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="luxury-band">
+      <div class="band-content">
+        <div class="band-text">
+          <h2 class="brand-name">Yves Saint Laurent<br>Maison YSL</h2>
+          <p class="brand-description">
+            Yves Saint Laurent révolutionne la mode avec des pièces emblématiques comme le smoking féminin, la saharienne
+            et les robes Mondrian. Son style audacieux mêle art, liberté et sophistication.
+          </p>
+          <img src="css/images/YSL_Luxe.png" alt="Logo YSL" class="brand-logo">
+        </div>
+
+        <div class="band-images">
+          <div class="image-circle">
+            <div class="circle-image"><img src="css/images/Tenue_noire_ysl1.png" alt="YSL 1"></div>
+            <div class="circle-image"><img src="css/images/Tenue_noire_ysl2.png" alt="YSL 2"></div>
+            <div class="circle-image"><img src="css/images/YSL_random.png" alt="YSL 3"></div>
+            <div class="circle-image"><img src="css/images/image_ysl_4.png" alt="YSL 4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="luxury-band">
+      <div class="band-content">
+        <div class="band-text">
+          <h2 class="brand-name">Salvatore<br>Ferragamo</h2>
+          <p class="brand-description">
+            Salvatore Ferragamo, surnommé « le cordonnier des stars », devient célèbre pour ses créations innovantes et
+            son approche artisanale. Sa maison représente l’élégance italienne et l’innovation.
+          </p>
+          <img src="css/images/Salvatore_Ferragamo.png" alt="Logo Ferragamo" class="brand-logo">
+        </div>
+
+        <div class="band-images">
+          <div class="image-circle">
+            <div class="circle-image"><img src="css/images/Salvatore_Ferragamo_1.png" alt="Ferragamo 1"></div>
+            <div class="circle-image"><img src="css/images/Salvatore_Ferragamo_2.png" alt="Ferragamo 2"></div>
+            <div class="circle-image"><img src="css/images/image_ferragamo_3.png" alt="Ferragamo 3"></div>
+            <div class="circle-image"><img src="css/images/image_ferragamo_4.png" alt="Ferragamo 4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="luxury-band">
+      <div class="band-content">
+        <div class="band-text">
+          <h2 class="brand-name">Hermès<br>Maison Hermès</h2>
+          <p class="brand-description">
+            Thierry Hermès fonde une maison d’exception dédiée à l’artisanat et au luxe. Réputée pour la perfection de ses
+            cuirs, ses foulards iconiques et ses pièces intemporelles, Hermès incarne un raffinement discret.
+          </p>
+          <img src="css/images/logo_hermes_paris.png" alt="Logo Hermès" class="brand-logo">
+        </div>
+
+        <div class="band-images">
+          <div class="image-circle">
+            <div class="circle-image"><img src="css/images/sac_hermes.jpg" alt="Hermès 1"></div>
+            <div class="circle-image"><img src="css/images/hermes_1.jpg" alt="Hermès 2"></div>
+            <div class="circle-image"><img src="css/images/hermes_2.png" alt="Hermès 3"></div>
+            <div class="circle-image"><img src="css/images/image_hermes_4.png" alt="Hermès 4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="luxury-band">
+      <div class="band-content">
+        <div class="band-text">
+          <h2 class="brand-name">Louis Vuitton<br>Maison Louis Vuitton</h2>
+          <p class="brand-description">
+            Louis Vuitton devient célèbre dès 1854 pour ses malles innovantes et son approche visionnaire du voyage.
+            La maison transforme l’art de la maroquinerie en symbole d’élégance et de savoir-faire.
+          </p>
+          <img src="css/images/lv_logo.png" alt="Logo Louis Vuitton" class="brand-logo">
+        </div>
+
+        <div class="band-images">
+          <div class="image-circle">
+            <div class="circle-image"><img src="css/images/sac_lv.png" alt="LV 1"></div>
+            <div class="circle-image"><img src="css/images/lv_1.png" alt="LV 2"></div>
+            <div class="circle-image"><img src="css/images/lv_2.png" alt="LV 3"></div>
+            <div class="circle-image"><img src="css/images/image_lv_4.png" alt="LV 4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer-->
+  <footer>
+    <div class="footer-social-block">
+      <div class="footer-text">
+        <h2 class="suivez-nous">Suivez nous</h2>
+        <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="btn-suivre"><b>@ICONIX</b></a>
+      </div>
+      <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="logo-link">
+        <img src="css/images/logo_instagram.png" class="logo-instagram" alt="logo-instagram">
+      </a>
+    </div>
+
+    <a href="a_propos.html" class="btn-a-propos"><b>À PROPOS</b></a>
+    <button id="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'});">⬆</button>
+  </footer>
+</body>
 </html>
