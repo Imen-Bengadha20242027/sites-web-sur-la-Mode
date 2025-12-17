@@ -1013,7 +1013,7 @@ footer{
 .page-luxe .titre-pages { display: none; }
 .page-luxe .introduction-luxe { display: none; }
 
-
+/* Hero comme sur l'image */
 .page-luxe .luxe-hero{
   padding: 4.5rem 7vw 2.5rem;
 }
@@ -1035,7 +1035,7 @@ footer{
   font-family: "Brush Script MT", "Segoe Script", "Lucida Handwriting", cursive;
 }
 
-/* DIOR layout  */
+/* DIOR layout (texte gauche + cercle droite) */
 .page-luxe .luxe-dior{
   position: relative;
   display: grid;
@@ -1061,7 +1061,7 @@ footer{
   color: #f2f2f2;
 }
 
-/* Gros cercle  */
+/* Gros cercle Dior */
 .page-luxe .luxe-dior-right{
   display: flex;
   justify-content: center;
@@ -1098,7 +1098,7 @@ footer{
   gap: 1rem;
 }
 
-/* Dior : logo + 2 images  */
+/* Dior : logo + 2 images (comme ta maquette) */
 .page-luxe .luxe-circle-grid--dior{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -1139,7 +1139,7 @@ footer{
   grid-row: 2;
 }
 
-/* Bands  */
+/* Bands (les sections luxury-band) */
 .page-luxe .luxury-band{
   width: 100%;
   padding: 5.5rem 7vw;
