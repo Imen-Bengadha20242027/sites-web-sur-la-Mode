@@ -1000,188 +1000,101 @@ footer{
     margin-bottom: 1rem;
 }
 
-/* Styles Spécifiques pour la page Maisons de Luxe */
-body {
-    background-color: #ffffff;
-    color: #000000;
-    font-family: serif;
-    margin: 0;
-    padding: 0;
+/* MAISONS DE LUXE */
+/* MARQUES MODERNES */
+/* MARQUES STREETWEAR & POPULAIRES */
+
+.page-luxe .luxe-hero,
+.page-modernes .modern-hero,
+.page-streetwear .street-hero {
+  padding: 4.5rem 7vw 2.5rem;
 }
 
-.titre-pages, h2, h1 {
-    color: #000000;
+.page-luxe .luxe-title,
+.page-modernes .modern-title,
+.page-streetwear .street-title {
+  font-size: clamp(3rem, 6vw, 4.6rem);
+  font-weight: 400;
+  margin: 0 0 1.5rem 0;
+  text-align: left;
+  color: #111;
 }
 
-.titre-luxe {
+.page-luxe .luxe-intro,
+.page-modernes .modern-intro,
+.page-streetwear .street-intro {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #444;
+  font-family: "Brush Script MT", "Segoe Script", "Lucida Handwriting", cursive;
+}
+
+/* Sections marques */
+.page-luxe .luxury-band,
+.page-modernes .modern-band,
+.page-streetwear .street-band {
+  width: 100%;
+  padding: 4.5rem 7vw;
+  border-top: 1px solid rgba(0,0,0,0.15);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-luxe .luxury-band .brand-name,
+.page-modernes .modern-band .brand-name,
+.page-streetwear .street-band .brand-name {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin: 0 0 1.2rem 0;
+  color: #111;
+}
+
+.page-luxe .luxury-band .brand-description,
+.page-modernes .modern-band .brand-description,
+.page-streetwear .street-band .brand-description {
+  font-size: 1.2rem;
+  line-height: 1.95;
+  color: #555;
+  margin: 0;
+}
+
+/* Section Dior (unique à Luxe) */
+.page-luxe .luxe-dior {
+  padding: 2.5rem 7vw 4.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-luxe .luxe-dior h2 {
+  font-size: 2.2rem;
+  margin: 0 0 1.2rem 0;
+  color: #111;
+}
+
+.page-luxe .luxe-dior p {
+  font-size: 1.35rem;
+  line-height: 1.95;
+  font-weight: 400;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 950px) {
+  .page-luxe .luxe-title,
+  .page-modernes .modern-title,
+  .page-streetwear .street-title {
     text-align: center;
-    padding-top: 50px;
-}
+  }
 
-.introduction-luxe {
+  .page-luxe .luxe-dior,
+  .page-luxe .luxury-band,
+  .page-modernes .modern-band,
+  .page-streetwear .street-band {
     text-align: center;
-    max-width: 800px;
-    margin: 20px auto 50px;
-    font-size: 1.2em;
-}
-
-.maison-luxe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 100px 0;
-    padding: 20px;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.defile-top-content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-top: 50px;
-}
-
-.defile-texte-gauche {
-    width: 35%;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: left;
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.description-luxe {
-    font-size: 1.6em;
-    line-height: 1.8;
-}
-
-.defile-image-droite.marque-cercle {
-    width: 65%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.marque-cercle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-
-    border-radius: 50%;
-    width: 60rem;
-    height: 60rem;
-    text-align: center;
-    background: #BEB9BB;
-    box-shadow: #BEB9BB 0px 0px 100px;
-
-    position: relative;
-    overflow: hidden;
-}
-
-.marque-cercle:nth-child(even) {
-    margin-right: auto;
-    margin-left: -10rem;
-    padding-left: 5rem;
-}
-
-.marque-cercle:nth-child(odd) {
-    margin-left: auto;
-    margin-right: -10rem;
-    padding-right: 5rem;
-}
-
-.dior-section .contenu-principal-dior.marque-cercle {
-    display: block;
-    width: 70rem;
-    height: 70rem;
-    max-width: 90%;
-}
-
-.dior-section .defile-top-content {
-    display: block;
-    width: 100%;
-}
-
-.dior-section .titre-marque-dior {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 3em;
-    z-index: 10;
-}
-
-.dior-section .defile-texte-gauche {
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    width: 45%;
-    z-index: 5;
-    text-align: left;
-    background-color: transparent;
-    padding: 0;
-}
-
-.dior-section .logo-luxe-box {
-    position: absolute;
-    top: 15%;
-    right: 5%;
-    z-index: 5;
-    background-color: black;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.dior-section .luxe-logo {
-    width: 100px;
-    height: auto;
-}
-
-.dior-section .image-circulaire-container {
-    position: absolute;
-    overflow: hidden;
-    border-radius: 5px;
-}
-
-.dior-section .image-mannequin-dior {
-    top: 30%;
-    right: 5%;
-    width: 45%;
-    height: 70%;
-}
-
-.dior-section .image-robe-dior {
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 45%;
-    height: 45%;
-}
-
-.luxe-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.maison-luxe:not(.dior-section) .defile-image-droite.marque-cercle {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    padding: 50px;
-}
-
-.maison-luxe:not(.dior-section) .image-circulaire-container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 50%;
+  }
 }
 
 /* pour la page à_propos */
