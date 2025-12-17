@@ -73,6 +73,108 @@ header {
 .bandeau a:hover {
   color: #c7a5ff;
 }
+
+
+/*  Pour le menu burger et les sous-menus  */
+
+.burger-toggle {
+    display: block; 
+    font-size: 30px; 
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #ccc;
+}
+
+/* 1. Menu Principal (Masqué par défaut) */
+.menu-liste {
+    /* Style de base du volet */
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    position: fixed; 
+    top: 20%;
+    left: 80%;
+    width: 100%;
+    background-color: #fff; 
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    max-height: 0;
+    overflow: hidden; 
+    transition: max-height 0.3s ease-out;
+}
+
+/* 2. Affichage du Menu Principal */
+.menu-liste.ouvert {
+    max-height: 500rem;
+    max-width: 20rem;
+    border-radius: 20px;
+    background: #4b0000;
+    transition: max-height 0.5s ease-in;
+}
+
+/* 3. Style des éléments du menu principal */
+.menu-liste li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    
+}
+.menu-liste a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    
+}
+
+/* 4. Gestion des Sous-menus (Toggle et Marge) */
+.submenu-toggle {
+    display: block; 
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 30px;
+    width: 30px;
+    background: #fff;
+    border: none;
+    color: #333;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 1002;
+    border-radius: 50%;
+}
+.submenu-toggle.submenu-actif {
+    background: #ccc;
+}
+
+/* Sous-liste (Masquée par défaut) */
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+    
+    
+    /* Technique pour masquer/animer le sous-menu */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+/* Affichage du Sous-menu */
+.submenu.submenu-ouvert {
+    max-height: 300px; /* Grande valeur assurant l'affichage */
+    transition: max-height 0.5s ease-in;
+}
+
+.submenu li {
+    padding: 8px 10px 8px 10px;
+    border-bottom: 1px solid #fff;
+}
 /*  Titres principaux des pages (ex : h1 de chaque page) ====== */
 .titre-pages{
     font-size: 3rem;
