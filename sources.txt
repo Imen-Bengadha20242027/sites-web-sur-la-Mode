@@ -1,1 +1,18 @@
 https://www.w3schools.com/css/
+
+Prompt donné à Gemini pour enlever "message='notre message'" quand on voulait envoyer notre formulaire par mail:
+
+            Voici mon code html:
+            <form id ="Formulaire" action="mailto:iconix@gmail.com?subject=Contact site web" method="post">
+
+                        <label for="message">Message* :</label>
+
+                        <textarea id="message" name="message" rows="6" required></textarea>
+
+
+
+                        <button type="submit">Envoyer</button>
+
+                    </form>
+
+            il y a pas moyen d'enlever message="notre message dans le mail" quand j'envoie le formulaire
