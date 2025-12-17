@@ -5,13 +5,26 @@
     height: 4vw;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(#fff 7%, #888B8B 38%, #656A6A 51%, #8E9696 65%, #EFEEF0 95%);
+    background: linear-gradient(#000 7%, #776F6F 38%, #9A9595 51%, #716969 65%, #100E0E 95%);
     list-style: none;
     text-decoration: none;
 }
 
+.lune-toggle-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.lune-mode {
+    width: 3rem;
+    height: auto;
+    margin-top: 0.5rem;
+}
+
 nav a{
-    color:#000000;
+    color:#ffffff;
     font-size: 1.5rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -29,7 +42,7 @@ body {
     color: black;
     position: relative;
     font-family: "Times New Roman", Times, serif;
-    background: linear-gradient(#fff 52%, #6A6E6E 100%);
+    background: linear-gradient(#fff 52%, #000 100%);
     overflow-x: hidden;
 }
 
@@ -50,7 +63,7 @@ body {
     background: none;
     cursor: pointer;
     padding: 10px;
-    color: #333;
+    color: #fff;
     margin-left: 15rem;
 }
 
@@ -152,6 +165,10 @@ footer{
     position: relative;
     justify-content: space-between;
     align-items: center;
+    color: #fff;
+}
+.suivez-nous{
+    color: #fff;
 }
 
 .footer-text{
@@ -161,7 +178,7 @@ footer{
     margin-left: 3rem;
     margin-bottom: 2rem;
     margin-right: 1rem;
-    color: #ffffff;
+    color: #fff;
 }
 
 .footer-social-block {
@@ -214,15 +231,13 @@ footer{
     margin-right: auto;
     margin-bottom: 400px;
     margin-top: 400px;
-    opacity: 0.6;
 }
 /* Slogan sur l’image */
 .slogan {
     position: absolute;
-    color: black;
+    color: #fff;
     font-size: 4rem;
     text-align: left;
-
     margin-top: 400px;
     margin-right: 2%;
 }
@@ -476,6 +491,8 @@ footer{
     font-size: x-large;
     max-width: 700px;
     margin: 0 auto;
+    margin-bottom: 3rem;
+    color: #fff;
 }
 
 /* pour la page actualités Tendances intemporelles */
@@ -962,7 +979,6 @@ footer{
     box-shadow: #fff 0px 0px 100px;
 }
 
-
 .marque-cercle h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
@@ -1264,8 +1280,8 @@ form textarea {
     height: 50px;
     border-radius: 50%;
     font-size: 1.8rem;
-    background: #b4ff00;
-    color: #001515;
+    background: #000;
+    color: #fff;
     cursor: pointer;
     border: none;
     display: flex;
@@ -1278,7 +1294,7 @@ form textarea {
 }
 
 #top-btn:hover {
-    background: #94d800;
+    background: #383838;
     transform: scale(1.1);
 }
 
@@ -1287,8 +1303,8 @@ form textarea {
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: #b4ff00;
-    color: #001515;
+    background-color: #000;
+    color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
@@ -1301,6 +1317,6 @@ form textarea {
 }
 
 #theme-toggle:hover {
-    background-color: #94d800;
+    background-color: #383838;
     transform: scale(1.05);
 }

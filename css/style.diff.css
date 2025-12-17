@@ -8,6 +8,19 @@
   font-family: "Poppins", sans-serif;
 }
 
+.lune-toggle-btn {
+    background: none; /* Supprime le fond par défaut */
+    border: none;    /* Supprime la bordure */
+    padding: 0;
+    cursor: pointer;
+}
+
+.lune-mode {
+    width: 3rem;
+    height: auto;
+    margin-top: 0.5rem;
+}
+
 
 /*  Liens du menu de navigation dans le header ====== */
 nav a{

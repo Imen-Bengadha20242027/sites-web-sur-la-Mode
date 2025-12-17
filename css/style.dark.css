@@ -10,6 +10,19 @@
     text-decoration: none;
 }
 
+.lune-toggle-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.lune-mode {
+    width: 3rem;
+    height: auto;
+    margin-top: 0.5rem;
+}
+
 nav a{
     color:#ffffff;
     font-size: 1.5rem;
