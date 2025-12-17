@@ -633,7 +633,9 @@ section {
     margin-right: auto;
     margin-left: 20vw;
 }
+
 /* 5. page createurs & marques */
+
 .marques-container {
     display: flex;               
     justify-content: center;     
@@ -653,8 +655,6 @@ section {
     width: 25rem;
     height: 25rem;
     text-align: center;
-
-    /* Couleurs */
     background: #ffeaea; 
     color: #4b0000;      
 
