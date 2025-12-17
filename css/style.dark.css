@@ -53,7 +53,6 @@ body {
     margin: 4rem;
 }
 
-
 /*  Pour le menu burger et les sous-menus  */
 
 .burger-toggle {
@@ -69,7 +68,6 @@ body {
 
 /* 1. Menu Principal (Masqué par défaut) */
 .menu-liste {
-    
     list-style: none; 
     padding: 0; 
     position: fixed; 
@@ -97,13 +95,12 @@ body {
     padding: 10px 15px;
     border-bottom: 1px solid #fff;
     position: relative;
-    
 }
+
 .menu-liste a {
     text-decoration: none;
     color: #fff;
     display: block;
-    
 }
 
 /* 4. Gestion des Sous-menus (Toggle et Marge) */
@@ -125,6 +122,7 @@ body {
     z-index: 1002;
     border-radius: 50%;
 }
+
 .submenu-toggle.submenu-actif {
     background: #ccc;
 }
@@ -134,9 +132,7 @@ body {
     list-style: none;
     padding: 0;
     margin-left: 20px;
-    
-    
-    /* animer le sous-menu */
+
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
@@ -152,18 +148,6 @@ body {
     padding: 8px 10px 8px 10px;
     border-bottom: 1px solid #fff;
 }
-
-/* Affichage du Sous-menu */
-.submenu.submenu-ouvert {
-    max-height: 300px; 
-    transition: max-height 0.5s ease-in;
-}
-
-.submenu li {
-    padding: 8px 10px 8px 10px;
-    border-bottom: 1px solid #fff;
-}
-
 
 /* le footer pour toutes les pages sauf à propos */
 
@@ -237,6 +221,7 @@ footer{
     margin-top: 400px;
     opacity: 0.6;
 }
+
 /* Slogan sur l’image */
 .slogan {
     position: absolute;  
@@ -298,7 +283,6 @@ footer{
     font-size: 1.2rem;
 }
 
-
 /* pour la page actualités_mode */
 
 .actu-card{
@@ -332,7 +316,6 @@ footer{
 
 .actu-img:hover{
     transform: scale(1.05);
-
 }
 
 .actu-title{
@@ -394,7 +377,6 @@ footer{
     font-weight: bolder;
     margin-left: 35%;
     margin-right: 35%;
-
 }
 
 .block-article-defile {
@@ -422,7 +404,6 @@ footer{
     width: 100%;
 }
 
-
 .defile-texte-gauche,
 .defile-texte-droite,
 .defile-image-droite,
@@ -441,15 +422,14 @@ footer{
     flex-direction: row;
 }
 
-
 .actu-img-defile {
     width: 100%;
     height: auto;
     display: block;
 }
 
-
-.defile-texte-gauche p, .defile-texte-droite p {
+.defile-texte-gauche p,
+.defile-texte-droite p {
     font-size: 1em;
     line-height: 1.7;
 }
@@ -599,6 +579,7 @@ footer{
 .tendance-grid--3 .tendance-img {
     height: 340px;
 }
+
 @media (max-width: 900px) {
     .introduction-tendance {
         width: 90%;
@@ -613,7 +594,6 @@ footer{
         height: 380px;
     }
 }
-
 
 .collab-page{
   width: min(1200px, 95%);
@@ -669,6 +649,7 @@ footer{
 .collab-row.reverse{
   direction: rtl;
 }
+
 .collab-row.reverse > *{
   direction: ltr;
 }
@@ -763,7 +744,6 @@ footer{
     font-size: 1.25rem;
   }
 
-  /* mobile */
   .collab-images.center{
     flex-direction: column;
   }
@@ -772,8 +752,6 @@ footer{
     width: 100%;
   }
 }
-
-
 
 /* pour la page looks iconiques*/
 
@@ -862,7 +840,6 @@ footer{
     border: 1px solid #fce3b6;
 }
 
-
 /* pour la page tendances */
 
 .tendances-ligne {
@@ -932,6 +909,7 @@ footer{
     margin-top: 10rem;
     margin-bottom: 10rem;
 }
+
 .marque-cercle h3 {
     font-size: 3rem; 
     color: white;    
@@ -944,7 +922,6 @@ footer{
     flex-direction: column;
     gap: 15rem;
     padding: 5rem 0;
-
 }
 
 .marque-cercle:nth-child(even) {
@@ -959,7 +936,6 @@ footer{
     padding-right: 5rem;
 }
 
-
 .marque-cercle {
     display: flex;
     flex-direction: column;
@@ -967,7 +943,6 @@ footer{
     justify-content: center;
     text-decoration: none;
 
-    /* pour l'effet de cercle */
     border-radius: 50%;
     width: 60rem;
     height: 60rem; 
@@ -982,7 +957,6 @@ footer{
     transition: transform 0.4s ease-in-out;
     box-shadow: #000 0px 0px 100px;
 }
-
 
 .marque-cercle h2 {
     font-size: 2.5rem;
@@ -1005,24 +979,28 @@ footer{
     margin-bottom: 1rem;
 }
 
-/*  MAISONS DE LUXE  */
+/* MAISONS DE LUXE */
+/* MARQUES MODERNES */
+/* MARQUES STREETWEAR & POPULAIRES */
 
-.page-luxe .titre-pages { display: none; }
-.page-luxe .introduction-luxe { display: none; }
-
-
-.page-luxe .luxe-hero{
+.page-luxe .luxe-hero,
+.page-modernes .modern-hero,
+.page-streetwear .street-hero {
   padding: 4.5rem 7vw 2.5rem;
 }
 
-.page-luxe .luxe-title{
+.page-luxe .luxe-title,
+.page-modernes .modern-title,
+.page-streetwear .street-title {
   font-size: clamp(3rem, 6vw, 4.6rem);
   font-weight: 400;
   margin: 0 0 1.5rem 0;
   text-align: left;
 }
 
-.page-luxe .luxe-intro{
+.page-luxe .luxe-intro,
+.page-modernes .modern-intro,
+.page-streetwear .street-intro {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
@@ -1032,189 +1010,65 @@ footer{
   font-family: "Brush Script MT", "Segoe Script", "Lucida Handwriting", cursive;
 }
 
-/* DIOR layout */
-.page-luxe .luxe-dior{
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-  padding: 2.5rem 7vw 4.5rem;
-}
-
-.page-luxe .luxe-dior-left{
-  max-width: 520px;
-}
-
-.page-luxe .luxe-brand-left{
-  font-size: 2.2rem;
-  margin: 0 0 1.2rem 0;
-}
-
-.page-luxe .luxe-text-left{
-  font-size: 1.35rem;
-  line-height: 1.95;
-  font-weight: 600;
-  color: #f2f2f2;
-}
-
-
-.page-luxe .luxe-dior-right{
-  display: flex;
-  justify-content: center;
-}
-
-.page-luxe .luxe-circle{
-  width: min(620px, 90vw);
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  background: rgba(70,70,70,0.75);
-  box-shadow: 0 25px 70px rgba(0,0,0,0.7);
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.page-luxe .luxe-circle-title{
-  position: absolute;
-  top: 9%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2.2rem;
-  font-weight: 400;
-  margin: 0;
-}
-
-.page-luxe .luxe-circle-grid{
-  width: 78%;
-  height: 68%;
-  margin-top: 10%;
-  display: grid;
-  gap: 1rem;
-}
-
-/* Dior : logo + 2 images  */
-.page-luxe .luxe-circle-grid--dior{
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-.page-luxe .luxe-tile{
-  background: rgba(0,0,0,0.35);
-  overflow: hidden;
-}
-
-.page-luxe .luxe-tile img{
+/* Sections marques */
+.page-luxe .luxury-band,
+.page-modernes .modern-band,
+.page-streetwear .street-band {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.page-luxe .luxe-tile--logo{
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.page-luxe .luxe-tile--logo img{
-  width: 80%;
-  height: auto;
-  object-fit: contain;
-}
-
-.page-luxe .luxe-tile--portrait{
-  grid-column: 2;
-  grid-row: 1 / span 2;
-}
-
-.page-luxe .luxe-tile--dress{
-  grid-column: 1;
-  grid-row: 2;
-}
-
-/* Bands */
-.page-luxe .luxury-band{
-  width: 100%;
-  padding: 5.5rem 7vw;
+  padding: 4.5rem 7vw;
   border-top: 1px solid rgba(255,255,255,0.12);
-}
-
-.page-luxe .luxury-band .band-content{
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
 }
 
-.page-luxe .luxury-band:nth-of-type(even) .band-content{
-  direction: rtl;
-}
-.page-luxe .luxury-band:nth-of-type(even) .band-content > *{
-  direction: ltr;
-}
-
-.page-luxe .brand-name{
+.page-luxe .luxury-band .brand-name,
+.page-modernes .modern-band .brand-name,
+.page-streetwear .street-band .brand-name {
   font-size: 2.4rem;
   font-weight: 400;
   margin: 0 0 1.2rem 0;
 }
 
-.page-luxe .brand-description{
+.page-luxe .luxury-band .brand-description,
+.page-modernes .modern-band .brand-description,
+.page-streetwear .street-band .brand-description {
   font-size: 1.2rem;
   line-height: 1.95;
   color: #dcdcdc;
-  margin: 0 0 1.5rem 0;
+  margin: 0;
 }
 
-.page-luxe .brand-logo{
-  width: 140px;
-  background: #fff;
-  padding: 12px;
-  border-radius: 10px;
+/* Section Dior (unique à Luxe) */
+.page-luxe .luxe-dior {
+  padding: 2.5rem 7vw 4.5rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.page-luxe .image-circle{
-  width: min(520px, 90vw);
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  background: rgba(70,70,70,0.55);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 14px;
-  padding: 46px;
-  box-shadow: 0 25px 70px rgba(0,0,0,0.7);
+.page-luxe .luxe-dior h2 {
+  font-size: 2.2rem;
+  margin: 0 0 1.2rem 0;
 }
 
-.page-luxe .circle-image{
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.page-luxe .circle-image img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.page-luxe .luxe-dior p {
+  font-size: 1.35rem;
+  line-height: 1.95;
+  font-weight: 400;
+  color: #f2f2f2;
 }
 
 /* Responsive */
-@media (max-width: 950px){
-  .page-luxe .luxe-dior{
-    grid-template-columns: 1fr;
-  }
-  .page-luxe .luxury-band .band-content{
-    grid-template-columns: 1fr;
+@media (max-width: 950px) {
+  .page-luxe .luxe-title,
+  .page-modernes .modern-title,
+  .page-streetwear .street-title {
     text-align: center;
   }
-  .page-luxe .luxe-dior-left{
-    margin: 0 auto;
+
+  .page-luxe .luxe-dior,
+  .page-luxe .luxury-band,
+  .page-modernes .modern-band,
+  .page-streetwear .street-band {
     text-align: center;
   }
 }
@@ -1326,14 +1180,12 @@ form textarea {
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
   transition: 0.3s ease;
   z-index: 9999;
-
 }
 
 #top-btn:hover {
   background: #afafaf;
   transform: scale(1.1);
 }
-
 
 #theme-toggle {
     position: fixed;
