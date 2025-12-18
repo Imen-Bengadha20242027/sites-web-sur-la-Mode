@@ -4,7 +4,7 @@ body{background:#f4f4f8;color:#222;line-height:1.6}
 
 /* ===== Header & Nav ===== */
 header{display:flex;justify-content:space-between;align-items:center;padding:20px 50px;background:#4b0000;color:#ffeaea}
-.title,.titre-pages{text-align:center;color:#fce3b6;font-family:"Verdana","Segoe UI",sans-serif;letter-spacing:.12rem;text-transform:uppercase}
+.title,.titre-pages{text-align:center;color:#000;font-family:"Verdana","Segoe UI",sans-serif;letter-spacing:.12rem;text-transform:uppercase}
 .title{font-size:2.8rem}
 .title h1{font-size:40px;letter-spacing:3px}
 .bandeau{align-items:center;margin-top: 5rem;}
@@ -56,7 +56,7 @@ nav a,.bandeau a{color:#ffeaea;text-decoration:none;font-weight:500;transition:.
 section{font-size:1.2rem}
 .text-chanel{max-width:900px;margin:2rem auto;text-align:center;line-height:1.7}
 .block-actu-défilé,.block-img-actu{display:flex;flex-direction:column;gap:2rem;margin:4rem auto;width:90%;max-width:1200px}
-.section-description-actu-mode-defile{max-width:900px;margin:3rem auto 4rem;padding:2rem 3rem;text-align:center;font-family:"Georgia","Times New Roman",serif;font-size:1.4rem;line-height:1.8;color:#fdf7ff;background:rgba(248, 248, 248, 0.85);border:2px solid #fce3b6;border-radius:2rem;box-shadow:0 12px 35px rgba(0,0,0,.6)}
+.section-description-actu-mode-defile{max-width:900px;margin:3rem auto 4rem;padding:2rem 3rem;text-align:center;font-family:"Georgia","Times New Roman",serif;font-size:1.4rem;line-height:1.8;color:#000;background:rgba(248, 248, 248, 0.85);border:2px solid #fce3b6;border-radius:2rem;box-shadow:0 12px 35px rgba(0,0,0,.6)}
 .video-chanel{display:block;margin:0 auto;width:90%;max-width:700px;border:5px solid #4b0000;border-radius:16px}
 .defile-texte-gauche,.defile-texte-droite,.defile-image-gauche,.defile-image-droite{flex:1;min-width:280px}
 .defile-image-gauche,.defile-image-droite{display:flex;justify-content:center}
