@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>ICONIX</title>
+    <title>Maisons de Luxe - ICONIX</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.dark.css" id="theme-style">
@@ -9,6 +9,7 @@
 </head>
 
 <body class="page-luxe">
+    <button id="theme-toggle">Changer le style</button>
 
     <header>
         <div class="title">
@@ -16,40 +17,44 @@
         </div>
 
         <nav>
-            <button id="luneToggle" class="lune-toggle-btn">
-                <img src="css/images/lune_mode_claire_2.png" alt="Mode" class="lune-mode" width="48" height="48">
-            </button>
+            <ul class="bandeau">
+                <li class="icone-nav">
+                    <button id="luneToggle" class="lune-toggle-btn">
+                        <img src="css/images/lune_mode_claire_2.png" alt="Mode" class="lune-mode" width="48" height="48">
+                    </button>
+                </li>
 
-            <div class="burger-wrapper">
-                <button id="toggleBtn" onclick="toggleMenu()" class="burger-toggle" aria-expanded="false">
-                    ☰
-                </button>
+                <li class="burger-wrapper">
+                    <button id="toggleBtn" onclick="toggleMenu()" class="burger-toggle" aria-expanded="false">
+                        ☰
+                    </button>
 
-                <ul id="menuListe" class="menu-liste">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li class="has-submenu">
-                        <a href="actualités_mode.html">Actualités Mode</a>
-                        <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
-                        <ul class="submenu">
-                            <li><a href="actualités_mode_défilé.html">Défilés</a></li>
-                            <li><a href="actualités_mode_tendances_intemporelles.html">Tendances</a></li>
-                            <li><a href="actualités_mode_collaborations_partenariats.html">Collaborations</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="tendances.html">Tendances</a></li>
-                    <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
-                    <li class="has-submenu">
-                        <a href="createur_marques.html">Créateurs & Marques</a>
-                        <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
-                        <ul class="submenu">
-                            <li><a href="createurs_marques_Maison_de_luxe.html">Maison de Luxe</a></li>
-                            <li><a href="createur_marques_marques_modernes.html">Marques Modernes</a></li>
-                            <li><a href="createurs_marques_marques_streetwear_populaire.html">Streetwear</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="a_propos.html">À Propos</a></li>
-                </ul>
-            </div>
+                    <ul id="menuListe" class="menu-liste">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="has-submenu">
+                            <a href="actualités_mode.html">Actualités Mode</a>
+                            <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
+                            <ul class="submenu">
+                                <li><a href="actualités_mode_défilé.html">Défilés</a></li>
+                                <li><a href="actualités_mode_tendances_intemporelles.html">Tendances</a></li>
+                                <li><a href="actualités_mode_collaborations_partenariats.html">Collaborations</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="tendances.html">Tendances</a></li>
+                        <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+                        <li class="has-submenu">
+                            <a href="createur_marques.html">Créateurs & Marques</a>
+                            <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
+                            <ul class="submenu">
+                                <li><a href="createurs_marques_Maison_de_luxe.html">Maison de Luxe</a></li>
+                                <li><a href="createur_marques_marques_modernes.html">Marques Modernes</a></li>
+                                <li><a href="createurs_marques_marques_streetwear_populaire.html">Streetwear</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="a_propos.html">À Propos</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
     </header>
 
@@ -62,35 +67,35 @@
             </p>
         </section>
 
-        <section class="luxury-band">
+        <article class="luxury-band">
             <h2>Christian Dior</h2>
-            <p><strong>Christian Dior</strong> révolutionne la mode en 1947 avec le « New Look »...</p>
-        </section>
+            <p><strong>Christian Dior</strong> révolutionne la mode en 1947 avec le « New Look », redéfinissant la silhouette féminine après-guerre avec élégance et luxe.</p>
+        </article>
 
-        <section class="luxury-band">
+        <article class="luxury-band">
             <h2>Coco Chanel – Maison Chanel</h2>
-            <p><strong>Coco Chanel</strong> transforme la mode féminine en libérant les femmes des corsets...</p>
-        </section>
+            <p><strong>Coco Chanel</strong> transforme la mode féminine en libérant les femmes des corsets, imposant le tailleur en tweed et l'indétrônable petite robe noire.</p>
+        </article>
 
-        <section class="luxury-band">
+        <article class="luxury-band">
             <h2>Yves Saint Laurent – Maison YSL</h2>
-            <p><strong>Yves Saint Laurent</strong> introduit le smoking pour femmes...</p>
-        </section>
+            <p><strong>Yves Saint Laurent</strong> introduit le smoking pour femmes et démocratise le prêt-à-porter de luxe, mêlant l'art à la haute couture.</p>
+        </article>
 
-        <section class="luxury-band">
+        <article class="luxury-band">
             <h2>Salvatore Ferragamo</h2>
-            <p>Surnommé <strong>« le cordonnier des stars »</strong>...</p>
-        </section>
+            <p>Surnommé <strong>« le cordonnier des stars »</strong>, il a marqué l'histoire par son artisanat d'exception et ses innovations dans le design de chaussures de luxe.</p>
+        </article>
 
-        <section class="luxury-band">
+        <article class="luxury-band">
             <h2>Hermès – Maison Hermès</h2>
-            <p>Fondée en 1837 par <strong>Thierry Hermès</strong>...</p>
-        </section>
+            <p>Fondée en 1837 par <strong>Thierry Hermès</strong>, la maison est mondialement reconnue pour son excellence dans la maroquinerie, notamment ses sacs légendaires Birkin et Kelly.</p>
+        </article>
 
-        <section class="luxury-band">
+        <article class="luxury-band">
             <h2>Louis Vuitton – Maison Louis Vuitton</h2>
-            <p>Fondée en 1854, la maison <strong>Louis Vuitton</strong> révolutionne la maroquinerie...</p>
-        </section>
+            <p>Fondée en 1854, la maison <strong>Louis Vuitton</strong> révolutionne la maroquinerie avec ses malles de voyage iconiques et son célèbre monogramme reconnu partout dans le monde.</p>
+        </article>
     </main>
 
     <footer>
@@ -100,7 +105,7 @@
                 <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="btn-suivre"><b>@ICONIX</b></a>
             </div>
             <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="logo-link">
-                <img src="css/images/logo_instagram.png" class="logo-instagram" alt="logo-instagram" width="56" height="56">
+                <img src="css/images/logo_instagram.png" class="logo-instagram" alt="Instagram" width="56" height="56">
             </a>
         </div>
         <a href="a_propos.html" class="btn-a-propos"><b>À PROPOS</b></a>
@@ -110,6 +115,5 @@
     </footer>
 
     <script src="javaScript/switch-style.js"></script>
-
 </body>
 </html>
