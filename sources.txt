@@ -16,3 +16,72 @@ Prompt donné à Gemini pour enlever "message='notre message'" quand on voulait 
                     </form>
 
             il y a pas moyen d'enlever message="notre message dans le mail" quand j'envoie le formulaire
+
+Prompt donné à Gemini pour voir comment optimiser mon site web:
+
+            Rapport du 18 déc. 2025, 03:35:28
+
+            Saisissez une URL valide
+
+            smartphone
+
+            Mobile
+
+            computer
+
+            Bureau
+
+            Découvrez l'expérience de vos utilisateurs
+
+            Analysez les problèmes de performances
+
+            74
+            Performances
+
+            98
+            Accessibilité
+
+            96
+            Bonnes pratiques
+
+            91
+            SEO
+
+            74
+            FCP
+
+            +10
+            LCP
+
+            +0
+            TBT
+
+            +30
+            CLS
+
+            +25
+            SI
+
+            +9
+            Statistiques
+            Réduire la vue
+
+            First Contentful Paint
+            0,8 s
+            La métrique "First Contentful Paint" indique le moment où le premier texte ou la première image sont affichés. En savoir plus sur cette métrique
+
+            Largest Contentful Paint
+            11,4 s
+            La métrique "Largest Contentful Paint" indique le moment où le texte le plus long ou l'image la plus grande sont affichés. En savoir plus sur cette métrique
+
+            Total Blocking Time
+            0 ms
+            Somme en millisecondes de toutes les périodes entre le FCP et le délai avant interactivité, lorsque la durée de la tâche a dépassé 50 ms. En savoir plus sur la métrique "Total Blocking Time"
+
+            Cumulative Layout Shift
+            0
+            Cumulative Layout Shift mesure le mouvement des éléments visibles dans la fenêtre d'affichage. En savoir plus sur cette métrique
+
+            Speed Index
+            3,6 s
+            La métrique "Speed Index" indique la rapidité avec laquelle le contenu d'une page est disponible. En savoir plus sur cette métrique
