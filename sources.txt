@@ -16,4 +16,20 @@ Prompt donné à Gemini pour enlever "message='notre message'" quand on voulait 
                     </form>
 
             il y a pas moyen d'enlever message="notre message dans le mail" quand j'envoie le formulaire
+https://youtu.be/6r2eqeyR6Xw 
+ 
+[Tuto] Comment afficher des images rondes
+
+https://developer.mozilla.org/fr/
+  
+sources diverse pour coder 
+
+https://developer.mozilla.org/fr/docs/Web/HTML
+
+tutoriel plus balise 
+
+
+https://developer.mozilla.org/fr/docs/Web/CSS/Reference/At-rules/@media
+https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing?hl=fr
+regles de responsives avec @media 
 
