@@ -1,12 +1,12 @@
 /* Header, navigation et burger */
-.bandeau{display:flex;height:7vw;justify-content:space-between;align-items:center;background:linear-gradient(#000 2%,#cfcfcf 38%,#fff 51%,#cfcfcf 70%,#000 100%);list-style:none;text-decoration:none}
+.bandeau{display:flex;height:7vw;justify-content:space-between;align-items:center;background:linear-gradient(#000 7%,#776F6F 38%,#9A9595 51%,#716969 65%,#000 95%);list-style:none;text-decoration:none}
 .lune-toggle-btn{background:none;border:none;padding:0;cursor:pointer}
 .lune-mode{width:3rem;height:auto;margin-top:.5rem}
-nav a{color:#000;font-size:1.5rem;margin:0 2rem;text-decoration:none}
+nav a{color:#fff;font-size:1.5rem;margin:0 2rem;text-decoration:none}
 .title{text-align:center;font-size:3rem;color:#fff}
-.burger-toggle{display:block;font-size:30px;border:none;background:none;cursor:pointer;padding:10px;color:#000;margin-right:2rem}
+.burger-toggle{display:block;font-size:30px;border:none;background:none;cursor:pointer;padding:10px;color:#fff;margin-right:2rem}
 .menu-liste{list-style:none;padding:20px 0;margin:0;position:fixed;top:20%;right:20px;width:20rem;background-color:#fff;z-index:1000;box-shadow:0 4px 8px rgba(0,0,0,.9);border-radius:20px;transform:translateX(120%);transition:transform .4s ease-out;overflow:hidden}
-.menu-liste.ouvert{transform:translateX(0);background:linear-gradient(#242121 7%,#776F6F 38%,#000000 51%,#716969 65%,#100E0E 95%)}
+.menu-liste.ouvert{transform:translateX(0);background:linear-gradient(#000 7%,#776F6F 38%,#9A9595 51%,#716969 65%,#100E0E 95%)}
 .menu-liste li{padding:10px 15px;border-bottom:1px solid #fff;position:relative}
 .menu-liste a{text-decoration:none;color:#fff;display:block}
 .submenu-toggle{display:block;position:absolute;right:15px;top:50%;transform:translateY(-50%);height:30px;width:30px;background:#fff;border:none;color:#333;font-size:20px;line-height:1;cursor:pointer;z-index:1002;border-radius:50%}
@@ -18,7 +18,7 @@ body{color:white;position:relative;font-family:"Times New Roman",Times,serif;bac
 .titre-pages{font-size:3rem;text-align:center;color:#fff;margin:4rem}
 
 /* Footer */
-footer{margin-top:40rem;display:flex;position:relative;justify-content:space-between;align-items:center;color:#000}
+footer{margin-top:25rem;display:flex;position:relative;justify-content:space-between;align-items:center;color:#000}
 .suivez-nous{color:#000}
 .footer-text{display:flex;flex-direction:column;align-items:flex-start;margin:0 1rem 2rem 3rem;color:#000}
 .footer-social-block{display:flex;flex-direction:row;align-items:center;gap:15px}
@@ -29,7 +29,7 @@ footer{margin-top:40rem;display:flex;position:relative;justify-content:space-bet
 /* Page accueil */
 .accueil{position:relative;width:100%;height:auto;display:flex;justify-content:center;align-items:center}
 .accueil img{padding:50px;display:block;margin:400px auto 400px}
-.slogan{position:absolute;color:#000;font-size:4rem;text-align:left;margin-top:400px;margin-right:2%}
+.slogan{position:absolute;color:#fff;font-size:4rem;text-align:left;margin-top:400px;margin-right:2%}
 .actualités{display:flex;justify-content:center;gap:4vw;margin:5vh auto}
 .card{border:.4rem solid #000;font-size:1.4rem;padding:2rem;border-radius:2rem;width:22vw;max-width:20rem;text-align:center;color:white}
 .card-title{font-size:2rem}
