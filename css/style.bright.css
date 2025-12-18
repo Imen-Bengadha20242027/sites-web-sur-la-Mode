@@ -818,10 +818,6 @@ footer{
     box-shadow: 0 18px 40px rgba(255,255,255,0.7);
 }
 
-.img-look:hover {
-    transform: scale(1.03);
-}
-
 /* Titres */
 .look h2 {
     font-size: 2rem;
