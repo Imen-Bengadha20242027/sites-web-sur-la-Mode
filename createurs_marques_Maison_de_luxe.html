@@ -1,149 +1,152 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>Maisons de Luxe - ICONIX</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="switch-style.js"></script>
-  <link rel="stylesheet" href="css/style.dark.css" id="theme-style">
+    <title>ICONIX</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.dark.css" id="theme-style">
+    <link rel="icon" href="css/images/favicon.ico">
 </head>
 
 <body class="page-luxe">
-  <button id="theme-toggle">Changer le style</button>
+    <button id="theme-toggle">Changer le style</button>
 
-  <header>
-    <div class="title">
-      <h1>ICONIX</h1>
-    </div>
+    <header>
+        <div class="title">
+            <h1>ICONIX</h1>
+        </div>
 
-    <nav>
-      <ul class="bandeau">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="actualités_mode.html">Actualités Mode</a></li>
-        <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
-        <li><a href="tendances.html">Tendances</a></li>
-        <li><a href="createur_marques.html">Créateurs & Marques</a></li>
+        <nav>
+            <ul class="bandeau">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="actualités_mode.html">Actualités Mode</a></li>
+                <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+                <li><a href="tendances.html">Tendances</a></li>
+                <li><a href="createur_marques.html">Créateurs & Marques</a></li>
 
-        <li class="icone-nav">
-          <button id="luneToggle" class="lune-toggle-btn"></button>
-        </li>
+                <li class="icone-nav">
+                    <button id="luneToggle" class="lune-toggle-btn">
+                        <img src="css/images/lune_mode_claire_2.png" alt="Mode" class="lune-mode" width="48" height="48">
+                    </button>
+                </li>
 
-        <li class="nav-burger">
-          <nav class="navigation-principale">
-            <button id="toggleBtn" onclick="toggleMenu()" class="burger-toggle">☰</button>
+                <li class="burger-wrapper">
+                    <button id="toggleBtn" onclick="toggleMenu()" class="burger-toggle" aria-expanded="false">
+                        ☰
+                    </button>
 
-            <ul id="menuListe" class="menu-liste">
-              <li><a href="index.html">Accueil</a></li>
-
-              <li class="has-submenu">
-                <a href="actualités_mode.html">Actualités Mode</a>
-                <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
-                <ul class="submenu">
-                  <li><a href="actualités_mode_défilé.html">Défilés</a></li>
-                  <li><a href="actualités_mode_tendances_intemporelles.html">Tendances Intemporelles</a></li>
-                  <li><a href="actualités_mode_collaborations_partenariats.html">Collaborations & Partenariats</a></li>
-                </ul>
-              </li>
-
-              <li><a href="tendances.html">Tendances</a></li>
-              <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
-
-              <li class="has-submenu">
-                <a href="createur_marques.html">Créateurs & Marques</a>
-                <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
-                <ul class="submenu">
-                  <li><a href="createurs_marques_Maison_de_luxe.html">Maison de Luxe</a></li>
-                  <li><a href="createur_marques_marques_modernes.html">Marques Modernes</a></li>
-                  <li><a href="createurs_marques_marques_streetwear_populaire.html">Marques Streetwear Populaire</a></li>
-                </ul>
-              </li>
-
-              <li><a href="a_propos.html">À Propos</a></li>
+                    <ul id="menuListe" class="menu-liste">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="has-submenu">
+                            <a href="actualités_mode.html">Actualités Mode</a>
+                            <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
+                            <ul class="submenu">
+                                <li><a href="actualités_mode_défilé.html">Défilés</a></li>
+                                <li><a href="actualités_mode_tendances_intemporelles.html">Tendances</a></li>
+                                <li><a href="actualités_mode_collaborations_partenariats.html">Collaborations</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="tendances.html">Tendances</a></li>
+                        <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+                        <li class="has-submenu">
+                            <a href="createur_marques.html">Créateurs & Marques</a>
+                            <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
+                            <ul class="submenu">
+                                <li><a href="createurs_marques_Maison_de_luxe.html">Maison de Luxe</a></li>
+                                <li><a href="createur_marques_marques_modernes.html">Marques Modernes</a></li>
+                                <li><a href="createurs_marques_marques_streetwear_populaire.html">Streetwear</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="a_propos.html">À Propos</a></li>
+                    </ul>
+                </li>
             </ul>
-          </nav>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        </nav>
+    </header>
 
-  <main>
-    <section class="luxe-hero">
-      <h1 class="luxe-title">Maisons de Luxe</h1>
-      <p class="luxe-intro">
-        Découvrez les maisons de luxe qui ont façonné l’histoire de la mode, des icônes intemporelles
-        aux créateurs visionnaires dont l’héritage continue d’inspirer les tendances d’aujourd’hui.
-      </p>
-    </section>
+    <main>
+        <section class="luxe-hero">
+            <h2 class="luxe-title">Maisons de Luxe</h2>
+            <p class="luxe-intro">
+                Découvrez les maisons de luxe qui ont façonné l’histoire de la mode, des icônes intemporelles
+                aux créateurs visionnaires dont l’héritage continue d’inspirer les tendances d’aujourd’hui.
+            </p>
+        </section>
+        
 
-    <section class="luxe-dior">
-      <h2>Christian Dior</h2>
-      <p>
+
+
+
+        <div class="luxury-band">
+            <h3>Christian Dior</h3>
+            <p>
         <strong>Christian Dior</strong> révolutionne la mode en 1947 avec le « New Look », une silhouette féminine
         aux tailles marquées et jupes volumineuses. Son style raffiné et élégant a redéfini la haute couture française
         et continue d’influencer la mode moderne.
       </p>
-    </section>
+        </div>
 
-    <section class="luxury-band">
-      <h2>Coco Chanel – Maison Chanel</h2>
-      <p>
-         <strong> Coco Chanel</strong> transforme la mode féminine en libérant les femmes des corsets et des tenues contraignantes.
-        Elle est à l’origine de pièces devenues emblématiques comme le tailleur en tweed,
-         la petite robe noire et le
-        parfum Chanel N°5, lancé en 1921, qui marquent durablement l’histoire de la mode.
-      </p>
-    </section>
+        <div class="luxury-band">
+            <h3>Coco Chanel – Maison Chanel</h3>
+            <p>
+            <strong> Coco Chanel</strong> transforme la mode féminine en libérant les femmes des corsets et des tenues contraignantes.
+            Elle est à l’origine de pièces devenues emblématiques comme le tailleur en tweed,
+            la petite robe noire et le
+            parfum Chanel N°5, lancé en 1921, qui marquent durablement l’histoire de la mode.
+        </p>
+        </div>
 
-    <section class="luxury-band">
-      <h2>Yves Saint Laurent – Maison YSL</h2>
-      <p>
-        <strong>Yves Saint Laurent</strong> révolutionne la mode féminine en introduisant le smoking pour femmes, symbole d’émancipation et de modernité.
-        Il crée également des pièces emblématiques comme la saharienne et les robes Mondrian, inspirées de l’art moderne. 
-        Son style associe audace, liberté créative et élégance sophistiquée.
-      </p>
-    </section>
+        <div class="luxury-band">
+            <h3>Yves Saint Laurent – Maison YSL</h3>
+            <p>
+            <strong>Yves Saint Laurent</strong> révolutionne la mode féminine en introduisant le smoking pour femmes, symbole d’émancipation et de modernité.
+            Il crée également des pièces emblématiques comme la saharienne et les robes Mondrian, inspirées de l’art moderne. 
+            Son style associe audace, liberté créative et élégance sophistiquée.
+            </p>
+        </div>
 
-    <section class="luxury-band">
-      <h2>Salvatore Ferragamo</h2>
-      <p>
-        Surnommé <strong>« le cordonnier des stars »</strong>, Salvatore Ferragamo acquiert une renommée internationale 
-        en chaussant les célébrités d’Hollywood dès les années 1920. Il se distingue par des innovations techniques majeures, comme l’usage du liège et des structures anatomiques.
-        Son travail artisanal devient un symbole durable de l’élégance et du savoir-faire italien.
-      </p>
-    </section>
+        <div class="luxury-band">
+            <h3>Salvatore Ferragamo</h3>
+            <p>
+            Surnommé <strong>« le cordonnier des stars »</strong>, Salvatore Ferragamo acquiert une renommée internationale 
+            en chaussant les célébrités d’Hollywood dès les années 1920. Il se distingue par des innovations techniques majeures, comme l’usage du liège et des structures anatomiques.
+            Son travail artisanal devient un symbole durable de l’élégance et du savoir-faire italien.
+            </p>
+        </div>
 
-    <section class="luxury-band">
-      <h2>Hermès – Maison Hermès</h2>
-      <p>
+        <div class="luxury-band">
+            <h3>Hermès – Maison Hermès</h3>
+            <p>
         Fondée en 1837 par <strong>Thierry Hermès</strong>, la maison Hermès se distingue par son excellence artisanale et son savoir-faire équestre d’origine.
          Elle incarne un luxe discret, fondé sur la qualité des matériaux et la fabrication à la main.
          Ses créations intemporelles sont aujourd’hui reconnues dans le monde entier.
       </p>
-    </section>
+        </div>
 
-    <section class="luxury-band">
-      <h2>Louis Vuitton – Maison Louis Vuitton</h2>
-      <p>
+        <div class="luxury-band">
+            <h3>Louis Vuitton – Maison Louis Vuitton</h3>
+            <p>
         Fondée en 1854, la maison <strong>Louis Vuitton</strong> révolutionne la maroquinerie en développant des malles innovantes adaptées au voyage moderne. 
         Elle impose rapidement un savoir-faire artisanal fondé sur la qualité et la fonctionnalité. 
         L’art du voyage devient ainsi un symbole durable d’élégance et de luxe.
       </p>
-    </section>
-  </main>
+        </div>
+    </main>
 
-  <footer>
-    <div class="footer-social-block">
-      <div class="footer-text">
-        <h2 class="suivez-nous">Suivez nous</h2>
-        <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="btn-suivre"><b>@ICONIX</b></a>
-      </div>
-      <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="logo-link">
-        <img src="css/images/logo_instagram.png" class="logo-instagram" alt="logo-instagram">
-      </a>
-    </div>
+    <footer>
+        <div class="footer-social-block">
+            <div class="footer-text">
+                <h2 class="suivez-nous">Suivez nous</h2>
+                <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="btn-suivre"><b>@ICONIX</b></a>
+            </div>
+            <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="logo-link">
+                <img src="css/images/logo_instagram.png" class="logo-instagram" alt="Instagram" width="56" height="56" loading ="lazy">
+            </a>
+        </div>
+        <a href="a_propos.html" class="btn-a-propos"><b>À PROPOS</b></a>
+        <button id="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'});">⬆</button>
+    </footer>
 
-    <a href="a_propos.html" class="btn-a-propos"><b>À PROPOS</b></a>
-    <button id="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'});">⬆</button>
-  </footer>
+    <script src="javaScript/switch-style.js"></script>
 </body>
 </html>

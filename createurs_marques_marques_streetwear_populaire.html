@@ -1,135 +1,126 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>Marques Streetwear & Populaires - ICONIX</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="css/images/favicon.ico">
-  <link rel="stylesheet" href="css/style.dark.css" id="theme-style">
+    <title>ICONIX</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="css/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.dark.css" id="theme-style">
 </head>
 
 <body class="page-streetwear">
-  <button id="theme-toggle">Changer le style</button>
+    <button id="theme-toggle">Changer le style</button>
 
-  <header>
-    <div class="title">
-      <h1>ICONIX</h1>
-    </div>
+    <header>
+        <div class="title">
+            <h1>ICONIX</h1>
+        </div>
 
-    <nav>
-      <ul class="bandeau">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="actualités_mode.html">Actualités Mode</a></li>
-        <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
-        <li><a href="tendances.html">Tendances</a></li>
-        <li><a href="createur_marques.html">Créateurs & Marques</a></li>
+        <nav>
+            <ul class="bandeau">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="actualités_mode.html">Actualités Mode</a></li>
+                <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+                <li><a href="tendances.html">Tendances</a></li>
+                <li><a href="createur_marques.html">Créateurs & Marques</a></li>
 
-        <li class="icone-nav">
-          <button id="luneToggle" class="lune-toggle-btn">
-            <img src="css/images/lune_mode_claire_2.png" alt="Changer le mode d'affichage" class="lune-mode">
-          </button>
-        </li>
+                <li class="icone-nav">
+                    <button id="luneToggle" class="lune-toggle-btn">
+                        <img src="css/images/lune_mode_claire_2.png" alt="Changer le mode" class="lune-mode" width="48" height="48">
+                    </button>
+                </li>
 
-        <li class="nav-burger">
-          <nav class="navigation-principale">
-            <button id="toggleBtn" onclick="toggleMenu()" class="burger-toggle" aria-expanded="false">☰</button>
+                <li class="burger-wrapper">
+                    <button id="toggleBtn" onclick="toggleMenu()" class="burger-toggle" aria-expanded="false">
+                        ☰
+                    </button>
 
-            <ul id="menuListe" class="menu-liste">
-              <li><a href="index.html">Accueil</a></li>
-
-              <li class="has-submenu">
-                <a href="actualités_mode.html">Actualités Mode</a>
-                <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
-                <ul class="submenu">
-                  <li><a href="actualités_mode_défilé.html">Défilés</a></li>
-                  <li><a href="actualités_mode_tendances_intemporelles.html">Tendances Intemporelles</a></li>
-                  <li><a href="actualités_mode_collaborations_partenariats.html">Collaborations & Partenariats</a></li>
-                </ul>
-              </li>
-
-              <li><a href="tendances.html">Tendances</a></li>
-              <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
-
-              <li class="has-submenu">
-                <a href="createur_marques.html">Créateurs & Marques</a>
-                <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
-                <ul class="submenu">
-                  <li><a href="createurs_marques_Maison_de_luxe.html">Maison de Luxe</a></li>
-                  <li><a href="createur_marques_marques_modernes.html">Marques Modernes</a></li>
-                  <li><a href="createurs_marques_marques_streetwear_populaire.html">Marques Streetwear Populaire</a></li>
-                </ul>
-              </li>
-
-              <li><a href="a_propos.html">À Propos</a></li>
+                    <ul id="menuListe" class="menu-liste">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="has-submenu">
+                            <a href="actualités_mode.html">Actualités Mode</a>
+                            <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
+                            <ul class="submenu">
+                                <li><a href="actualités_mode_défilé.html">Défilés</a></li>
+                                <li><a href="actualités_mode_tendances_intemporelles.html">Tendances</a></li>
+                                <li><a href="actualités_mode_collaborations_partenariats.html">Collaborations</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="tendances.html">Tendances</a></li>
+                        <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+                        <li class="has-submenu">
+                            <a href="createur_marques.html">Créateurs & Marques</a>
+                            <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
+                            <ul class="submenu">
+                                <li><a href="createurs_marques_Maison_de_luxe.html">Maison de Luxe</a></li>
+                                <li><a href="createur_marques_marques_modernes.html">Marques Modernes</a></li>
+                                <li><a href="createurs_marques_marques_streetwear_populaire.html">Streetwear</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="a_propos.html">À Propos</a></li>
+                    </ul>
+                </li>
             </ul>
-          </nav>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        </nav>
+    </header>
 
-  <main>
-    <section class="street-hero">
-      <h1 class="street-title">Marques Streetwear & Populaires</h1>
-      <p class="street-intro">
-        Les marques streetwear occupent aujourd’hui une place essentielle dans la mode, influençant autant la culture
-        que les tendances. Entre pièces iconiques et collaborations marquantes, ces labels mêlent confort, identité et style.
-        Voici une sélection des marques les plus populaires du moment.
-      </p>
-    </section>
+    <main>
+        <section class="street-hero">
+            <h2 class="titre-pages">Marques Streetwear & Populaires</h2>
+            <p class="street-intro">
+                Les marques streetwear occupent aujourd’hui une place essentielle dans la mode, influençant autant la culture
+                que les tendances. Entre pièces iconiques et collaborations marquantes, ces labels mêlent confort, identité et style.
+            </p>
+        </section>
 
-    <section class="street-band">
-      <h2 class="brand-name">Supreme</h2>
-      <p class="brand-description">
-        Supreme est une marque streetwear née à New York, devenue un véritable phénomène culturel. Connue pour ses drops
-        très limités, son logo emblématique et ses collaborations prestigieuses, la marque a su créer un univers unique où
-        mode, skate et art se rencontrent. Aujourd’hui, Supreme reste une référence incontournable du streetwear mondial.
-      </p>
-    </section>
+        
+        <section class="street-band">
+            <h3 class="brand-name">Off-White</h3>
+            <p class="brand-description">
+                Off-White, fondée par Virgil Abloh, a révolutionné le streetwear en mélangeant luxe, design conceptuel et influences
+                urbaines. Avec ses guillemets, ses motifs industriels et son esthétique avant-gardiste, la marque a imposé un style
+                reconnaissable entre tous.
+            </p>
+            
+        </section>
 
-    <section class="street-band">
-      <h2 class="brand-name">Off-White</h2>
-      <p class="brand-description">
-        Off-White, fondée par Virgil Abloh, a révolutionné le streetwear en mélangeant luxe, design conceptuel et influences
-        urbaines. Avec ses guillemets, ses motifs industriels et son esthétique avant-gardiste, la marque a imposé un style
-        reconnaissable entre tous. Aujourd’hui, Off-White reste l’un des labels les plus influents de la mode contemporaine.
-      </p>
-    </section>
+        <section class="street-band">
+            <h3 class="brand-name">Stüssy</h3>
+            <p class="brand-description">
+                Stüssy est l’une des marques pionnières du streetwear, née dans la culture surf californienne. Avec son logo iconique
+                et son style décontracté, elle a posé les bases du streetwear moderne.
+            </p>
+            
+        </section>
 
-    <section class="street-band">
-      <h2 class="brand-name">Stüssy</h2>
-      <p class="brand-description">
-        Stüssy est l’une des marques pionnières du streetwear, née dans la culture surf californienne. Avec son logo iconique
-        et son style décontracté, elle a posé les bases du streetwear moderne. Aujourd’hui, Stüssy reste une référence mondiale
-        grâce à son authenticité et son influence durable.
-      </p>
-    </section>
+        <section class="street-band">
+            <h3 class="brand-name">Nike</h3>
+            <p class="brand-description">
+                Nike est une marque incontournable qui domine autant le sport que la culture streetwear. Ses sneakers emblématiques,
+                ses collaborations marquantes et son identité visuelle forte en ont fait un pilier de la mode urbaine.
+            </p>
+            <div class="tendance-contenu">
+                <img src="css/images/nike_1.png" alt="Sneakers Nike iconiques" class="tendance-img" width="600" height="600" loading ="lazy">
+                <img src="css/images/nike_2.png" alt="Tenue sport-chic Nike" class="tendance-img" width="600" height="600" loading ="lazy">
+            </div>
+        </section>
+    </main>
 
-    <section class="street-band">
-      <h2 class="brand-name">Nike</h2>
-      <p class="brand-description">
-        Nike est une marque incontournable qui domine autant le sport que la culture streetwear. Ses sneakers emblématiques,
-        ses collaborations marquantes et son identité visuelle forte en ont fait un pilier de la mode urbaine. Nike continue
-        d’inspirer chaque génération grâce à son innovation et son impact culturel.
-      </p>
-    </section>
-  </main>
+    <footer>
+        <div class="footer-social-block">
+            <div class="footer-text">
+                <h2 class="suivez-nous">Suivez nous</h2>
+                <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="btn-suivre"><b>@ICONIX</b></a>
+            </div>
+            <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="logo-link">
+                <img src="css/images/logo_instagram.png" class="logo-instagram" alt="Instagram" width="56" height="56"  loading ="lazy">
+            </a>
+        </div>
 
-  <footer>
-    <div class="footer-social-block">
-      <div class="footer-text">
-        <h2 class="suivez-nous">Suivez nous</h2>
-        <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="btn-suivre"><b>@ICONIX</b></a>
-      </div>
-      <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="logo-link">
-        <img src="css/images/logo_instagram.png" class="logo-instagram" alt="logo-instagram">
-      </a>
-    </div>
+        <a href="a_propos.html" class="btn-a-propos"><b>À PROPOS</b></a>
+        <button id="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'});">⬆</button>
+    </footer>
 
-    <a href="a_propos.html" class="btn-a-propos"><b>À PROPOS</b></a>
-    <button id="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'});">⬆</button>
-  </footer>
-
-  <script src="javaScript/switch-style.js"></script>
+    <script src="javaScript/switch-style.js"></script>
 </body>
 </html>

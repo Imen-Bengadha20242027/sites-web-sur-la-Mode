@@ -1,109 +1,141 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>Marques Modernes - ICONIX</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" href="css/images/favicon.ico">
-  <link rel="stylesheet" href="css/style.dark.css" id="theme-style">
+    <title>ICONIX</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="css/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.dark.css" id="theme-style">
 </head>
 
 <body class="page-modernes">
-  <button id="theme-toggle">Changer le style</button>
+    <button id="theme-toggle">Changer le style</button>
 
-  
-  <header>
-    <div class="title">
-      <h1>ICONIX</h1>
-    </div>
+    <header>
+        <div class="title">
+            <h1>ICONIX</h1>
+        </div>
 
-    <nav>
-      <ul class="bandeau">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="actualités_mode.html">Actualités Mode</a></li>
-        <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
-        <li><a href="tendances.html">Tendances</a></li>
-        <li><a href="createur_marques.html">Créateurs & Marques</a></li>
-      </ul>
-    </nav>
-  </header>
+        <nav>
+            <ul class="bandeau">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="actualités_mode.html">Actualités Mode</a></li>
+                <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+                <li><a href="tendances.html">Tendances</a></li>
+                <li><a href="createur_marques.html">Créateurs & Marques</a></li>
 
-  
-  <main>
-    
-    <section class="modern-hero">
-      <h1 class="modern-title">Marques Modernes</h1>
-      <p class="modern-intro">
-        Découvrez les marques modernes qui redéfinissent la mode contemporaine à travers l’innovation,
-        la créativité et de nouvelles visions du style. Entre avant-garde, minimalisme et influences streetwear,
-        ces créateurs proposent des silhouettes actuelles qui reflètent l’évolution de la mode d’aujourd’hui.
-      </p>
-    </section>
+                <li class="icone-nav">
+                    <button id="luneToggle" class="lune-toggle-btn">
+                        <img src="css/images/lune_mode_claire_2.png" alt="Mode" class="lune-mode" width="48" height="48">
+                    </button>
+                </li>
 
-    <!-- Marques -->
-    <section class="modern-band">
-      <h2 class="brand-name">Jacquemus</h2>
-      <p class="brand-description">
-        Fondée en 2009 en France, la maison Jacquemus de Simon Porte Jacquemus propose une mode minimaliste
-        et lumineuse inspirée du sud. Entre silhouettes épurées et accessoires iconiques, la marque incarne
-        une vision moderne et poétique du style.
-      </p>
-    </section>
+                <li class="burger-wrapper">
+                    <button id="toggleBtn" onclick="toggleMenu()" class="burger-toggle" aria-expanded="false">
+                        ☰
+                    </button>
 
-    <section class="modern-band">
-      <h2 class="brand-name">Acne Studios</h2>
-      <p class="brand-description">
-        Créée en 1996 en Suède, Acne Studios de Jonny Johansson propose un style minimaliste inspiré du design
-        scandinave. Reconnaissable par ses lignes épurées et son esthétique artistique, la marque s’impose
-        comme une référence du style contemporain.
-      </p>
-    </section>
+                    <ul id="menuListe" class="menu-liste">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="has-submenu">
+                            <a href="actualités_mode.html">Actualités Mode</a>
+                            <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
+                            <ul class="submenu">
+                                <li><a href="actualités_mode_défilé.html">Défilés</a></li>
+                                <li><a href="actualités_mode_tendances_intemporelles.html">Tendances</a></li>
+                                <li><a href="actualités_mode_collaborations_partenariats.html">Collaborations</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="tendances.html">Tendances</a></li>
+                        <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+                        <li class="has-submenu">
+                            <a href="createur_marques.html">Créateurs & Marques</a>
+                            <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
+                            <ul class="submenu">
+                                <li><a href="createurs_marques_Maison_de_luxe.html">Maison de Luxe</a></li>
+                                <li><a href="createur_marques_marques_modernes.html">Marques Modernes</a></li>
+                                <li><a href="createurs_marques_marques_streetwear_populaire.html">Streetwear</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="a_propos.html">À Propos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="modern-band">
-      <h2 class="brand-name">Mugler</h2>
-      <p class="brand-description">
-        Créée en 1974 en France, la maison Mugler de Thierry Mugler est célèbre pour ses silhouettes sculpturales,
-        futuristes et théâtrales. Son style audacieux, mêlant glamour et architecture, a profondément marqué
-        l’histoire de la mode.
-      </p>
-    </section>
+    <main>
+        <div class="modern-hero">
+            <h2 class="titre-pages">Marques Modernes</h2>
+            <p class="modern-intro">
+                Découvrez les marques modernes qui redéfinissent la mode contemporaine à travers l’innovation,
+                la créativité et de nouvelles visions du style. Entre avant-garde, minimalisme et influences streetwear,
+                ces créateurs proposent des silhouettes actuelles qui reflètent l’évolution de la mode d’aujourd’hui.
+            </p>
+        </div>
 
-    <section class="modern-band">
-      <h2 class="brand-name">JW Anderson</h2>
-      <p class="brand-description">
-        Lancée en 2008 au Royaume-Uni, la marque JW Anderson de Jonathan Anderson explore une mode hybride
-        et expérimentale. Son univers créatif, entre contrastes et volumes inattendus, en fait l’un des designers
-        les plus innovants de la scène actuelle.
-      </p>
-    </section>
+        <section class="modern-band">
+            <h2 class="brand-name">Jacquemus</h2>
+            <p class="brand-description">
+                Fondée en 2009 en France, la maison Jacquemus de Simon Porte Jacquemus propose une mode minimaliste
+                et lumineuse inspirée du sud. Entre silhouettes épurées et accessoires iconiques, la marque incarne
+                une vision moderne et poétique du style.
+            </p>
+           
+        </section>
 
-    <section class="modern-band">
-      <h2 class="brand-name">Maison Margiela</h2>
-      <p class="brand-description">
-        Fondée en 1988 à Paris par le designer belge Martin Margiela, la maison se distingue par son approche
-        conceptuelle et déconstructiviste. Avec une esthétique mystérieuse et avant-gardiste, Margiela révolutionne
-        les codes du vêtement et de l’anonymat.
-      </p>
-    </section>
-  </main>
+        <section class="modern-band">
+            <h2 class="brand-name">Acne Studios</h2>
+            <p class="brand-description">
+                Créée en 1996 en Suède, Acne Studios de Jonny Johansson propose un style minimaliste inspiré du design
+                scandinave. Reconnaissable par ses lignes épurées et son esthétique artistique, la marque s’impose
+                comme une référence du style contemporain.
+            </p>
+            
+        </section>
 
-  
-  <footer>
-    <div class="footer-social-block">
-      <div class="footer-text">
-        <h2 class="suivez-nous">Suivez nous</h2>
-        <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="btn-suivre"><b>@ICONIX</b></a>
-      </div>
-      <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="logo-link">
-        <img src="css/images/logo_instagram.png" class="logo-instagram" alt="logo-instagram">
-      </a>
-    </div>
+        <section class="modern-band">
+            <h2 class="brand-name">Mugler</h2>
+            <p class="brand-description">
+                Créée en 1974 en France, la maison Mugler de Thierry Mugler est célèbre pour ses silhouettes sculpturales,
+                futuristes et théâtrales. Son style audacieux, mêlant glamour et architecture, a profondément marqué
+                l’histoire de la mode.
+            </p>
+            
+        </section>
 
-    <a href="a_propos.html" class="btn-a-propos"><b>À PROPOS</b></a>
-    <button id="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'});">⬆</button>
-  </footer>
+        <section class="modern-band">
+            <h2 class="brand-name">JW Anderson</h2>
+            <p class="brand-description">
+                Lancée en 2008 au Royaume-Uni, la marque JW Anderson de Jonathan Anderson explore une mode hybride
+                et expérimentale. Son univers créatif, entre contrastes et volumes inattendus, en fait l’un des designers
+                les plus innovants de la scène actuelle.
+            </p>
+        </section>
 
-  <script src="javaScript/switch-style.js"></script>
+        <section class="modern-band">
+            <h2 class="brand-name">Maison Margiela</h2>
+            <p class="brand-description">
+                Fondée en 1988 à Paris par le designer belge Martin Margiela, la maison se distingue par son approche
+                conceptuelle et déconstructiviste. Avec une esthétique mystérieuse et avant-gardiste, Margiela révolutionne
+                les codes du vêtement et de l’anonymat.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-social-block">
+            <div class="footer-text">
+                <h2 class="suivez-nous">Suivez nous</h2>
+                <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="btn-suivre"><b>@ICONIX</b></a>
+            </div>
+            <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="logo-link">
+                <img src="css/images/logo_instagram.png" class="logo-instagram" alt="Instagram" width="56" height="56" loading ="lazy">
+            </a>
+        </div>
+        <a href="a_propos.html" class="btn-a-propos"><b>À PROPOS</b></a>
+        <button id="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'});">⬆</button>
+    </footer>
+
+    <script src="javaScript/switch-style.js"></script>
 </body>
 </html>

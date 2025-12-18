@@ -1,76 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>ICONIX</title>
-        <meta charset="utf-8">
-        <link rel="icon" href="css/images/favicon.ico">
-        <link rel="stylesheet" href="css/style.dark.css" id="theme-style">
-        <script src="switch-style.js"></script>
-    </head>
-    <body>
-        <button id="theme-toggle">Changer le style</button>
-        <header>
-            <div class="title">
-                <h1>ICONIX</h1>
-            </div>
-            <nav>
-                <ul class="bandeau">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="actualités_mode.html">Actualités Mode</a></li>
-                    <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
-                    <li><a href="tendances.html">Tendances</a></li>
-                    <li><a href="createur_marques.html">Créateurs & Marques</a></li>
-                    <li class="icone-nav">
-                        <button id="luneToggle" class="lune-toggle-btn">
-                            <img src="css/images/lune_mode_claire_2.png" alt="Changer le mode d'affichage" class="lune-mode">
-                        </button>
-                    </li>
-                    <nav class="navigation-principale">
-                        <button id="toggleBtn" onclick="toggleMenu()" class="burger-toggle" aria-expanded="false">
-                            ☰
-                        </button>
+<head>
+    <title>ICONIX</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="css/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.dark.css" id="theme-style">
+</head>
 
-                        <ul id="menuListe" class="menu-liste">
-                            <li><a href="index.html">Accueil</a></li>
+<body>
+    <button id="theme-toggle">Changer le style</button>
 
-                            <li class="has-submenu">
-                                <a href="actualités_mode.html">Actualités Mode</a>
-                                <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
-                                <ul class="submenu">
-                                    <li><a href="actualités_mode_défilé.html">Défilés</a></li>
-                                    <li><a href="actualités_mode_tendances_intemporelles.html">Tendances Intemporelles</a></li>
-                                    <li><a href="actualités_mode_collaborations_partenariats.html">Collaborations & Partenariats</a></li>
-                                </ul>
-                            </li>
-                            
-                            <li><a href="tendances.html">Tendances</a></li>
-                            <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+    <header>
+        <div class="title">
+            <h1>ICONIX</h1>
+        </div>
+        <nav>
+            <ul class="bandeau">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="actualités_mode.html">Actualités Mode</a></li>
+                <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+                <li><a href="tendances.html">Tendances</a></li>
+                <li><a href="createur_marques.html">Créateurs & Marques</a></li>
+                
+                <li class="icone-nav">
+                    <button id="luneToggle" class="lune-toggle-btn">
+                        <img src="css/images/lune_mode_claire_2.png" alt="Mode" class="lune-mode" width="48" height="48">
+                    </button>
+                </li>
 
-                            <li class="has-submenu">
-                                <a href="createur_marques.html">Créateurs & Marques</a>
-                                <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
-                                <ul class="submenu">
-                                    <li><a href="createurs_marques_Maison_de_luxe.html">Maison de Luxe</a></li>
-                                    <li><a href="createur_marques_marques_modernes.html">Marques Modernes</a></li>
-                                    <li><a href="createurs_marques_marques_streetwear_populaire.html">Marques Streetwear Populaire</a></li>
-                                </ul>
-                            </li>
+                <li class="burger-wrapper">
+                    <button id="toggleBtn" onclick="toggleMenu()" class="burger-toggle" aria-expanded="false">
+                        ☰
+                    </button>
 
-                            <li><a href="a_propos.html">À Propos</a></li>
-                        </ul>
-                    </nav>
-                </ul>
-            </nav>
+                    <ul id="menuListe" class="menu-liste">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="has-submenu">
+                            <a href="actualités_mode.html">Actualités Mode</a>
+                            <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
+                            <ul class="submenu">
+                                <li><a href="actualités_mode_défilé.html">Défilés</a></li>
+                                <li><a href="actualités_mode_tendances_intemporelles.html">Tendances</a></li>
+                                <li><a href="actualités_mode_collaborations_partenariats.html">Collaborations</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="tendances.html">Tendances</a></li>
+                        <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+                        <li class="has-submenu">
+                            <a href="createur_marques.html">Créateurs & Marques</a>
+                            <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
+                            <ul class="submenu">
+                                <li><a href="createurs_marques_Maison_de_luxe.html">Maison de Luxe</a></li>
+                                <li><a href="createur_marques_marques_modernes.html">Marques Modernes</a></li>
+                                <li><a href="createurs_marques_marques_streetwear_populaire.html">Streetwear</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="a_propos.html">À Propos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        </header>
-        <h1 class="titre-pages">À PROPOS</h1>
-        <p class="text-a-propos">Nous sommes une équipe de trois étudiants, Imen, Maelan<br>
-            et Kawthar, et ce site web représente notre tout premier<br>
-            projet sites web. Nous sommes très fiers de vous le <br>
-            présenter et d’avoir donné vie à notre vision de la mode à<br>
-            travers ICONIX. Nous espérons sincèrement que vous avez<br>
-            apprécié découvrir notre site ainsi que tout son contenu.
-        </p>
+    <main class="a-propos-content">
+        <h2 class="titre-pages">À PROPOS</h2>
         
         <img src="css/images/a-props.webp" alt="image 3 personnes" class="img-a-propos">
         <h2 class="titre-feedback">VOTRE AVIS</h2>
@@ -93,5 +86,46 @@
             <a href="a_propos.html" class="btn-a-propos"><b>À PROPOS</b></a>
         </footer>
     </body>
+        <div class="a-propos-presentation">
+            <p class="text-a-propos">
+                Nous sommes une équipe de trois étudiants, Imen, Maelan et Kawthar, et ce site web représente notre tout premier projet. 
+                Nous sommes très fiers de vous le présenter et d’avoir donné vie à notre vision de la mode à travers ICONIX. 
+                Nous espérons sincèrement que vous avez apprécié découvrir notre site ainsi que tout son contenu.
+            </p>
+            
+            <figure class="img-container-a-propos">
+                <img src="css/images/a-props.png" alt="L'équipe ICONIX : Imen, Maelan et Kawthar" class="img-a-propos" width="800" height="533">
+            </figure>
+        </div>
 
+        <section class="feedback-section">
+            <h2 class="titre-feedback">VOTRE AVIS</h2>
+            <p class="feedback">Votre avis compte.<br>Laissez-nous vos commentaires ci-dessous :</p>
+            
+            <form id="Formulaire" action="#" method="post">
+                <div class="form-group">
+                    <label for="message">Message* :</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Partagez vos impressions..." required></textarea>
+                </div>
+                <button type="submit" class="btn-envoyer">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-social-block">
+            <div class="footer-text">
+                <h2 class="suivez-nous">Suivez nous</h2>
+                <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="btn-suivre"><b>@ICONIX</b></a>
+            </div>
+            <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="logo-link">
+                <img src="css/images/logo_instagram.png" class="logo-instagram" alt="Instagram Iconix" width="56" height="56" loading ="lazy">
+            </a>
+        </div>
+        <a href="a_propos.html" class="btn-a-propos"><b>À PROPOS</b></a>
+        <button id="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'});">⬆</button>
+    </footer>
+
+    <script src="javaScript/switch-style.js"></script>
+</body>
 </html>

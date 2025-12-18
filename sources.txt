@@ -16,3 +16,4 @@ Prompt donné à Gemini pour enlever "message='notre message'" quand on voulait 
                     </form>
 
             il y a pas moyen d'enlever message="notre message dans le mail" quand j'envoie le formulaire
+

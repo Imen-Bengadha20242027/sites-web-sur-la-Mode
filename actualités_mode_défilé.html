@@ -24,6 +24,64 @@
             </nav>
         </header>
         
+
+<head>
+    <title>ICONIX</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="css/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.dark.css" id="theme-style">
+</head>
+<body>
+    <button id="theme-toggle">Changer le style</button>
+    
+    <header>
+        <div class="title">
+            <h1>ICONIX</h1>
+        </div>
+        <nav>
+           
+                
+                <li class="icone-nav">
+                    <button id="luneToggle" class="lune-toggle-btn">
+                        <img src="css/images/lune_mode_claire_2.webp" alt="Mode" class="lune-mode" width="48" height="48">
+                    </button>
+                </li>
+
+                <li class="burger-wrapper">
+                    <button id="toggleBtn" onclick="toggleMenu()" class="burger-toggle" aria-expanded="false">
+                        ☰
+                    </button>
+
+                    <ul id="menuListe" class="menu-liste">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="has-submenu">
+                            <a href="actualités_mode.html">Actualités Mode</a>
+                            <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
+                            <ul class="submenu">
+                                <li><a href="actualités_mode_défilé.html">Défilés</a></li>
+                                <li><a href="actualités_mode_tendances_intemporelles.html">Tendances</a></li>
+                                <li><a href="actualités_mode_collaborations_partenariats.html">Collaborations</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="tendances.html">Tendances</a></li>
+                        <li><a href="looks_iconiques.html">Looks Iconiques</a></li>
+                        <li class="has-submenu">
+                            <a href="createur_marques.html">Créateurs & Marques</a>
+                            <button class="submenu-toggle" onclick="toggleSubmenu(this)">+</button>
+                            <ul class="submenu">
+                                <li><a href="createurs_marques_Maison_de_luxe.html">Maison de Luxe</a></li>
+                                <li><a href="createur_marques_marques_modernes.html">Marques Modernes</a></li>
+                                <li><a href="createurs_marques_marques_streetwear_populaire.html">Streetwear</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="a_propos.html">À Propos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
         <section>
             <h2 class="titre-pages">Défilés récents</h2>
             <p class="section-description-actu-mode-defile">
@@ -32,9 +90,8 @@
                 innovantes, des looks audacieux.
             </p>
             
-            <div class="block-article-defile defile-dior">
+            <article class="block-article-defile defile-dior">
                 <h2>Dior – Paris Fashion Week 2025</h2>
-                
                 <div class="defile-top-content content-gauche-image-droite">
                     <div class="defile-texte-gauche">
                         <p>
@@ -44,12 +101,11 @@
                             à une interprétation moderne, sublimée par l'excellence des ateliers Dior.
                         </p>
                     </div>
-                    
                     <div class="defile-image-droite">
-                        <img src="css/images/defile_9.webp" alt="défilé Dior 2025" class="actu-img-defile">
+
+                        <img src="css/images/défilé_9.webp" alt="Silhouette haute couture Dior 2025" class="actu-img-defile" width="600" height="900" loading ="lazy">
                     </div>
                 </div>
-                
                 <div class="defile-bottom-content">
                     <p>
                         Ces créations, à la fois ancrées dans le passé et résolument contemporaines,
@@ -58,6 +114,7 @@
                         toutes ses formes.
                     </p>
                 </div>
+
             </div>
             
             <div class="block-article-defile defile-gucci">
@@ -69,29 +126,34 @@
                         <img src="css/images/defile_8.webp" alt="défilé Gucci 2025" class="actu-img-defile">
                     </div>
 
+            </article>
+
+            <article class="block-article-defile defile-gucci">
+                <h2>Gucci – Milan Fashion Week 2025</h2>
+                <div class="defile-top-content content-image-gauche-texte-droite">
+                    <div class="defile-image-gauche">
+                        <img src="css/images/défilé_8.webp" alt="Look Gucci Milan 2025" class="actu-img-defile" width="600" height="900" loading ="lazy">
+                    </div>
                     <div class="defile-texte-droite">
                         <p>
                             Un continuum d’artisanat, d’élégance et de culture qui traverse le temps. Aujourd’hui,
                             la collection pourrait être perçue comme fondatrice, une déclaration de ce qu’est Gucci
-                            Michele à travers ses codes et ses croyances, passés, présents et futurs. Faite sous
-                            la direction de Alessandro, le podium du défilé Automne-Hiver 2025 arbore les courbes
-                            de l’emblème de la Maison. Célébrant leur 50e anniversaire cette année.
+                            Michele à travers ses codes et ses croyances, passés, présents et futurs.
                         </p>
                         <div class="defile-mini-image-interieur">
-                            <img src="css/images/defile_5.webp" alt="défilé Gucci 2025 scène 2" class="actu-img-defile-petit">
+
+                            <img src="css/images/défilé_5.webp" alt="Détail accessoire Gucci 2025" class="actu-img-defile-petit" width="300" height="450" loading ="lazy">
                         </div>
                     </div>
-                    
                 </div>
-                
                 <div class="defile-bottom-content">
                     <p>
                         Soulignant le récit cinématographique de la collection, la musique du défilé est une création
-                        originale de Justin Hurwitz, qui a également dirigé l’orchestre qui a joué pendant le défilé.
-                        Le compositeur et chef d’orchestre multi-récompensé se livre à une réflexion sur son processus
+                        originale de Justin Hurwitz. Le compositeur multi-récompensé se livre à une réflexion sur son processus
                         créatif et sur les émotions qu’il a cherché à traduire par le son.
                     </p>
                 </div>
+
             </div>
             
             <div class="block-article-defile defile-burberry">
@@ -102,25 +164,32 @@
                     <div class="defile-image-gauche image-burberry-col-1">
                         <img src="css/images/defile_7.webp" alt="défilé Burberry 2025 1" class="actu-img-defile">
                     </div>
+            </article>
 
+            <article class="block-article-defile defile-burberry">
+                <h2>London Fashion Week 2025 – Burberry</h2>
+                <div class="defile-top-content content-image-gauche-texte-droite">
+                    <div class="defile-image-gauche image-burberry-col-1">
+                        <img src="css/images/défilé_7.webp" alt="Trench iconique Burberry 2025" class="actu-img-defile" width="600" height="900" loading ="lazy">
+                    </div>
                     <div class="defile-texte-droite texte-burberry-col-2">
                         <p>
                             La collection « Winter 2025 » de Burberry, présentée à Londres au Tate Britain,
                             s’inspire des promenades pluvieuses à la campagne et des intérieurs de demeures britanniques raffinées.
                         </p>
                         <div class="defile-mini-image-interieur image-burberry-bottom-right">
-                            <img src="css/images/defile_4.webp" alt="défilé Burberry 2025 2" class="actu-img-defile-petit">
+
+                            <img src="css/images/défilé_4.webp" alt="Détail textile Burberry" class="actu-img-defile-petit" width="300" height="450" loading ="lazy">
                         </div>
                     </div>
                 </div>
-                
                 <div class="defile-bottom-content bottom-burberry">
                     <p>
                         Le défilé place l’imperméable iconique et les matières artisanales au cœur de la maison,
                         dans une célébration « British creativity » affirmée lors de cette saison.
                     </p>
                 </div>
-            </div>
+            </article>
 
             <div class="block-article-defile defile-chanel">
                 <h2>Haute Couture Paris 2025-Chanel</h2>
@@ -131,37 +200,50 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
                 </iframe>
+
+            <article class="block-article-defile defile-chanel">
+                <h2>Haute Couture Paris 2025 - Chanel</h2>
+                <img src="css/images/défilé_6.webp" alt="Robe haute couture Chanel 2025" class="actu-img-defile-centree" width="600" height="900" loading ="lazy">
+                
+                <div class="video-container">
+                    <iframe class="video-chanel"
+                        width="1280" height="720"
+                        src="https://www.youtube.com/embed/xXgKw_SCIg4" 
+                        title="Vidéo du Défilé Chanel Haute Couture"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
                 
                 <div class="defile-center-content">
                     <p class="text-chanel">
                         La maison Chanel a présenté sa collection haute couture Automne-Hiver 2025/26 au Grand Palais à Paris,
-                        dans un décor inspiré du 31 rue Cambon, mêlant tons naturels — écru, ivoire, brun, vert et noir —
-                        et symboles tels que les épis de blé qui ponctuent broderies et détails-bijoux pour valoriser
-                        le savoir-faire de ses ateliers.
+                        dans un décor inspiré du 31 rue Cambon, mêlant tons naturels et symboles tels que les épis de blé.
                     </p>
                 </div>
 
-                <h3>
-                    Le défilé place l’imperméable iconique et les matières artisanales au cœur de la maison, 
-                    dans une célébration « British creativity » affirmée lors de cette saison.
+                <h3 class="text-chanel">
+                    Le défilé place l’imperméable iconique et les matières artisanales au cœur de la maison.
                 </h3>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-social-block">
+            <div class="footer-text">
+                <h2 class="suivez-nous">Suivez nous</h2>
+                <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="btn-suivre"><b>@ICONIX</b></a>
             </div>
 
-            
-        </section>
-        <footer>
-            <div class="footer-social-block">
-                <div class="footer-text">
-                    <h2 class="suivez-nous">Suivez nous</h2>
-                    <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="btn-suivre"><b>@ICONIX</b></a>
-                </div>
-                <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="logo-link">
-                    <img src="css/images/logo_instagram.png" class="logo-instagram" alt="logo-instagram">
-                </a>
-            </div>
-            <a href="a_propos.html" class="btn-a-propos"><b>À PROPOS</b></a>
-            <button id="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'});">⬆</button>
-        </footer>
-        <script src="javaScript/switch-style.js"></script>
-    </body>
+            <a href="https://www.instagram.com/iconix117?igsh=MTRzZjBzbGMzdTZleQ%3D%3D&utm_source=qr" class="logo-link">
+                <img src="css/images/logo_instagram.png" class="logo-instagram" alt="Instagram Iconix" width="56" height="56" loading ="lazy">
+            </a>
+        </div>
+        <a href="a_propos.html" class="btn-a-propos"><b>À PROPOS</b></a>
+        <button id="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'});">⬆</button>
+    </footer>
+
+    <script src="javaScript/switch-style.js"></script>
+</body>
 </html>
