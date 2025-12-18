@@ -62,21 +62,22 @@
         </header>
 
         <main>
-            <h1 class="titre-pages">Tendances</h1>
-            <section class="tendances-block">
-                <h3 class="tendances-text">
+            <h2 class="titre-pages">Tendances</h2>
+            
+            <div class="tendances-block">
+                <p class="tendances-text-intro">
                     Chaque saison impose ses propres couleurs et styles.<br>
                     L’hiver privilégie des tons profonds, le printemps des nuances pastel, et l’été des couleurs lumineuses et légères.<br>
                     Ces palettes reflètent l’évolution naturelle de la mode au fil des saisons.
-                </h3>
-            </section>
+                </p>
+            </div>
 
             <h2 class="tendances-title"> -HIVER- </h2>
-            <section class="tendances-block">
+            <div class="tendances-block">
                 <p class="tendances-text">
                     L’hiver s’impose avec des matières chaudes et des silhouettes structurées. Les tons profonds comme le bleu nuit, le bordeaux ou le vert sapin dominent, apportant élégance et intensité aux looks de saison.
                 </p>
-            </section>
+            </div>
 
             <div class="tendances-ligne">
                 <img src="css/images/tendances_9.png" class="tendance-img" alt="tendance hiver modèle 1" width="500" height="750">
@@ -95,11 +96,11 @@
             </div>
 
             <h2 class="tendances-title"> -PRINTEMPS- </h2>
-            <section class="tendances-block">
+            <div class="tendances-block">
                 <p class="tendances-text">
                     Le printemps apporte des looks légers et lumineux inspirés du renouveau. Les couleurs pastel comme le rose, la lavande, le vert tendre ou le bleu clair dominent, créant une palette douce et fraîche.
                 </p>
-            </section>
+            </div>
 
             <div class="tendances-ligne">
                 <div class="pantone-colonne">
@@ -118,11 +119,11 @@
             </div>
 
             <h2 class="tendances-title"> -ÉTÉ- </h2>
-            <section class="tendances-block">
+            <div class="tendances-block">
                 <p class="tendances-text">
                     L’été privilégie des silhouettes fluides et aérées, parfaites pour les journées ensoleillées. Les couleurs claires et lumineuses dominent, comme le blanc, le beige, le bleu océan ou le vert menthe.
                 </p>
-            </section>
+            </div>
 
             <div class="tendances-ligne">
                 <img src="css/images/tendances_25.png" class="tendance-img" alt="été modèle vert" width="500" height="750">
@@ -152,7 +153,9 @@
                 </a>
             </div>
             <a href="a_propos.html" class="btn-a-propos"><b>À PROPOS</b></a>
-            <button id="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'});">⬆</button>
+            <button id="top-btn" class="btn-to-top" onclick="window.scrollTo({top:0, behavior:'smooth'});">
+                <b>RETOUR EN HAUT</b>
+            </button>
         </footer>
         <script src="javaScript/switch-style.js"></script>
     </body>
