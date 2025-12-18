@@ -77,26 +77,35 @@ footer{margin-top:25rem;display:flex;position:relative;justify-content:space-bet
 .tendance-block{margin-bottom:8rem}
 .tendance-titre{font-size:2.5rem;margin-bottom:2rem;color:white;text-align:center}
 .tendance-contenu{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
-.tendance-item{background:rgba(217,217,217,.9);border:.2rem solid rgba(144,131,131,.2);border-radius:2rem;padding:1rem;max-width:330px;width:100%;box-shadow:0 10px 25px rgba(0,0,0,.65);transition:transform .3s ease}
-.tendance-item:hover{transform:scale(1.02)}
-.tendance-img{display:block;width:100%;height:380px;object-fit:cover;border-radius:1.5rem}
-.tendance-grid--oldmoney{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;align-items:flex-start}
-.tendance-item--large{max-width:420px}
-.tendance-item--large .tendance-img{height:520px}
-.tendance-colonne{display:flex;flex-direction:column;gap:2rem}
-.tendance-grid--3 .tendance-item{max-width:300px}
-.tendance-grid--3 .tendance-img{height:340px}
+.tendance-img{display:block;width:100%;height:380px;object-fit:cover;border-radius:1.5rem;margin:15px;box-shadow:0 10px 25px rgba(0,0,0,.65);transition:transform .3s ease}
 
 /* Page looks iconiques */
 .looks-iconiques{width:90%;max-width:1100px;margin:0 auto;display:flex;flex-direction:column;gap:6rem;font-family:"Playfair Display","Georgia",serif;color:#fdf7ff}
-.look:nth-child(even){align-self:flex-end}
-.look:nth-child(odd){align-self:flex-start}
-.look{width:85%;background:rgba(91,88,107,.25);padding:3rem;border-radius:4rem;box-shadow:0 20px 45px rgba(0,0,0,.4)}
-.images-look{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
+.look:nth-child(even){margin-left:auto;align-self:flex-end}
+.look:nth-child(odd){margin-right:auto;align-self:flex-start}
+.look{width:75%;background:rgba(91,88,107,.25);padding:3rem;border-radius:4rem;box-shadow:0 20px 45px rgba(0,0,0,.4);margin-bottom:4rem}
+.images-look{width:85%;height:auto;display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
 .img-look{width:45%;max-width:420px;border-radius:1.8rem;border:3px solid #fce3b6;padding:6px;background:rgba(0,0,0,.75);box-shadow:0 18px 40px rgba(0,0,0,.3)}
 .look h2{font-size:2rem;letter-spacing:.05rem;margin-bottom:1.2rem;text-align:center}
 .look h3{font-family:"Poppins",sans-serif;font-size:1.5rem;font-weight:300;line-height:1.8;text-align:center;color:#e9e2ff}
 .text-look-iconique{margin:6rem auto 0;max-width:700px;font-family:"Georgia","Playfair Display",serif;font-size:1.2rem;line-height:1.9;text-align:center;background:rgba(142,126,126,.2);padding:3rem;border-radius:4rem;border:1px solid #fce3b6}
+
+/* Page Collaborations & Marques*/
+
+.section-description-collaboration {text-align:center; font-size:2rem; font-family:"Georgia", serif; margin:40px auto; max-width:900px; line-height:1.8; color:#fdf7ff}
+.collaboration-article-bloc {max-width:1100px; margin:80px auto; padding:50px 5%; display:flex; flex-direction:column}
+.collab-title {font-size:2.5rem; margin-bottom:40px; text-align:center; text-transform:uppercase; color:#fce3b6; width:100%}
+.collab-row {display:flex; justify-content:space-between; gap:40px; margin-bottom:40px; width:100%}
+.collab-row.reverse {flex-direction:row-reverse}
+.collab-text {width:45%; font-size:1.8rem; font-weight:bold; line-height:1.7; color:#fdf7ff}
+.collab-images {width:50%; display:flex; gap:15px}
+.collab-images img {width:50%; height:auto; border-radius:15px; display:block}
+.collab-bottom {max-width:90%; margin:30px auto 0; text-align:center; font-style:italic; font-size:1.8rem; font-weight:bold; color:#f7b1d3}
+.collab-center {text-align:center; width:100%}
+.collab-text-center {font-size:1.8rem; font-weight:bold; margin-bottom:30px; color:#fdf7ff}
+.collab-text-center-conclusion {font-size:1.8rem; font-weight:bold; margin-bottom:30px;color:#000}
+.collab-images.center {width:70%; margin:0 auto 30px; justify-content:center}
+.collab-images.center img {width:45%}
 
 /* Page tendances */
 .tendances-ligne{display:flex;justify-content:center;align-items:center;gap:4vw;margin-bottom:12vh}
@@ -104,14 +113,16 @@ footer{margin-top:25rem;display:flex;position:relative;justify-content:space-bet
 .pantone-colonne{display:flex;flex-direction:column;gap:2rem}
 .square{width:10vw;height:auto}
 .tendances-title{margin-top:10vh;margin-bottom:3vh;color:white;text-align:center;font-size:2.8rem}
-.tendances-text{text-align:center;font-size:2rem;color:#fff}
-.tendances-block{border:.4rem solid #948787;background-color:rgba(217,217,217,.69);padding:2rem 8vw 0;border-radius:2rem;width:60vw;max-width:55rem;margin:0 auto 6rem}
+.tendances-text{text-align:center;font-size:2rem;color:#000}
+.tendances-block{border:0.4rem solid #948787;background-color:#d9d9d9;padding:.5rem 8vw 0;border-radius:3rem;width:75%;max-width:55em;margin:.5em auto .5em}
 
 /* Créateurs & marques */
 .titre-pages.createurs-marques{text-align:left;margin:10rem 0 10rem 20rem}
 .marque-cercle h3{font-size:3rem;color:white;margin-bottom:2rem;text-align:center}
 .marques-container{display:flex;flex-direction:column;gap:15rem;padding:5rem 0}
 .marque-cercle{display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;border-radius:50%;width:60rem;height:60rem;text-align:center;background:#414644;box-shadow:#414644 0 0 100px}
+.marque-cercle:nth-child(even){margin-right:auto;margin-left:-10rem;padding-left:5rem}
+.marque-cercle:nth-child(odd){margin-left:auto;margin-right:-10rem;padding-right:5rem}
 .marque-cercle:hover{opacity:.9;transform:scale(1.02);transition:transform .4s ease-in-out;box-shadow:#000 0 0 100px}
 .marque-cercle h2{font-size:2.5rem;margin-bottom:3rem;color:white}
 
@@ -153,7 +164,7 @@ form textarea{padding:1rem;border:.4rem solid #000;border-radius:1rem;font-size:
   font-weight: 400;
   margin: 0 0 1.5rem 0;
   text-align: left;
-  color: #111;
+  color: #fff;
 }
 
 .page-luxe .luxe-intro,

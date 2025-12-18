@@ -7,6 +7,7 @@ header{display:flex;justify-content:space-between;align-items:center;padding:20p
 .title,.titre-pages{text-align:center;color:#fce3b6;font-family:"Verdana","Segoe UI",sans-serif;letter-spacing:.12rem;text-transform:uppercase}
 .title{font-size:2.8rem}
 .title h1{font-size:40px;letter-spacing:3px}
+.bandeau{align-items:center;margin-top: 5rem;}
 .bandeau,nav a{display:flex;gap:30px;list-style:none}
 nav a,.bandeau a{color:#ffeaea;text-decoration:none;font-weight:500;transition:.3s;font-family:"Verdana","Segoe UI",sans-serif;font-size:1rem;letter-spacing:.08rem;text-transform:uppercase;margin-right:2rem}
 .bandeau a:hover,nav a:hover{color:#c7a5ff;text-decoration:underline}
