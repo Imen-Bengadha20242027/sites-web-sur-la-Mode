@@ -2,10 +2,10 @@
 
 .bandeau{
     display: flex;
-    height: 4vw;
+    height: 7vw;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(#000 7%, #776F6F 38%, #9A9595 51%, #716969 65%, #100E0E 95%);
+    background: linear-gradient(#fff 2%, #303030 38%, #000000 51%, #303030 70%, #fff 100%);
     list-style: none;
     text-decoration: none;
 }
@@ -37,24 +37,7 @@ nav a{
     color: #000000;
 }
 
-/* body pour toutes les pages */
-body {
-    color: black;
-    position: relative;
-    font-family: "Times New Roman", Times, serif;
-    background: linear-gradient(#fff 52%, #000 100%);
-    overflow-x: hidden;
-}
-
-.titre-pages{
-    font-size: 3rem;
-    text-align: center;
-    color: #000000;
-    margin: 4rem;
-}
-
-
-/*  Pour le menu burger et les sous-menus  */
+/* Pour le menu burger et les sous-menus  */
 
 .burger-toggle {
     display: block;
@@ -64,35 +47,35 @@ body {
     cursor: pointer;
     padding: 10px;
     color: #fff;
-    margin-left: 15rem;
+    margin-right: 2rem;
 }
 
 /* 1. Menu Principal (Masqué par défaut) */
 .menu-liste {
     /* Style de base du volet */
     list-style: none;
-    padding: 0;
+    padding: 20px 0;
     margin: 0;
     position: fixed;
-    top: 20%;
-    left: 80%;
-    width: 100%;
+    top: 20%; 
+    right: 20px; /* Aligné à droite avec un petit espace */
+    width: 20rem; /* Largeur compacte comme tu voulais */
     background-color: #000;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+    border-radius: 20px;
 
-    max-height: 0;
+    /* ÉTAT FERMÉ : On le décale vers la droite */
+    transform: translateX(120%); 
+    transition: transform 0.4s ease-out;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
 }
 
 /* 2. Affichage du Menu Principal */
 .menu-liste.ouvert {
-    max-height: 500rem;
-    max-width: 20rem;
-    border-radius: 20px;
+    /* ÉTAT OUVERT : On le ramène à sa position */
+    transform: translateX(0);
     background: linear-gradient(#fff 15%, #888B8B 38%, #656A6A 51%, #8E9696 65%, #EFEEF0 95%);
-    transition: max-height 0.5s ease-in;
 }
 
 /* 3. Style des éléments du menu principal */
@@ -100,13 +83,12 @@ body {
     padding: 10px 15px;
     border-bottom: 1px solid #000;
     position: relative;
-
 }
+
 .menu-liste a {
     text-decoration: none;
     color: #000;
     display: block;
-
 }
 
 /* 4. Gestion des Sous-menus (Toggle et Marge) */
@@ -114,9 +96,8 @@ body {
     display: block;
     position: absolute;
     right: 15px;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
+    top: 50%;
+    transform: translateY(-50%); /* Centre le bouton verticalement */
     height: 30px;
     width: 30px;
     background: #000;
@@ -128,6 +109,7 @@ body {
     z-index: 1002;
     border-radius: 50%;
 }
+
 .submenu-toggle.submenu-actif {
     background: #333;
 }
@@ -136,8 +118,7 @@ body {
 .submenu {
     list-style: none;
     padding: 0;
-    margin-left: 20px;
-
+    margin-left: 20px; /* Ta marge à gauche */
 
     /* Technique pour masquer/animer le sous-menu */
     max-height: 0;
@@ -153,9 +134,24 @@ body {
 
 .submenu li {
     padding: 8px 10px 8px 10px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgba(0,0,0,0.1); /* Bordure plus légère pour les sous-menus */
 }
 
+/* body pour toutes les pages */
+body {
+    color: black;
+    position: relative;
+    font-family: "Times New Roman", Times, serif;
+    background: linear-gradient(#fff 52%, #000 100%);
+    overflow-x: hidden;
+}
+
+.titre-pages{
+    font-size: 3rem;
+    text-align: center;
+    color: #000000;
+    margin: 4rem;
+}
 
 /* le footer pour toutes les pages sauf à propos */
 

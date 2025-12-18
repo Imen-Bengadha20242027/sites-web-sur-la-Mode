@@ -53,19 +53,11 @@ document.addEventListener("DOMContentLoaded", () => {
 // Fonctions pour le menu burger et les sous-menus
 function toggleMenu() {
     const menu = document.getElementById('menuListe');
-    const toggleButton = document.getElementById('toggleBtn');
     menu.classList.toggle('ouvert');
-    const estOuvert = menu.classList.contains('ouvert');
-    toggleButton.setAttribute('aria-expanded', estOuvert);
-
 }
 
-function toggleSubmenu(buttonElement) {
-    const submenu = buttonElement.nextElementSibling; // Le <ul> .submenu est le prochain élément
-    
-    if (submenu) {
-        submenu.classList.toggle('submenu-ouvert');
-        const estOuvert = submenu.classList.contains('submenu-ouvert');
-        buttonElement.textContent = estOuvert ? '−' : '+';
-    }
+function toggleSubmenu(btn) {
+    const submenu = btn.nextElementSibling;
+    submenu.classList.toggle('submenu-ouvert');
+    btn.textContent = submenu.classList.contains('submenu-ouvert') ? '−' : '+';
 }
