@@ -23,7 +23,7 @@ footer{margin-top:40rem;display:flex;position:relative;justify-content:space-bet
 .footer-text{display:flex;flex-direction:column;align-items:flex-start;margin:0 1rem 2rem 3rem;color:#fff}
 .footer-social-block{display:flex;flex-direction:row;align-items:center;gap:15px}
 .btn-suivre{text-decoration:none;margin:0;color:#fff;font-size:x-large}
-.logo-instagram{width:4rem}
+.logo-instagram{width:4rem;height:auto;}
 .btn-to-top{width:25%;position:absolute;left:50%;transform:translateX(-50%);bottom:2rem;padding:1rem 2rem;font-size:1.5rem;background:#fff;color:#000;border-radius:2rem;text-align:center;text-decoration:none}
 
 /* Page accueil */

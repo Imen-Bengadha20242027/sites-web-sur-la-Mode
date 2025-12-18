@@ -90,7 +90,7 @@ section{font-size:1.2rem}
 /* ===== Footer ===== */
 footer{margin-top:45rem;display:flex;position:relative;justify-content:space-between;align-items:center;padding:2rem 3vw;background:#601212;border-top:1px solid #4b3a7a}
 .footer-text{display:flex;flex-direction:column;margin:0 1rem 0 0;color:#f0e6ff;font-size:.95rem}
-.logo-instagram{width:3.5rem;margin-top:.5rem}
+.logo-instagram{width:3.5rem;height:auto;margin-top:.5rem}
 .btn-suivre{text-decoration:none;color:#f8f8f8;background:linear-gradient(135deg,#fce3b6,#f7b1d3);padding:.6rem 1.4rem;border-radius:999px;font-size:.9rem;font-weight:600}
 
 /* ===== Formulaires & À propos ===== */
